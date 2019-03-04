@@ -1,0 +1,26 @@
+HTTrack3.49-2+htsswf+htsjava launched on Fri, 21 Sep 2018 10:58:13 at http://ravistheme.com/pinar/html/ +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar
+(winhttrack -qwC2%Ps2u1%s%uN0%I0p3DaK0H0%kf2A25000%f#f -F "Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98)" -%F "<!-- Mirrored from %s%s by HTTrack Website Copier/3.x [XR&CO'2014], %s -->" -%l "fr, en, *" http://ravistheme.com/pinar/html/ -O1 "C:\Users\Thomas\Desktop\perso\Arcoch\Chambres" +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+10:58:14	Warning: 	Note: due to ravistheme.com remote robots.txt rules, links beginning with these path will be forbidden: /test/ (see in the options to disable this)
+11:10:14	Warning: 	Retry after error -4 (No data (connection closed)) at link ravistheme.com/pinar/html/assets/css/fonts/FontAwesome/fontawesome-webfont.woff?v=4.3.0 (from ravistheme.com/pinar/html/assets/css/styles.css)
+11:10:20	Error: 	"Not Found" (404) at link ravistheme.com/pinar/html/assets/css/AjaxLoader.gif (from ravistheme.com/pinar/html/assets/css/styles.css)
+11:10:20	Warning: 	Retry after error -4 (No data (connection closed)) at link ravistheme.com/pinar/html/assets/img/staff/5.jpg (from ravistheme.com/pinar/html/pages/about.html)
+11:10:26	Warning: 	Retry after error -4 (No data (connection closed)) at link ravistheme.com/pinar/html/assets/img/gallery/9.jpg (from ravistheme.com/pinar/html/pages/gallery-grid.html)
+11:10:26	Warning: 	Retry after error -4 (No data (connection closed)) at link ravistheme.com/pinar/html/assets/img/resaurant/header.jpg (from ravistheme.com/pinar/html/pages/restaurant.html)
+11:10:26	Warning: 	Retry after error -4 (No data (connection closed)) at link ravistheme.com/pinar/html/assets/img/resaurant/1.jpg (from ravistheme.com/pinar/html/pages/restaurant.html)
+11:10:33	Warning: 	Retry after error -4 (No data (connection closed)) at link ravistheme.com/pinar/html/assets/img/resaurant/2.jpg (from ravistheme.com/pinar/html/pages/restaurant.html)
+11:10:33	Warning: 	Retry after error -4 (No data (connection closed)) at link ravistheme.com/pinar/html/assets/img/resaurant/3.jpg (from ravistheme.com/pinar/html/pages/restaurant.html)
+11:10:53	Warning: 	Retry after error -4 (No data (connection closed)) at link ravistheme.com/pinar/html/assets/img/resaurant/4.jpg (from ravistheme.com/pinar/html/pages/restaurant.html)
+11:11:48	Warning: 	Retry after error -4 (No data (connection closed)) at link ravistheme.com/pinar/html/assets/img/resaurant/great-taste.jpg (from ravistheme.com/pinar/html/pages/restaurant.html)
+11:11:48	Warning: 	Retry after error -4 (No data (connection closed)) at link ravistheme.com/pinar/html/assets/img/testimonials-header.jpg (from ravistheme.com/pinar/html/pages/guest-book.html)
+11:12:24	Warning: 	Retry after error -4 (No data (connection closed)) at link ravistheme.com/pinar/html/assets/img/packages/header.jpg (from ravistheme.com/pinar/html/pages/packages.html)
+11:12:29	Warning: 	Retry after error -4 (No data (connection closed)) at link ravistheme.com/pinar/html/assets/img/gallery/9.jpg (from ravistheme.com/pinar/html/pages/gallery-grid.html)
+11:12:54	Warning: 	Retry after error -4 (No data (connection closed)) at link ravistheme.com/pinar/html/assets/img/resaurant/2.jpg (from ravistheme.com/pinar/html/pages/restaurant.html)
+
+HTTrack Website Copier/3.49-2 mirror complete in 15 minutes 55 seconds : 123 links scanned, 108 files written (24703621 bytes overall) [23649059 bytes received at 24763 bytes/sec], 1499040 bytes transferred using HTTP compression in 34 files, ratio 27%, 1.3 requests per connection
+(1 errors, 14 warnings, 0 messages)

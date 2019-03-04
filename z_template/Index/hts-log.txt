@@ -1,0 +1,15 @@
+HTTrack3.49-2+htsswf+htsjava launched on Fri, 21 Sep 2018 10:50:06 at http://themearth.com/demo/html/eventpoint/view/index-gradient.html +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar
+(winhttrack -qwC2%Ps2u1%s%uN0%I0p3DaK0H0%kf2A25000%f#f -F "Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98)" -%F "<!-- Mirrored from %s%s by HTTrack Website Copier/3.x [XR&CO'2014], %s -->" -%l "fr, en, *" http://themearth.com/demo/html/eventpoint/view/index-gradient.html -O1 "C:\Users\Thomas\Desktop\perso\Arcoch\Index\Arcoch - Index" +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+10:59:25	Warning: 	Retry after error -4 (No data (connection closed)) at link themearth.com/demo/html/eventpoint/view/assets/img/speakers/speaker4.jpg (from themearth.com/demo/html/eventpoint/view/index-gradient.html)
+10:59:29	Error: 	"Not Found" (404) at link themearth.com/demo/html/eventpoint/view/assets/libs/owlcarousel/owl.video.play.png (from themearth.com/demo/html/eventpoint/view/assets/libs/owlcarousel/owl.carousel.min.css)
+10:59:29	Warning: 	Retry after error -4 (No data (connection closed)) at link themearth.com/demo/html/eventpoint/view/assets/img/banner-bg.jpg (from themearth.com/demo/html/eventpoint/view/assets/css/style-default.min.css)
+11:00:27	Error: 	"Not Found" (404) at link themearth.com/demo/html/eventpoint/view/sspeaker-single.html (from themearth.com/demo/html/eventpoint/view/index-contentslider.html)
+
+HTTrack Website Copier/3.49-2 mirror complete in 10 minutes 21 seconds : 127 links scanned, 122 files written (16759967 bytes overall) [15613937 bytes received at 25143 bytes/sec], 1899950 bytes transferred using HTTP compression in 46 files, ratio 33%, 2.7 requests per connection
+(2 errors, 2 warnings, 0 messages)
