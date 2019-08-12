@@ -7,9 +7,6 @@
 <li class="@if($active == "rooms") active @endif">
     <a href="{{ route('rooms') }}">Les chambres</a>
 </li>
-<li class="@if($active == "whirlpool") active @endif">
-    <a href="{{ route('whirlpool') }}">Le SPA</a>
-</li>
 <li class="@if($active == "concierge") active @endif">
     <a href="{{ route('concierge') }}">La conciergerie</a>
 </li>

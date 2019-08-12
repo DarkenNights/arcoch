@@ -90,14 +90,10 @@
 <body class="home">
 
 <!--[if lt IE 8]>
-<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
-    your browser</a> to improve your experience.</p>
+<p class="browserupgrade">Vous utilisé un navigateur <strong>incompatible ou trop ancien</strong>. Merci de le mettre à jour.</p>
 <![endif]-->
 
 <div class="lgx-container ">
-    <!-- ***  ADD YOUR SITE CONTENT HERE *** -->
-
-
     <!--HEADER-->
     <header>
         <div id="lgx-header" class="lgx-header">
@@ -112,13 +108,13 @@
                                             <div class="navbar-header">
                                                 <button type="button" class="navbar-toggle" data-toggle="collapse"
                                                         data-target=".navbar-collapse">
-                                                    <span class="sr-only">Toggle navigation</span>
+                                                    <span class="sr-only">Navigation</span>
                                                     <span class="icon-bar"></span>
                                                     <span class="icon-bar"></span>
                                                     <span class="icon-bar"></span>
                                                 </button>
                                                 <div class="lgx-logo">
-                                                    <a href="index.html" class="lgx-scroll">
+                                                    <a href="{{ route('index') }}" class="lgx-scroll">
                                                         <img src="{{ asset('index/img/logo.png') }}" alt="Logo"/>
                                                     </a>
                                                 </div>
@@ -162,8 +158,8 @@
                                     <div class="circular-countdown-area">
                                         <div id="circular-countdown" data-date="2019-12-20 00:00:00" ></div>
                                     </div>
-                                    <h2 class="title">Prochain évènement <span>2019</span></h2>
-                                    <h3 class="date"><span>Du 02 au 05 Avril </span>2019, Arcoch, Payolle</h3>
+                                    <h2 class="title">{{ $event->title }}</h2>
+                                    <h3 class="date"><span>Du {{ $event->start->day }} au {{ $event->end->day }} {{ $event->end->formatLocalized('%B') }} </span>{{ $event->start->year }}, {{ $event->place }}</h3>
                                 </div>
                             </div>
                         </div>
