@@ -156,10 +156,10 @@
                             <div class="col-xs-12">
                                 <div class="banner-info">
                                     <div class="circular-countdown-area">
-                                        <div id="circular-countdown" data-date="2019-12-20 00:00:00" ></div>
+                                        <div id="circular-countdown" data-date="{{ $event->start->toDateTimeString() }}" ></div>
                                     </div>
                                     <h2 class="title">{{ $event->title }}</h2>
-                                    <h3 class="date"><span>Du {{ $event->start->day }} au {{ $event->end->day }} {{ $event->end->formatLocalized('%B') }} </span>{{ $event->start->year }}, {{ $event->place }}</h3>
+                                    <h3 class="date"><span>Du {{ $event->start->day }} au {{ $event->end->day }} {{ $event->end->monthName }} </span>{{ $event->start->year }}, {{ $event->place }}</h3>
                                 </div>
                             </div>
                         </div>

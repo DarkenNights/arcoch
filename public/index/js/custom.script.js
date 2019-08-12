@@ -34,12 +34,12 @@
                 "circle_bg_color": "#ddd",
                 "time": {
                     "Days": {
-                        "text": "Days",
+                        "text": "Jours",
                         "color": "#ff8a00",
                         "show": true
                     },
                     "Hours": {
-                        "text": "Hours",
+                        "text": "Heures",
                         "color": "#dc4e41",
                         "show": true
                     },
@@ -49,7 +49,7 @@
                         "show": true
                     },
                     "Seconds": {
-                        "text": "Seconds",
+                        "text": "Secondes",
                         "color": "#42bd41",
                         "show": true
                     }

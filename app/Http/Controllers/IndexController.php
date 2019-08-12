@@ -9,11 +9,18 @@ class IndexController extends Controller
 {
     public function index() {
 
-        $event = Event::orderBy('start', 'ASC')->first();
+        $events = Event::orderBy('start', 'ASC')->get();
+        $nextEvent = $events->first();
+        foreach ($events as $event) {
+            if ($event->highlight) {
+                $nextEvent = $event;
+                break;
+            }
+        }
 
         /* Affichage du template index */
         return view('index')->with(array(
-            'event' => $event
+            'event' => $nextEvent
         ));
 
     }

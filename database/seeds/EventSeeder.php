@@ -16,8 +16,24 @@ class EventSeeder extends Seeder
 
         \App\Event::create([
             'title' => 'Titre 1',
-            'start' => \Illuminate\Support\Carbon::create(2019, 12, 01, 19, 0, 0),
-            'end' => \Illuminate\Support\Carbon::create(2019, 12, 01, 23, 0, 0),
+            'start' => \Illuminate\Support\Carbon::create(2019, 8, 14, 19, 0, 0)->locale('fr_FR'),
+            'end' => \Illuminate\Support\Carbon::create(2019, 12, 01, 23, 0, 0)->locale('fr_FR'),
+            'place' => 'Arcoch',
+            'highlight' => true
+        ]);
+
+        \App\Event::create([
+            'title' => 'Titre 2',
+            'start' => \Illuminate\Support\Carbon::create(2019, 8, 15, 19, 0, 0)->locale('fr_FR'),
+            'end' => \Illuminate\Support\Carbon::create(2019, 9, 01, 23, 0, 0)->locale('fr_FR'),
+            'place' => 'Arcoch',
+            'highlight' => true
+        ]);
+
+        \App\Event::create([
+            'title' => 'Titre 2',
+            'start' => \Illuminate\Support\Carbon::create(2019, 8, 16, 19, 0, 0)->locale('fr_FR'),
+            'end' => \Illuminate\Support\Carbon::create(2019, 9, 01, 23, 0, 0)->locale('fr_FR'),
             'place' => 'Arcoch',
             'highlight' => false
         ]);
