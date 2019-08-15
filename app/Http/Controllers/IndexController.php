@@ -19,7 +19,7 @@ class IndexController extends Controller
             }
         }
 
-        $next_events = Event::where('start', '<=', Carbon::now()->addMonths(5)->toDateTimeString())->orderBy('start', 'ASC')->get();
+        $next_events = Event::where('start', '<=', Carbon::now()->addMonths(4)->toDateTimeString())->orderBy('start', 'ASC')->get();
         $events = [];
         foreach ($next_events as $next_event) {
             if(empty($events[$next_event->start->year . '-' . $next_event->start->month])) $events[$next_event->start->year . '-' . $next_event->start->month] = [];

@@ -77,7 +77,7 @@ class EventSeeder extends Seeder
         \App\Event::create([
             'title' => 'Titre 3',
             'text' => 'Texte 2=3',
-            'start' => \Illuminate\Support\Carbon::create(2019, 12, 16, 19, 0, 0)->locale('fr_FR'),
+            'start' => \Illuminate\Support\Carbon::create(2019, 12, 12, 19, 0, 0)->locale('fr_FR'),
             'end' => \Illuminate\Support\Carbon::create(2019, 9, 01, 23, 0, 0)->locale('fr_FR'),
             'place' => 'Arcoch',
             'creator' => "L'Arcoch",
