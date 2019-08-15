@@ -16,9 +16,11 @@ class CreateEventTable extends Migration
         Schema::create('event', function (Blueprint $table) {
             $table->increments('id');
             $table->string('title', 255);
+            $table->text('text');
             $table->dateTime('start');
             $table->dateTime('end');
             $table->string('place', 255);
+            $table->string('creator', 255);
             $table->boolean('highlight');
             $table->timestamps();
             $table->softDeletes();

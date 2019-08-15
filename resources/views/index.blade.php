@@ -159,7 +159,19 @@
                                         <div id="circular-countdown" data-date="{{ $event->start->toDateTimeString() }}" ></div>
                                     </div>
                                     <h2 class="title">{{ $event->title }}</h2>
-                                    <h3 class="date"><span>Du {{ $event->start->day }} au {{ $event->end->day }} {{ $event->end->monthName }} </span>{{ $event->start->year }}, {{ $event->place }}</h3>
+                                    @if ($event->start->day == $event->end->day)
+                                        @if ($event->start->month == $event->end->month)
+                                            <h3 class="date"><span>Le {{ $event->start->day . ' ' . $event->start->monthName . ' ' . $event->start->year }} de {{ $event->start->hour }} à {{ $event->end->hour }} heure </span>, {{ $event->place }}</h3>
+                                        @else
+                                            <h3 class="date"><span>Du {{ $event->start->day }} {{ $event->start->monthName }} au {{ $event->end->day }} {{ $event->end->monthName }} {{ $event->end->year }} </span>, {{ $event->place }}</h3>
+                                        @endif
+                                    @else
+                                        @if($event->start->month == $event->end->month)
+                                            <h3 class="date"><span>Du {{ $event->start->day }} au {{ $event->end->day }} {{ $event->end->monthName }} {{ $event->end->year }} </span>, {{ $event->place }}</h3>
+                                        @else
+                                            <h3 class="date"><span>Du {{ $event->start->day }} {{ $event->start->monthName }} au {{ $event->end->day }} {{ $event->end->monthName }} {{ $event->end->year }} </span>, {{ $event->place }}</h3>
+                                        @endif
+                                    @endif
                                 </div>
                             </div>
                         </div>
@@ -184,7 +196,7 @@
                             <div class="lgx-heading-area">
                                 <h2 class="lgx-heading">
                                     <span class="back-heading"><i class="fa fa-info-circle" aria-hidden="true"></i></span>
-                                    <span class="heading">L'Arcoch ou le Petit Canada</span>
+                                    <span class="heading">Le lac de Payolle ou le Petit Canada</span>
                                 </h2>
                                 <p class="text">
                                     Un endroit magique et enchanté aux multiples activités
@@ -215,8 +227,27 @@
                         </div>
                         <div class="col-sm-6">
                             <div class="lgx-about-text">
-                                <h4 class="hi-text">Un grand titre pour le texte qui va suivre</h4>
-                                <p class="text">Un long texte pour expliquer ce qui est fait à l'Arcoch et aux alentours</p>
+                                <h4 class="hi-text">Le lac de Payolle vous invite à essayer</h4>
+                                <p class="text">
+                                <ul>
+                                    <li>Le restaurant L'Arcoch à l'inspiration canadienne</li>
+                                    <li>Les chambres d'hôtes de l'Arcoch face au lac et disponible toute l'année</li>
+                                    <li>Un gîte deluxe pour deux personnes avec un jaccuzi et un sauna privatif</li>
+                                    <li>La conciergerie de l'Arcoch pour ne plus vous occuper de vos locations</li>
+                                    <li>Des activités sportives :</li>
+                                        <ul>
+                                            <li>Balades en poney ou à cheval</li>
+                                            <li>Base nautique l'Aneto</li>
+                                            <li>Parcours d'accrobranche pour les petits Lou Farfadet</li>
+                                            <li>Terrain de tennis</li>
+                                            <li>Terrain de pétanque</li>
+                                            <li>Ski de fond</li>
+                                            <li>Balade en chiens de traineaux</li>
+                                            <li>Parcours de VTT</li>
+                                            <li>Parcours de marche à pied</li>
+                                        </ul>
+                                </ul>
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -256,8 +287,41 @@
                                     <img src="{{ asset('index/img/speakers/speaker1.jpg') }}" alt="speaker"/>
                                 </figure>
                                 <div class="speaker-info">
-                                    <h3 class="title"><a href="speakers-list.html">Jhon Soumen</a></h3>
-                                    <h4 class="subtitle">Ceo of LogicHunt</h4>
+                                    <h3 class="title">Julia</h3>
+                                    <h4 class="subtitle">Cuisine</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-3">
+                            <div class="lgx-single-speaker lgx-single-speaker-sm">
+                                <figure>
+                                    <img src="{{ asset('index/img/speakers/speaker2.jpg') }}" alt="speaker"/>
+                                </figure>
+                                <div class="speaker-info">
+                                    <h3 class="title">Pauline</h3>
+                                    <h4 class="subtitle">Cuisine et chambres d'hôtes</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-3">
+                            <div class="lgx-single-speaker lgx-single-speaker-sm">
+                                <figure>
+                                    <img src="{{ asset('index/img/speakers/speaker3.jpg') }}" alt="speaker"/>
+                                </figure>
+                                <div class="speaker-info">
+                                    <h3 class="title">Catherine</h3>
+                                    <h4 class="subtitle">Cuisine, serveuse et <br> chambres d'hôtes</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-3">
+                            <div class="lgx-single-speaker lgx-single-speaker-sm">
+                                <figure>
+                                    <img src="{{ asset('index/img/speakers/speaker4.jpg') }}" alt="speaker"/>
+                                </figure>
+                                <div class="speaker-info">
+                                    <h3 class="title">Alex</h3>
+                                    <h4 class="subtitle">Barman et serveur</h4>
                                 </div>
                             </div>
                         </div>
@@ -267,8 +331,8 @@
                                     <img src="{{ asset('index/img/speakers/speaker1.jpg') }}" alt="speaker"/>
                                 </figure>
                                 <div class="speaker-info">
-                                    <h3 class="title"><a href="speakers-list.html">Sujana Jhon</a></h3>
-                                    <h4 class="subtitle">Ceo of LogicHunt</h4>
+                                    <h3 class="title">Luc</h3>
+                                    <h4 class="subtitle">Serveur</h4>
                                 </div>
                             </div>
                         </div>
@@ -276,16 +340,10 @@
                             <div class="lgx-single-speaker lgx-single-speaker-sm">
                                 <figure>
                                     <img src="{{ asset('index/img/speakers/speaker1.jpg') }}" alt="speaker"/>
-                                    <figcaption>
-                                        <a class="sp-tw" href="#"><i class="fa fa-twitter"></i></a>
-                                        <a class="sp-fb" href="#"><i class="fa fa-facebook"></i></a>
-                                        <a class="sp-insta" href="#"><i class="fa fa-instagram"></i></a>
-                                        <a class="sp-in" href="#"><i class="fa fa-linkedin"></i></a>
-                                    </figcaption>
                                 </figure>
                                 <div class="speaker-info">
-                                    <h3 class="title"><a href="speakers-list.html">Devil Sagar</a></h3>
-                                    <h4 class="subtitle">Ceo of LogicHunt</h4>
+                                    <h3 class="title">Patrick</h3>
+                                    <h4 class="subtitle">Cuisine et conciergerie</h4>
                                 </div>
                             </div>
                         </div>
@@ -293,84 +351,10 @@
                             <div class="lgx-single-speaker lgx-single-speaker-sm">
                                 <figure>
                                     <img src="{{ asset('index/img/speakers/speaker1.jpg') }}" alt="speaker"/>
-                                    <figcaption>
-                                        <a class="sp-tw" href="#"><i class="fa fa-twitter"></i></a>
-                                        <a class="sp-fb" href="#"><i class="fa fa-facebook"></i></a>
-                                        <a class="sp-insta" href="#"><i class="fa fa-instagram"></i></a>
-                                        <a class="sp-in" href="#"><i class="fa fa-linkedin"></i></a>
-                                    </figcaption>
                                 </figure>
                                 <div class="speaker-info">
-                                    <h3 class="title"><a href="speakers-list.html">Alina Pavel</a></h3>
-                                    <h4 class="subtitle">Ceo of LogicHunt</h4>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xs-12 col-sm-6 col-md-3">
-                            <div class="lgx-single-speaker lgx-single-speaker-sm">
-                                <figure>
-                                    <img src="{{ asset('index/img/speakers/speaker1.jpg') }}" alt="speaker"/>
-                                    <figcaption>
-                                        <a class="sp-tw" href="#"><i class="fa fa-twitter"></i></a>
-                                        <a class="sp-fb" href="#"><i class="fa fa-facebook"></i></a>
-                                        <a class="sp-insta" href="#"><i class="fa fa-instagram"></i></a>
-                                        <a class="sp-in" href="#"><i class="fa fa-linkedin"></i></a>
-                                    </figcaption>
-                                </figure>
-                                <div class="speaker-info">
-                                    <h3 class="title"><a href="speakers-list.html">Jhon Soumen</a></h3>
-                                    <h4 class="subtitle">Ceo of LogicHunt</h4>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xs-12 col-sm-6 col-md-3">
-                            <div class="lgx-single-speaker lgx-single-speaker-sm">
-                                <figure>
-                                    <img src="{{ asset('index/img/speakers/speaker1.jpg') }}" alt="speaker"/>
-                                    <figcaption>
-                                        <a class="sp-tw" href="#"><i class="fa fa-twitter"></i></a>
-                                        <a class="sp-fb" href="#"><i class="fa fa-facebook"></i></a>
-                                        <a class="sp-insta" href="#"><i class="fa fa-instagram"></i></a>
-                                        <a class="sp-in" href="#"><i class="fa fa-linkedin"></i></a>
-                                    </figcaption>
-                                </figure>
-                                <div class="speaker-info">
-                                    <h3 class="title"><a href="speakers-list.html">Sujana Jhon</a></h3>
-                                    <h4 class="subtitle">Ceo of LogicHunt</h4>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xs-12 col-sm-6 col-md-3">
-                            <div class="lgx-single-speaker lgx-single-speaker-sm">
-                                <figure>
-                                    <img src="{{ asset('index/img/speakers/speaker1.jpg') }}" alt="speaker"/>
-                                    <figcaption>
-                                        <a class="sp-tw" href="#"><i class="fa fa-twitter"></i></a>
-                                        <a class="sp-fb" href="#"><i class="fa fa-facebook"></i></a>
-                                        <a class="sp-insta" href="#"><i class="fa fa-instagram"></i></a>
-                                        <a class="sp-in" href="#"><i class="fa fa-linkedin"></i></a>
-                                    </figcaption>
-                                </figure>
-                                <div class="speaker-info">
-                                    <h3 class="title"><a href="speakers-list.html">Devil Sagar</a></h3>
-                                    <h4 class="subtitle">Ceo of LogicHunt</h4>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xs-12 col-sm-6 col-md-3">
-                            <div class="lgx-single-speaker lgx-single-speaker-sm">
-                                <figure>
-                                    <img src="{{ asset('index/img/speakers/speaker1.jpg') }}" alt="speaker"/>
-                                    <figcaption>
-                                        <a class="sp-tw" href="#"><i class="fa fa-twitter"></i></a>
-                                        <a class="sp-fb" href="#"><i class="fa fa-facebook"></i></a>
-                                        <a class="sp-insta" href="#"><i class="fa fa-instagram"></i></a>
-                                        <a class="sp-in" href="#"><i class="fa fa-linkedin"></i></a>
-                                    </figcaption>
-                                </figure>
-                                <div class="speaker-info">
-                                    <h3 class="title"><a href="speakers-list.html">Alina Pavel</a></h3>
-                                    <h4 class="subtitle">Ceo of LogicHunt</h4>
+                                    <h3 class="title">Thomas</h3>
+                                    <h4 class="subtitle">Serveur et conciergerie</h4>
                                 </div>
                             </div>
                         </div>
@@ -406,10 +390,12 @@
                         <div class="col-xs-12">
                             <div class="lgx-tab">
                                 <ul class="nav nav-pills text-center">
-                                    <li class="active"><a data-toggle="pill" href="#home"><h3>Novembre </h3> <p><span>2018 </span></p></a></li>
-                                    <li><a data-toggle="pill" href="#menu1"><h3>Décembre </h3> <p><span>2018 </span></p></a></li>
-                                    <li><a data-toggle="pill" href="#menu2"><h3>Janvier </h3> <p><span>2019 </span></p></a></li>
-                                    <li><a data-toggle="pill" href="#menu3"><h3>Février </h3> <p><span>2019 </span></p></a></li>
+                                    @php $i = 0 @endphp
+                                    @foreach($events as $key => $event)
+                                        @php $dt = \Carbon\Carbon::createFromFormat('Y-m-d', $key.'-01')->locale('fr_FR') @endphp
+                                        <li @if ($i == 0) class="active" @endif><a data-toggle="pill" href="#{{ $key }}"><h3>{{ $dt->monthName }} </h3> <p><span>{{ $dt->year }} </span></p></a></li>
+                                        @php $i++; @endphp
+                                    @endforeach
                                 </ul>
                                 <div class="tab-content lgx-tab-content text-center">
                                     <div id="home" class="tab-pane fade in active">

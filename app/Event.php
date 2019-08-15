@@ -20,7 +20,7 @@ class Event extends Model
      * @var array
      */
     protected $fillable = [
-        'title', 'start', 'end', 'place', 'highlight'
+        'title', 'start', 'end', 'place', 'highlight', 'text', 'creator'
     ];
     /**
      * Add dates attributes for Carbon use
