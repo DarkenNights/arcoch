@@ -284,7 +284,7 @@
                         <div class="col-xs-12 col-sm-6 col-md-3">
                             <div class="lgx-single-speaker lgx-single-speaker-sm">
                                 <figure>
-                                    <img src="{{ asset('index/img/speakers/speaker1.jpg') }}" alt="speaker"/>
+                                    <img src="{{ asset('index/img/speakers/julia.png') }}" alt="speaker"/>
                                 </figure>
                                 <div class="speaker-info">
                                     <h3 class="title">Julia</h3>
@@ -295,7 +295,7 @@
                         <div class="col-xs-12 col-sm-6 col-md-3">
                             <div class="lgx-single-speaker lgx-single-speaker-sm">
                                 <figure>
-                                    <img src="{{ asset('index/img/speakers/speaker2.jpg') }}" alt="speaker"/>
+                                    <img src="{{ asset('index/img/speakers/pauline.png') }}" alt="speaker"/>
                                 </figure>
                                 <div class="speaker-info">
                                     <h3 class="title">Pauline</h3>
@@ -306,18 +306,18 @@
                         <div class="col-xs-12 col-sm-6 col-md-3">
                             <div class="lgx-single-speaker lgx-single-speaker-sm">
                                 <figure>
-                                    <img src="{{ asset('index/img/speakers/speaker3.jpg') }}" alt="speaker"/>
+                                    <img src="{{ asset('index/img/speakers/catherine.png') }}" alt="speaker"/>
                                 </figure>
                                 <div class="speaker-info">
                                     <h3 class="title">Catherine</h3>
-                                    <h4 class="subtitle">Cuisine, serveuse et <br> chambres d'hôtes</h4>
+                                    <h4 class="subtitle">Cuisine et serveuse</h4>
                                 </div>
                             </div>
                         </div>
                         <div class="col-xs-12 col-sm-6 col-md-3">
                             <div class="lgx-single-speaker lgx-single-speaker-sm">
                                 <figure>
-                                    <img src="{{ asset('index/img/speakers/speaker4.jpg') }}" alt="speaker"/>
+                                    <img src="{{ asset('index/img/speakers/alex.png') }}" alt="speaker"/>
                                 </figure>
                                 <div class="speaker-info">
                                     <h3 class="title">Alex</h3>
@@ -328,7 +328,7 @@
                         <div class="col-xs-12 col-sm-6 col-md-3">
                             <div class="lgx-single-speaker lgx-single-speaker-sm">
                                 <figure>
-                                    <img src="{{ asset('index/img/speakers/speaker1.jpg') }}" alt="speaker"/>
+                                    <img src="{{ asset('index/img/speakers/luc.png') }}" alt="speaker"/>
                                 </figure>
                                 <div class="speaker-info">
                                     <h3 class="title">Luc</h3>
@@ -339,7 +339,7 @@
                         <div class="col-xs-12 col-sm-6 col-md-3">
                             <div class="lgx-single-speaker lgx-single-speaker-sm">
                                 <figure>
-                                    <img src="{{ asset('index/img/speakers/speaker1.jpg') }}" alt="speaker"/>
+                                    <img src="{{ asset('index/img/speakers/patrick.png') }}" alt="speaker"/>
                                 </figure>
                                 <div class="speaker-info">
                                     <h3 class="title">Patrick</h3>
@@ -350,7 +350,7 @@
                         <div class="col-xs-12 col-sm-6 col-md-3">
                             <div class="lgx-single-speaker lgx-single-speaker-sm">
                                 <figure>
-                                    <img src="{{ asset('index/img/speakers/speaker1.jpg') }}" alt="speaker"/>
+                                    <img src="{{ asset('index/img/speakers/thomas.png') }}" alt="speaker"/>
                                 </figure>
                                 <div class="speaker-info">
                                     <h3 class="title">Thomas</h3>
@@ -390,301 +390,63 @@
                         <div class="col-xs-12">
                             <div class="lgx-tab">
                                 <ul class="nav nav-pills text-center">
-                                    @php $i = 0 @endphp
+                                    @php
+                                        $i = 0;
+                                        $j = 0;
+                                        $idsMenu = [];
+                                    @endphp
                                     @foreach($events as $key => $event)
-                                        @php $dt = \Carbon\Carbon::createFromFormat('Y-m-d', $key.'-01')->locale('fr_FR') @endphp
+                                        @php
+                                            $dt = \Carbon\Carbon::createFromFormat('Y-m-d', $key.'-01')->locale('fr_FR');
+                                            array_push($idsMenu, $key);
+                                        @endphp
                                         <li @if ($i == 0) class="active" @endif><a data-toggle="pill" href="#{{ $key }}"><h3>{{ $dt->monthName }} </h3> <p><span>{{ $dt->year }} </span></p></a></li>
                                         @php $i++; @endphp
                                     @endforeach
                                 </ul>
                                 <div class="tab-content lgx-tab-content text-center">
-                                    <div id="home" class="tab-pane fade in active">
-                                        <div class="lgx-single-tab">
-                                            <div class="row">
-                                                <div class="col-xs-12 col-sm-3">
-                                                    <div class="time-area">
-                                                        <h4 class="time">
-                                                            <span>Le </span>14/11 <span>de</span>
-                                                            <br>
-                                                            09h <span>à</span> 18h
-                                                        </h4>
-                                                    </div>
-                                                </div>
-                                                <div class="col-xs-12 col-sm-2">
-                                                    <div class="author-info">
-                                                        <h5 class="name">L'arcoch</h5>
-                                                        <p class="author-title">vous propose</p>
-                                                    </div>
-                                                </div>
-                                                <div class="col-xs-12 col-sm-7">
-                                                    <div class="schedule-info">
-                                                        <h3 class="title"><a href="#">Digital World Event Introduction</a></h3>
-                                                        <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices ipsum primis posuere cubilia Curae Nullam varius a felis eu dictum...</p>
-                                                    </div>
-                                                    <!--//.single tab-->
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="lgx-single-tab">
-                                            <div class="row">
-                                                <div class="col-xs-12 col-sm-2">
-                                                    <div class="time-area">
-                                                        <h4 class="time">10:30 <span>Am</span></h4>
-                                                    </div>
-                                                </div>
-                                                <div class="col-xs-12 col-sm-3">
-                                                    <div class="author">
-                                                        <a class="author-img" href="speaker-single.html"><img src="{{ asset('index/img/schedule/speaker2.jpg') }}" alt="Speaker"/></a>
-                                                        <div class="author-info">
-                                                            <h5 class="name"><a href="speaker-single.html">Elena De Suja</a></h5>
-                                                            <p class="author-title">UI Designer</p>
+                                    @foreach($idsMenu as $idMenu)
+                                        <div id="{{ $idMenu }}" class="tab-pane fade in @if($j == 0) active @endif">
+                                            @foreach($events[$idMenu] as $key => $event)
+                                                <div class="lgx-single-tab">
+                                                    <div class="row">
+                                                        <div class="col-xs-12 col-sm-3">
+                                                            <div class="time-area">
+                                                                <h4 class="time">
+                                                                    @if ($event->start->day == $event->end->day)
+                                                                        @if ($event->start->month == $event->end->month)
+                                                                            <span>Le</span> {{ $event->start->day . '/' . $event->start->month }} <span>de</span> <br> {{ $event->start->hour }}h <span>à</span> {{ $event->end->hour }}h  </span>
+                                                                        @else
+                                                                            <span>Du</span> {{ $event->start->day . '/' . $event->start->month }} <span>au</span> {{ $event->end->day . '/' . $event->end->month }}
+                                                                        @endif
+                                                                    @else
+                                                                        @if($event->start->month == $event->end->month)
+                                                                            <span>Du</span> {{ $event->start->day }} <span>au</span> {{ $event->end->day }} <br> {{ $event->end->monthName }}
+                                                                        @else
+                                                                            <span>Du</span> {{ $event->start->day . '/' . $event->start->month }} <span>au</span> {{ $event->end->day . '/' . $event->end->month }}
+                                                                        @endif
+                                                                    @endif
+                                                                </h4>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-xs-12 col-sm-2">
+                                                            <div class="author-info">
+                                                                <h5 class="name">{{ $event->creator }}</h5>
+                                                                <p class="author-title">vous propose</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-xs-12 col-sm-7">
+                                                            <div class="schedule-info">
+                                                                <h3 class="title"><a href="#">{{ $event->title }}</a></h3>
+                                                                <p>{{ $event->text }}</p>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="col-xs-12 col-sm-7">
-                                                    <div class="schedule-info">
-                                                        <h3 class="title"><a href="#">Digital World Event Introduction</a></h3>
-                                                        <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices ipsum primis posuere cubilia Curae Nullam varius a felis eu dictum...</p>
-                                                    </div>
-                                                    <!--//.single tab-->
-                                                </div>
-                                            </div>
+                                            @endforeach
                                         </div>
-
-                                        <div class="lgx-single-tab">
-                                            <div class="row">
-                                                <div class="col-xs-12 col-sm-2">
-                                                    <div class="time-area">
-                                                        <h4 class="time">11:50 <span>Am</span></h4>
-                                                    </div>
-                                                </div>
-                                                <div class="col-xs-12 col-sm-3">
-                                                    <div class="author">
-                                                        <a class="author-img" href="speaker-single.html"><img src="{{ asset('index/img/schedule/speaker3.jpg') }}" alt="Speaker"/></a>
-                                                        <div class="author-info">
-                                                            <h5 class="name"><a href="speaker-single.html">Elena De Suja</a></h5>
-                                                            <p class="author-title">UI Designer</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-xs-12 col-sm-7">
-                                                    <div class="schedule-info">
-                                                        <h3 class="title"><a href="#">Digital World Event Introduction</a></h3>
-                                                        <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices ipsum primis posuere cubilia Curae Nullam varius a felis eu dictum...</p>
-                                                    </div>
-                                                    <!--//.single tab-->
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="lgx-single-tab">
-                                            <div class="row">
-                                                <div class="col-xs-12 col-sm-2">
-                                                    <div class="time-area">
-                                                        <h4 class="time">12:20 <span>Am</span></h4>
-                                                    </div>
-                                                </div>
-                                                <div class="col-xs-12 col-sm-3">
-                                                    <div class="author">
-                                                        <a class="author-img" href="speaker-single.html"><img src="{{ asset('index/img/schedule/speaker4.jpg') }}" alt="Speaker"/></a>
-                                                        <div class="author-info">
-                                                            <h5 class="name"><a href="speaker-single.html">Elena De Suja</a></h5>
-                                                            <p class="author-title">UI Designer</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-xs-12 col-sm-7">
-                                                    <div class="schedule-info">
-                                                        <h3 class="title"><a href="#">Digital World Event Introduction</a></h3>
-                                                        <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices ipsum primis posuere cubilia Curae Nullam varius a felis eu dictum...</p>
-                                                    </div>
-                                                    <!--//.single tab-->
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="lgx-single-tab">
-                                            <div class="row">
-                                                <div class="col-xs-12 col-sm-2">
-                                                    <div class="time-area">
-                                                        <h4 class="time">01:20 <span>Am</span></h4>
-                                                    </div>
-                                                </div>
-                                                <div class="col-xs-12 col-sm-3">
-                                                    <div class="author">
-                                                        <a class="author-img" href="speaker-single.html"><img src="{{ asset('index/img/schedule/speaker5.jpg') }}" alt="Speaker"/></a>
-                                                        <div class="author-info">
-                                                            <h5 class="name"><a href="speaker-single.html">Elena De Suja</a></h5>
-                                                            <p class="author-title">UI Designer</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-xs-12 col-sm-7">
-                                                    <div class="schedule-info">
-                                                        <h3 class="title"><a href="#">Digital World Event Introduction</a></h3>
-                                                        <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices ipsum primis posuere cubilia Curae Nullam varius a felis eu dictum...</p>
-                                                    </div>
-                                                    <!--//.single tab-->
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div id="menu1" class="tab-pane fade">
-                                        <div class="lgx-single-tab">
-                                            <div class="row">
-                                                <div class="col-xs-12 col-sm-2">
-                                                    <div class="time-area">
-                                                        <h4 class="time">10:20 <span>Am</span></h4>
-                                                    </div>
-                                                </div>
-                                                <div class="col-xs-12 col-sm-3">
-                                                    <div class="author">
-                                                        <a class="author-img" href="speaker-single.html"><img src="{{ asset('index/img/schedule/speaker6.jpg') }}" alt="Speaker"/></a>
-                                                        <div class="author-info">
-                                                            <h5 class="name"><a href="speaker-single.html">Elena De Suja</a></h5>
-                                                            <p class="author-title">UI Designer</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-xs-12 col-sm-7">
-                                                    <div class="schedule-info">
-                                                        <h3 class="title"><a href="#">Digital World Event Introduction</a></h3>
-                                                        <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices ipsum primis posuere cubilia Curae Nullam varius a felis eu dictum...</p>
-                                                    </div>
-                                                    <!--//.single tab-->
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="lgx-single-tab">
-                                            <div class="row">
-                                                <div class="col-xs-12 col-sm-2">
-                                                    <div class="time-area">
-                                                        <h4 class="time">12:30 <span>Am</span></h4>
-                                                    </div>
-                                                </div>
-                                                <div class="col-xs-12 col-sm-3">
-                                                    <div class="author">
-                                                        <a class="author-img" href="speaker-single.html"><img src="{{ asset('index/img/schedule/speaker7.jpg') }}" alt="Speaker"/></a>
-                                                        <div class="author-info">
-                                                            <h5 class="name"><a href="speaker-single.html">Elena De Suja</a></h5>
-                                                            <p class="author-title">UI Designer</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-xs-12 col-sm-7">
-                                                    <div class="schedule-info">
-                                                        <h3 class="title"><a href="#">Digital World Event Introduction</a></h3>
-                                                        <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices ipsum primis posuere cubilia Curae Nullam varius a felis eu dictum...</p>
-                                                    </div>
-                                                    <!--//.single tab-->
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="lgx-single-tab">
-                                            <div class="row">
-                                                <div class="col-xs-12 col-sm-2">
-                                                    <div class="time-area">
-                                                        <h4 class="time">10:20 <span>Am</span></h4>
-                                                    </div>
-                                                </div>
-                                                <div class="col-xs-12 col-sm-3">
-                                                    <div class="author">
-                                                        <a class="author-img" href="speaker-single.html"><img src="{{ asset('index/img/schedule/speaker8.jpg') }}" alt="Speaker"/></a>
-                                                        <div class="author-info">
-                                                            <h5 class="name"><a href="speaker-single.html">Elena De Suja</a></h5>
-                                                            <p class="author-title">UI Designer</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-xs-12 col-sm-7">
-                                                    <div class="schedule-info">
-                                                        <h3 class="title"><a href="#">Digital World Event Introduction</a></h3>
-                                                        <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices ipsum primis posuere cubilia Curae Nullam varius a felis eu dictum...</p>
-                                                    </div>
-                                                    <!--//.single tab-->
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div id="menu2" class="tab-pane fade">
-                                        <div class="lgx-single-tab">
-                                            <div class="row">
-                                                <div class="col-xs-12 col-sm-2">
-                                                    <div class="time-area">
-                                                        <h4 class="time">10:20 <span>Am</span></h4>
-                                                    </div>
-                                                </div>
-                                                <div class="col-xs-12 col-sm-3">
-                                                    <div class="author">
-                                                        <a class="author-img" href="speaker-single.html"><img src="{{ asset('index/img/schedule/speaker1.jpg') }}" alt="Speaker"/></a>
-                                                        <div class="author-info">
-                                                            <h5 class="name"><a href="speaker-single.html">Elena De Suja</a></h5>
-                                                            <p class="author-title">UI Designer</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-xs-12 col-sm-7">
-                                                    <div class="schedule-info">
-                                                        <h3 class="title"><a href="#">Digital World Event Introduction</a></h3>
-                                                        <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices ipsum primis posuere cubilia Curae Nullam varius a felis eu dictum...</p>
-                                                    </div>
-                                                    <!--//.single tab-->
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="lgx-single-tab">
-                                            <div class="row">
-                                                <div class="col-xs-12 col-sm-2">
-                                                    <div class="time-area">
-                                                        <h4 class="time">10:20 <span>Am</span></h4>
-                                                    </div>
-                                                </div>
-                                                <div class="col-xs-12 col-sm-3">
-                                                    <div class="author">
-                                                        <a class="author-img" href="speaker-single.html"><img src="{{ asset('index/img/schedule/speaker2.jpg') }}" alt="Speaker"/></a>
-                                                        <div class="author-info">
-                                                            <h5 class="name"><a href="speaker-single.html">Elena De Suja</a></h5>
-                                                            <p class="author-title">UI Designer</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-xs-12 col-sm-7">
-                                                    <div class="schedule-info">
-                                                        <h3 class="title"><a href="#">Digital World Event Introduction</a></h3>
-                                                        <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices ipsum primis posuere cubilia Curae Nullam varius a felis eu dictum...</p>
-                                                    </div>
-                                                    <!--//.single tab-->
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div id="menu3" class="tab-pane fade">
-                                        <div class="lgx-single-tab">
-                                            <div class="row">
-                                                <div class="col-xs-12 col-sm-2">
-                                                    <div class="time-area">
-                                                        <h4 class="time">10:20 <span>Am</span></h4>
-                                                    </div>
-                                                </div>
-                                                <div class="col-xs-12 col-sm-3">
-                                                    <div class="author">
-                                                        <a class="author-img" href="speaker-single.html"><img src="{{ asset('index/img/schedule/speaker3.jpg') }}" alt="Speaker"/></a>
-                                                        <div class="author-info">
-                                                            <h5 class="name"><a href="speaker-single.html">Elena De Suja</a></h5>
-                                                            <p class="author-title">UI Designer</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-xs-12 col-sm-7">
-                                                    <div class="schedule-info">
-                                                        <h3 class="title"><a href="#">Digital World Event Introduction</a></h3>
-                                                        <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices ipsum primis posuere cubilia Curae Nullam varius a felis eu dictum...</p>
-                                                    </div>
-                                                    <!--//.single tab-->
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
+                                        @php $j++; @endphp
+                                    @endforeach
                                 </div>
                             </div>
                         </div>
@@ -725,11 +487,11 @@
                     <div class="row">
                         <div  class="lgx-single">
                             <figure>
-                                <img title="L'Arcoch de Payolle" src="{{ asset('index/img/gallery/gallery1.jpg') }}" alt="L'Arcoch de Payolle"/>
+                                <img title="L'Arcoch de Payolle" src="{{ asset('index/img/gallery/gallery2.jpg') }}" alt="L'Arcoch de Payolle"/>
                                 <figcaption class="lgx-figcaption">
                                     <div class="lgx-hover-link">
                                         <div class="lgx-vertical">
-                                            <a title="L'Arcoch de Payolle" href="{{ asset('index/img/gallery/gallery1.jpg') }}">
+                                            <a title="L'Arcoch de Payolle" href="{{ asset('index/img/gallery/gallery2.jpg') }}">
                                                 <i class="fa fa-search fa-2x"></i>
                                             </a>
                                         </div>
@@ -739,11 +501,11 @@
                         </div>
                         <div  class="lgx-single">
                             <figure>
-                                <img title="L'Arcoch de Payolle" src="{{ asset('index/img/gallery/gallery1.jpg') }}" alt="L'Arcoch de Payolle"/>
+                                <img title="L'Arcoch de Payolle" src="{{ asset('index/img/gallery/gallery4.jpg') }}" alt="L'Arcoch de Payolle"/>
                                 <figcaption class="lgx-figcaption">
                                     <div class="lgx-hover-link">
                                         <div class="lgx-vertical">
-                                            <a title="L'Arcoch de Payolle" href="{{ asset('index/img/gallery/gallery1.jpg') }}">
+                                            <a title="L'Arcoch de Payolle" href="{{ asset('index/img/gallery/gallery4.jpg') }}">
                                                 <i class="fa fa-search fa-2x"></i>
                                             </a>
                                         </div>
@@ -753,11 +515,11 @@
                         </div>
                         <div  class="lgx-single">
                             <figure>
-                                <img title="L'Arcoch de Payolle" src="{{ asset('index/img/gallery/gallery1.jpg') }}" alt="L'Arcoch de Payolle"/>
+                                <img title="L'Arcoch de Payolle" src="{{ asset('index/img/gallery/gallery6.jpg') }}" alt="L'Arcoch de Payolle"/>
                                 <figcaption class="lgx-figcaption">
                                     <div class="lgx-hover-link">
                                         <div class="lgx-vertical">
-                                            <a title="L'Arcoch de Payolle" href="{{ asset('index/img/gallery/gallery1.jpg') }}">
+                                            <a title="L'Arcoch de Payolle" href="{{ asset('index/img/gallery/gallery6.jpg') }}">
                                                 <i class="fa fa-search fa-2x"></i>
                                             </a>
                                         </div>
@@ -767,123 +529,11 @@
                         </div>
                         <div  class="lgx-single">
                             <figure>
-                                <img title="L'Arcoch de Payolle" src="{{ asset('index/img/gallery/gallery1.jpg') }}" alt="L'Arcoch de Payolle"/>
+                                <img title="L'Arcoch de Payolle" src="{{ asset('index/img/gallery/gallery8.jpg') }}" alt="L'Arcoch de Payolle"/>
                                 <figcaption class="lgx-figcaption">
                                     <div class="lgx-hover-link">
                                         <div class="lgx-vertical">
-                                            <a title="L'Arcoch de Payolle" href="{{ asset('index/img/gallery/gallery1.jpg') }}">
-                                                <i class="fa fa-search fa-2x"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </figcaption>
-                            </figure>
-                        </div>
-                        <div  class="lgx-single">
-                            <figure>
-                                <img title="L'Arcoch de Payolle" src="{{ asset('index/img/gallery/gallery1.jpg') }}" alt="L'Arcoch de Payolle"/>
-                                <figcaption class="lgx-figcaption">
-                                    <div class="lgx-hover-link">
-                                        <div class="lgx-vertical">
-                                            <a title="L'Arcoch de Payolle" href="{{ asset('index/img/gallery/gallery1.jpg') }}">
-                                                <i class="fa fa-search fa-2x"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </figcaption>
-                            </figure>
-                        </div>
-                        <div  class="lgx-single">
-                            <figure>
-                                <img title="L'Arcoch de Payolle" src="{{ asset('index/img/gallery/gallery1.jpg') }}" alt="L'Arcoch de Payolle"/>
-                                <figcaption class="lgx-figcaption">
-                                    <div class="lgx-hover-link">
-                                        <div class="lgx-vertical">
-                                            <a title="L'Arcoch de Payolle" href="{{ asset('index/img/gallery/gallery1.jpg') }}">
-                                                <i class="fa fa-search fa-2x"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </figcaption>
-                            </figure>
-                        </div>
-                        <div  class="lgx-single">
-                            <figure>
-                                <img title="L'Arcoch de Payolle" src="{{ asset('index/img/gallery/gallery1.jpg') }}" alt="L'Arcoch de Payolle"/>
-                                <figcaption class="lgx-figcaption">
-                                    <div class="lgx-hover-link">
-                                        <div class="lgx-vertical">
-                                            <a title="L'Arcoch de Payolle" href="{{ asset('index/img/gallery/gallery1.jpg') }}">
-                                                <i class="fa fa-search fa-2x"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </figcaption>
-                            </figure>
-                        </div>
-                        <div  class="lgx-single">
-                            <figure>
-                                <img title="L'Arcoch de Payolle" src="{{ asset('index/img/gallery/gallery1.jpg') }}" alt="L'Arcoch de Payolle"/>
-                                <figcaption class="lgx-figcaption">
-                                    <div class="lgx-hover-link">
-                                        <div class="lgx-vertical">
-                                            <a title="L'Arcoch de Payolle" href="{{ asset('index/img/gallery/gallery1.jpg') }}">
-                                                <i class="fa fa-search fa-2x"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </figcaption>
-                            </figure>
-                        </div>
-                        <div  class="lgx-single">
-                            <figure>
-                                <img title="L'Arcoch de Payolle" src="{{ asset('index/img/gallery/gallery1.jpg') }}" alt="L'Arcoch de Payolle"/>
-                                <figcaption class="lgx-figcaption">
-                                    <div class="lgx-hover-link">
-                                        <div class="lgx-vertical">
-                                            <a title="L'Arcoch de Payolle" href="{{ asset('index/img/gallery/gallery1.jpg') }}">
-                                                <i class="fa fa-search fa-2x"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </figcaption>
-                            </figure>
-                        </div>
-                        <div  class="lgx-single">
-                            <figure>
-                                <img title="L'Arcoch de Payolle" src="{{ asset('index/img/gallery/gallery1.jpg') }}" alt="L'Arcoch de Payolle"/>
-                                <figcaption class="lgx-figcaption">
-                                    <div class="lgx-hover-link">
-                                        <div class="lgx-vertical">
-                                            <a title="L'Arcoch de Payolle" href="{{ asset('index/img/gallery/gallery1.jpg') }}">
-                                                <i class="fa fa-search fa-2x"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </figcaption>
-                            </figure>
-                        </div>
-                        <div  class="lgx-single">
-                            <figure>
-                                <img title="L'Arcoch de Payolle" src="{{ asset('index/img/gallery/gallery1.jpg') }}" alt="L'Arcoch de Payolle"/>
-                                <figcaption class="lgx-figcaption">
-                                    <div class="lgx-hover-link">
-                                        <div class="lgx-vertical">
-                                            <a title="L'Arcoch de Payolle" href="{{ asset('index/img/gallery/gallery1.jpg') }}">
-                                                <i class="fa fa-search fa-2x"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </figcaption>
-                            </figure>
-                        </div>
-                        <div  class="lgx-single">
-                            <figure>
-                                <img title="L'Arcoch de Payolle" src="{{ asset('index/img/gallery/gallery1.jpg') }}" alt="L'Arcoch de Payolle"/>
-                                <figcaption class="lgx-figcaption">
-                                    <div class="lgx-hover-link">
-                                        <div class="lgx-vertical">
-                                            <a title="L'Arcoch de Payolle" href="{{ asset('index/img/gallery/gallery1.jpg') }}">
+                                            <a title="L'Arcoch de Payolle" href="{{ asset('index/img/gallery/gallery8.jpg') }}">
                                                 <i class="fa fa-search fa-2x"></i>
                                             </a>
                                         </div>
@@ -922,21 +572,21 @@
                             <div class="single">
                                 <img src="{{ asset('index/img/info-icon1.png') }}" alt="location"/>
                                 <h3 class="title">Adresse</h3>
-                                <p class="info">Arcoch, Quartier Payolle 65710 Campan</p>
+                                <p class="info">L'Arcoch, route du lac de Payolle - Quartier Serre Crampe, 65710 Campan</p>
                             </div>
                         </div>
                         <div class="col-xs-12 col-sm-6 col-md-4">
                             <div class="single">
                                 <img src="{{ asset('index/img/info-icon2.png') }}" alt="Transport"/>
                                 <h3 class="title">Transport</h3>
-                                <p class="info">Vous pouvez venir en voiture ou en bus. Les routes sont plus que praticables</p>
+                                <p class="info">Vous pouvez venir en voiture ou en bus. Les routes sont plus que praticables (même en hiver !)</p>
                             </div>
                         </div>
                         <div class="col-xs-12 col-sm-6 col-md-4">
                             <div class="single">
                                 <img src="{{ asset('index/img/info-icon3.png') }}" alt="Hotel & Restaurant"/>
                                 <h3 class="title">Hotel & Restaurant</h3>
-                                <p class="info">L'Arcoch vous propose des chambres et un restaurant attenant. Des séances de SPA peuvent être réservées</p>
+                                <p class="info">L'Arcoch vous propose des chambres d'hôtes et un restaurant attenant.</p>
                             </div>
                         </div>
                     </div>
@@ -982,12 +632,8 @@
                         </div>
                         <div class="footer-social">
                             <ul class="list-inline">
-                                <li><a class="sp-fb" href="#"><i class="fa fa-facebook"></i></a></li>
-                                <li><a class="sp-tw" href="#"><i class="fa fa-twitter"></i></a></li>
-                                <li><a class="sp-google" href="#"><i class="fa fa-google-plus"></i></a></li>
-                                <li><a class="sp-in" href="#"><i class="fa fa-linkedin"></i></a></li>
-                                <li><a class="sp-" href="#"><i class="fa fa-soundcloud"></i></a></li>
-                                <li><a class="sp-" href="#"><i class="fa fa-video-camera"></i></a></li>
+                                <li><a class="sp-fb" target="_blank" href="https://www.facebook.com/LArcoch-909597672726152/"><i class="fa fa-facebook"></i></a></li>
+                                <li><a class="sp-google" target="_blank" href="#"><i class="fa fa-google-plus"></i></a></li>
                             </ul>
                         </div>
                         <p class="lgx-copyright"><span class="themename">EventPoint</span> <span class="text">is proudly powered by</span> <a href="http://www.themearth.com/">themearth.com</a></p>
