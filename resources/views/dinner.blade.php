@@ -13,9 +13,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Dawat restaurant is a simple restaraunt website for restaurant business" />
-    <meta name="keywords" content="restaurant, pizza, burger, business, house, online, delevery, html, coffee, cafe, bar" />
-    <meta name="author" content="BDEXPERT" />
+    <meta name="description" content="L'Arcoch, le restautant au bord du lac de Payolle" />
+    <meta name="keywords" content="restaurant, poutines, burger, planches, salades, payolle, lac, pub, tapas" />
+    <meta name="author" content="Arcoch" />
 
     <!--====== TITLE TAG ======-->
     <title>L'Arcoch | Restaurant</title>
@@ -26,7 +26,6 @@
     <!--====== STYLESHEETS ======-->
     <link rel="stylesheet" href="{{ asset('dinner/css/normalize.css') }}">
     <link rel="stylesheet" href="{{ asset('dinner/css/animate.css') }}">
-    <link rel="stylesheet" href="{{ asset('dinner') }}">
     <link rel="stylesheet" href="{{ asset('dinner/css/owl.carousel.css') }}">
     <link rel="stylesheet" href="{{ asset('dinner/css/datepicker.css') }}">
     <link rel="stylesheet" href="{{ asset('dinner/css/timepicker.min.css') }}">
@@ -49,7 +48,7 @@
 <body>
 
 <!--[if lt IE 8]>
-<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+<p class="browserupgrade">Vous utilisez un navigateur <strong>non mise à jour</strong>. Merci<a href="http://browsehappy.com/">de le mettre à jour</a> pour améliorer votre expérience de navigation</p>
 <![endif]-->
 
 <!--- PRELOADER -->
@@ -69,21 +68,19 @@
                 <div class="row">
                     <div class="col-md-7 col-lg-6 col-sm-8">
                         <div class="call-to-action">
-                            <p><i class="fa fa-envelope-o"></i>Email: <a href="#">contact@arcoch.fr</a></p>
-                            <p><i class="fa fa-phone"></i>Telephone: <a href="#">05 59 05 59 05</a></p>
+                            <p><i class="fa fa-envelope-o"></i>Email: <a href="mailto:resto@arcoch.fr">resto@arcoch.fr</a></p>
+                            <p><i class="fa fa-phone"></i>Telephone: <a href="tel:+33954115416">09 54 11 54 16</a></p>
                         </div>
                     </div>
                     <div class="col-md-5 col-lg-6 col-sm-4">
                         <div class="book-table-popup">
-                            <a href="#reservation-form-modal" data-toggle="modal">Réserver un table</a>
+                            <a href="#reservation-form-modal" data-toggle="modal">Réserver</a>
                         </div>
                         <div class="top-social-bookmark">
                             <ul>
-                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
-                                <li><a href="#"><i class="fa fa-behance"></i></a></li>
-                                <li><a href="#"><i class="fa fa-feed"></i></a></li>
+                                <li><a href="https://www.facebook.com/LArcoch-909597672726152/"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                                <li><a href="#"><i class="fa fa-google"></i></a></li>
                             </ul>
                         </div>
                     </div>
@@ -140,7 +137,7 @@
                                     <b>Spécialité canadienne</b>
                                 </span>
                         </h1>
-                        <a class="home-reservation-button"  href="#reservation-form-modal" data-toggle="modal">Réserver une table</a>
+                        <a class="home-reservation-button"  href="#reservation-form-modal" data-toggle="modal">Nous contacter</a>
                     </div>
                 </div>
             </div>
@@ -162,17 +159,25 @@
             </div>
             <div class="col-md-6 col-lg-6 col-sm-12 col-xs-12">
                 <div class="about-content">
-                    <p><span class="big-text">U</span> n long texte pour expliquer l'histoire du restaurant</p>
+                    <p>
+                        <span class="big-text">A</span>yant déjà posséder un restaurant et salon de thé dans la ville de Pau. Nous avons fait le choix de recommencer l'aventure sur le lac de Payolle.
+                        Après avoir forcément trouvé l'endroit magique nous avons réfléchis pour créer une carte en adéquation avec le lieu et son environnement. Nous avons discuté avec plusieurs personnes
+                        habitants non loin du lac pour apprendre que le lac de Payolle s'appellait aussi "Le Petit Canada". C'est pourquoi nous avons choisis de créer une carte et un restaurant sur le thème du Canada.
+                    </p>
                 </div>
             </div>
             <div class="col-md-6 col-lg-6 col-sm-12 col-xs-12">
                 <div class="right-about-content">
-                    <p>Un deuxième long texte pour expliquer l'histoire du restaurant</p>
+                    <p>
+                        Le restaurant vous propose donc une multitude de plat, en passant par les poutines, les bugers, mais aussi les planches et les salades. Sur cette carte nous avons fais le choix de ne pas faire
+                        de la cuisine traditionnelle pour éviter au maximum les doublons avec les restaurants aux alentours. Ce ne sera donc pas chez nous que vous pourrez goûtter la traditionnelle garbure
+                        ou le porc noir de la région. Nous sommes impatients de vous voir et vous invitons à venir goûter notre carte.
+                    </p>
                 </div>
             </div>
             <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
                 <div class="about-author-sign text-center">
-                    <img src="{{ asset('dinner/img/about/about_sign.png') }}" alt="">
+
                 </div>
             </div>
         </div>
@@ -187,7 +192,7 @@
         <div class="row">
             <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
                 <div class="area-title text-center">
-                    <h2>Mise en avant d'un plat</h2>
+                    <h2>Venez déguster</h2>
                 </div>
             </div>
         </div>
@@ -213,16 +218,6 @@
                         <a href="#" class="read-more">Order now</a>
                     </div>
                 </div>
-                <div class="single-promotions">
-                    <div class="promotions-img">
-                        <img src="{{ asset('dinner/img/promotions/promo_slide_3.jpg') }}" alt="">
-                    </div>
-                    <div class="promotions-details">
-                        <h3>40% off for 9'' - 12'' pizza - Wed, Thu, Friday only</h3>
-                        <p>Pizza 12 inch + 1 Side Dish + 1,5L Coke Bottle Only From 209,000</p>
-                        <a href="#" class="read-more">Order now</a>
-                    </div>
-                </div>
             </div>
         </div>
     </div>
@@ -241,83 +236,8 @@
         </div>
         <div class="row">
             <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
-                <div class="food-menu-list-menu">
-                    <ul>
-                        <li class="filter active" data-filter="all">All</li>
-                        <li class="filter" data-filter=".breakfast">Breakfast</li>
-                        <li class="filter" data-filter=".lunch">Lunch</li>
-                        <li class="filter" data-filter=".dinner">Dinner</li>
-                        <li class="filter" data-filter=".coffee">Coffe</li>
-                        <li class="filter" data-filter=".snacks">Snacks</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class="row food-menu-list">
-            <div class="mix col-md-6 col-lg-6 col-sm-12 col-xs-12 single-menu breakfast coffee snacks">
-                <div class="single-menu-details">
-                    <div class="food-menu-img"><img src="{{ asset('dinner/img/menu/menu_1.jpg') }}" alt=""></div>
-                    <div class="food-menu-details">
-                        <h3>Cupcake Recipes <span class="menu-price">$20.00</span></h3>
-                        <p class="menu-speacification"><span>- Juice Fruit</span> <span>- Checken</span> <span>- Cherry</span></p>
-                        <p class="menu-speacification"><span>- Vegetable</span> <span>- Milk</span> <span>- Potato</span></p>
-                        <p class="menu-speacification"><span>- Tomato</span> <span>- Chilli</span> <span>- Sesame</span></p>
-                    </div>
-                </div>
-            </div>
-            <div class="mix col-md-6 col-lg-6 col-sm-12 col-xs-12 single-menu dinner snacks">
-                <div class="single-menu-details">
-                    <div class="food-menu-img"><img src="{{ asset('dinner/img/menu/menu_2.jpg') }}" alt=""></div>
-                    <div class="food-menu-details">
-                        <h3>Cupcake Recipes <span class="menu-price">$22.00</span></h3>
-                        <p class="menu-speacification"><span>- Juice Fruit</span> <span>- Checken</span> <span>- Cherry</span></p>
-                        <p class="menu-speacification"><span>- Vegetable</span> <span>- Milk</span> <span>- Potato</span></p>
-                        <p class="menu-speacification"><span>- Tomato</span> <span>- Chilli</span> <span>- Sesame</span></p>
-                    </div>
-                </div>
-            </div>
-            <div class="mix col-md-6 col-lg-6 col-sm-12 col-xs-12 single-menu breakfast">
-                <div class="single-menu-details">
-                    <div class="food-menu-img"><img src="{{ asset('dinner/img/menu/menu_3.jpg') }}" alt=""></div>
-                    <div class="food-menu-details">
-                        <h3>Cupcake Recipes <span class="menu-price">$17.00</span></h3>
-                        <p class="menu-speacification"><span>- Juice Fruit</span> <span>- Checken</span> <span>- Cherry</span></p>
-                        <p class="menu-speacification"><span>- Vegetable</span> <span>- Milk</span> <span>- Potato</span></p>
-                        <p class="menu-speacification"><span>- Tomato</span> <span>- Chilli</span> <span>- Sesame</span></p>
-                    </div>
-                </div>
-            </div>
-            <div class="mix col-md-6 col-lg-6 col-sm-12 col-xs-12 single-menu dinner lunch breakfast snacks">
-                <div class="single-menu-details">
-                    <div class="food-menu-img"><img src="{{ asset('dinner/img/menu/menu_4.jpg') }}" alt=""></div>
-                    <div class="food-menu-details">
-                        <h3>Cupcake Recipes <span class="menu-price">$28.00</span></h3>
-                        <p class="menu-speacification"><span>- Juice Fruit</span> <span>- Checken</span> <span>- Cherry</span></p>
-                        <p class="menu-speacification"><span>- Vegetable</span> <span>- Milk</span> <span>- Potato</span></p>
-                        <p class="menu-speacification"><span>- Tomato</span> <span>- Chilli</span> <span>- Sesame</span></p>
-                    </div>
-                </div>
-            </div>
-            <div class="mix col-md-6 col-lg-6 col-sm-12 col-xs-12 single-menu lunch coffee">
-                <div class="single-menu-details">
-                    <div class="food-menu-img"><img src="{{ asset('dinner/img/menu/menu_5.jpg') }}" alt=""></div>
-                    <div class="food-menu-details">
-                        <h3>Cupcake Recipes <span class="menu-price">$120.00</span></h3>
-                        <p class="menu-speacification"><span>- Juice Fruit</span> <span>- Checken</span> <span>- Cherry</span></p>
-                        <p class="menu-speacification"><span>- Vegetable</span> <span>- Milk</span> <span>- Potato</span></p>
-                        <p class="menu-speacification"><span>- Tomato</span> <span>- Chilli</span> <span>- Sesame</span></p>
-                    </div>
-                </div>
-            </div>
-            <div class="mix col-md-6 col-lg-6 col-sm-12 col-xs-12 single-menu breakfast">
-                <div class="single-menu-details">
-                    <div class="food-menu-img"><img src="{{ asset('dinner/img/menu/menu_6.jpg') }}" alt=""></div>
-                    <div class="food-menu-details">
-                        <h3>Cupcake Recipes <span class="menu-price">$100.00</span></h3>
-                        <p class="menu-speacification"><span>- Juice Fruit</span> <span>- Checken</span> <span>- Cherry</span></p>
-                        <p class="menu-speacification"><span>- Vegetable</span> <span>- Milk</span> <span>- Potato</span></p>
-                        <p class="menu-speacification"><span>- Tomato</span> <span>- Chilli</span> <span>- Sesame</span></p>
-                    </div>
+                <div class="resarvation-from-button text-center wow fadeIn">
+                    <a href="#" class="reservation-button" style="border: solid 2px #ca3d26">Télécharger la carte</a>
                 </div>
             </div>
         </div>
@@ -345,51 +265,17 @@
                         <div class="modal-content">
                             <div class="modal-header">
                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                                <h4 class="modal-title">Merci de remplir les informations ci-dessous pour réserver une table</h4>
+                                <h4 class="modal-title">Pour réserver une table merci de nous appeler au numéro</h4>
                             </div>
                             <div class="modal-body">
                                 <div class="reservation-form">
-                                    <form class="table-booking-form" id="reservation">
+                                    <div class="table-booking-form">
                                         <div class="row">
-                                            <div class="col-md-6 col-lg-6 col-sm-6 col-xs-12">
-                                                <label for="form-name"><i class="fa fa-user-o"></i></label>
-                                                <input class="form-input" type="text" name="form-name" id="form-name" placeholder="Nom...">
-                                            </div>
-                                            <div class="col-md-6 col-lg-6 col-sm-6 col-xs-12">
-                                                <label for="form-email"><i class="fa fa-at"></i></label>
-                                                <input class="form-input" type="email" name="form-email" id="form-email" placeholder="Email...">
-                                            </div>
-                                            <div class="col-md-6 col-lg-6 col-sm-6 col-xs-12">
-                                                <label for="form-mobile"><i class="fa fa-phone"></i></label>
-                                                <input class="form-input" type="text" name="form-phone" id="form-mobile" placeholder="Téléphone...">
-                                            </div>
-                                            <div class="col-md-6 col-lg-6 col-sm-6 col-xs-12">
-                                                <label for="form-date"><i class="fa fa-calendar"></i></label>
-                                                <input class="form-input" type="text" name="form-date" id="form-date" data-select="datepicker" placeholder="Date...">
-                                            </div>
-                                            <div class="col-md-6 col-lg-6 col-sm-6 col-xs-12">
-                                                <label for="time"><i class="fa fa-clock-o"></i></label>
-                                                <input class="form-input" type="text" name="form-time" id="time" placeholder="Heure...">
-                                            </div>
-                                            <div class="col-md-6 col-lg-6 col-sm-6 col-xs-12">
-                                                <label for="form-person"><i class="fa fa-user"></i></label>
-                                                <select class="form-input" name="form-person" id="form-person">
-                                                    <option value="2">2 Personnes</option>
-                                                    <option value="3">3 Personnes</option>
-                                                    <option value="4">4 Personnes</option>
-                                                    <option value="5">5 Personnes</option>
-                                                    <option value="6">6 Personnes</option>
-                                                    <option value="7">7 Personnes</option>
-                                                    <option value="8">8 Personnes</option>
-                                                    <option value="9">9 Personnes</option>
-                                                    <option value="10">10 Personnes</option>
-                                                </select>
-                                            </div>
-                                            <div class="col-md-6 col-lg-6 col-sm-6 col-sm-offset-3  col-md-offset-3  col-lg-offset-3 col-xs-12">
-                                                <button type="submit">Réserver une table</button>
+                                            <div class="col-sm-12 text-center" style="margin-bottom: 0; font-size: 40px">
+                                                09 54 11 54 16
                                             </div>
                                         </div>
-                                    </form>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -416,47 +302,65 @@
             <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12 team-slider">
                 <div class="single-team-member text-center">
                     <div class="team-member-img ">
-                        <img src="{{ asset('dinner/img/team/team-1.jpg') }}" alt="">
+                        <img src="{{ asset('index/img/speakers/julia.png') }}" alt="julia">
                     </div>
                     <div class="member-details">
-                        <h3>Mark Angelila</h3>
-                        <p>Cras senunc massa quisque tempor dolor sit amet </p>
+                        <h3>Julia</h3>
+                        <p>Cuisine</p>
                     </div>
                 </div>
                 <div class="single-team-member text-center">
                     <div class="team-member-img ">
-                        <img src="{{ asset('dinner/img/team/team-2.jpg') }}" alt="">
+                        <img src="{{ asset('index/img/speakers/pauline.png') }}" alt="">
                     </div>
                     <div class="member-details">
-                        <h3>Angel Meskat</h3>
-                        <p>Cras senunc massa quisque tempor dolor sit amet </p>
+                        <h3>Pauline</h3>
+                        <p>Cuisine</p>
                     </div>
                 </div>
                 <div class="single-team-member text-center">
                     <div class="team-member-img ">
-                        <img src="{{ asset('dinner/img/team/team-3.jpg') }}" alt="">
+                        <img src="{{ asset('index/img/speakers/catherine.png') }}" alt="">
                     </div>
                     <div class="member-details">
-                        <h3>Jon Doe</h3>
-                        <p>Cras senunc massa quisque tempor dolor sit amet </p>
+                        <h3>Catherine</h3>
+                        <p>Cuisine</p>
                     </div>
                 </div>
                 <div class="single-team-member text-center">
                     <div class="team-member-img ">
-                        <img src="{{ asset('dinner/img/team/team-4.jpg') }}" alt="">
+                        <img src="{{ asset('index/img/speakers/patrick.png') }}" alt="">
                     </div>
                     <div class="member-details">
-                        <h3>Angel Di Maria</h3>
-                        <p>Cras senunc massa quisque tempor dolor sit amet </p>
+                        <h3>Patrick</h3>
+                        <p>Cuisine</p>
                     </div>
                 </div>
                 <div class="single-team-member text-center">
                     <div class="team-member-img ">
-                        <img src="{{ asset('dinner/img/team/team-5.jpg') }}" alt="">
+                        <img src="{{ asset('index/img/speakers/luc.png') }}" alt="">
                     </div>
                     <div class="member-details">
-                        <h3>Park Ji Sung</h3>
-                        <p>Cras senunc massa quisque tempor dolor sit amet </p>
+                        <h3>Luc</h3>
+                        <p>Serveur</p>
+                    </div>
+                </div>
+                <div class="single-team-member text-center">
+                    <div class="team-member-img ">
+                        <img src="{{ asset('index/img/speakers/thomas.png') }}" alt="">
+                    </div>
+                    <div class="member-details">
+                        <h3>Thomas</h3>
+                        <p>Serveur</p>
+                    </div>
+                </div>
+                <div class="single-team-member text-center">
+                    <div class="team-member-img ">
+                        <img src="{{ asset('index/img/speakers/alex.png') }}" alt="">
+                    </div>
+                    <div class="member-details">
+                        <h3>Alexis</h3>
+                        <p>Barman</p>
                     </div>
                 </div>
             </div>
@@ -497,19 +401,15 @@
                         <a href="#"><img src="{{ asset('dinner/img/main_logo.png') }}" alt=""></a>
                     </div>
                     <div class="footer-address">
-                        <p>Arcoch, Quartier Payolle 65710 Campan</p>
+                        <p>L'Arcoch, route du lac de Payolle quartier Serre Crampe, 65710 Campan</p>
                         <p><a href="mailto:contact@arcoch.fr">contact@arcoch.fr</a></p>
-                        <p><a href="callto:+330559055905">+33 0559055905</a></p>
+                        <p><a href="callto:+33954115416">+33954115416</a></p>
                     </div>
                     <div class="footer-social-bookmark">
                         <ul>
-                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                            <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
-                            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-                            <li><a href="#"><i class="fa fa-flickr"></i></a></li>
-                            <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
-                            <li><a href="#"><i class="fa fa-skype"></i></a></li>
+                            <li><a class="sp-fb" target="_blank" href="https://www.facebook.com/LArcoch-909597672726152/"><i class="fa fa-facebook"></i></a></li>
+                            <li><a class="sp-google" target="_blank" href="#"><i class="fa fa-instagram"></i></a></li>
+                            <li><a class="sp-google" target="_blank" href="#"><i class="fa fa-google"></i></a></li>
                         </ul>
                     </div>
                 </div>
@@ -519,15 +419,13 @@
             <div class="col-md-6 col-lg-6 col-sm-12 col-xs-12">
                 <div class="footer-menu">
                     <ul>
-                        <li><a href="#">Mentions légales</a></li>
-                        <li><a href="#">CGU</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="{{ route('contact') }}">Contact</a></li>
                     </ul>
                 </div>
             </div>
             <div class="col-md-6 col-lg-6 col-sm-12 col-xs-12">
                 <div class="footer-copyright">
-                    <p>&copy; 2018 <a href="#">Arcoch restaurant</a> Tous droits réservés.</p>
+                    <p>&copy; 2019 <a href="#">Arcoch restaurant</a> Tous droits réservés.</p>
                 </div>
             </div>
         </div>

@@ -633,7 +633,8 @@
                         <div class="footer-social">
                             <ul class="list-inline">
                                 <li><a class="sp-fb" target="_blank" href="https://www.facebook.com/LArcoch-909597672726152/"><i class="fa fa-facebook"></i></a></li>
-                                <li><a class="sp-google" target="_blank" href="#"><i class="fa fa-google-plus"></i></a></li>
+                                <li><a class="sp-google" target="_blank" href="#"><i class="fa fa-instagram"></i></a></li>
+                                <li><a class="sp-google" target="_blank" href="#"><i class="fa fa-google"></i></a></li>
                             </ul>
                         </div>
                         <p class="lgx-copyright"><span class="themename">EventPoint</span> <span class="text">is proudly powered by</span> <a href="http://www.themearth.com/">themearth.com</a></p>
