@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <!-- Mirrored from ravistheme.com/pinar/html/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 21 Sep 2018 08:58:14 GMT -->
 <head>
     <meta charset="UTF-8">
-    <title>Pinar Hotel - Responsive Hotel Template</title><!-- Website's title ( it will be shown in browser's tab ), Change the website's title based on your Hotel information -->
-    <meta name="description" content="Pinar is Hotel and Resort HTML template."><!-- Add your Hotel short description -->
-    <meta name="keywords" content="Responsive,HTML5,CSS3,XML,JavaScript"><!-- Add some Keywords based on your Hotel and your business and separate them by comma -->
-    <meta name="author" content="Joseph a, ravistheme@gmail.com">
+    <title>L'Arcoch - Chambres d'hôtes</title><!-- Website's title ( it will be shown in browser's tab ), Change the website's title based on your Hotel information -->
+    <meta name="description" content="L'Arcoch - Chambres d'hôtes"><!-- Add your Hotel short description -->
+    <meta name="keywords" content="arcoch, payolle, chambres, hôtes"><!-- Add some Keywords based on your Hotel and your business and separate them by comma -->
+    <meta name="author" content="Thomas Lenormand, contact@arcoch.fr">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, user-scalable=no">
     <link href='https://fonts.googleapis.com/css?family=Lobster%7cRaleway:400,300,100,600,700,800' rel='stylesheet' type='text/css'><!-- Attach Google fonts -->
     <link rel="stylesheet" type="text/css" href="{{ asset('rooms/css/styles.css') }}"><!-- Attach the main stylesheet file -->
@@ -19,16 +19,9 @@
     <div class="inner-container container">
         <!-- Contact Info -->
         <ul class="contact-info list-inline">
-            <li><i class="fa fa-phone"></i>0185 26 37 48 59</li>
-            <li><i class="fa fa-envelope-o"></i>info@ravistheme.com</li>
+            <li><i class="fa fa-phone"></i>09 54 11 54 16</li>
+            <li><i class="fa fa-envelope-o"></i>chambres@arcoch.fr</li>
         </ul>
-
-        <!-- Language Switcher -->
-        <select id="language-switcher">
-            <option value="1">English</option>
-            <option value="2">Arabic</option>
-        </select>
-        <!-- End of Language Switcher -->
     </div>
 </div>
 <!-- End of Top Header -->
@@ -39,12 +32,7 @@
         <div class="left-sec col-sm-4 col-md-2 clearfix">
             <!-- Top Logo -->
             <div id="top-logo">
-                <div class="title"><span>Pinar</span> Hotel</div>
-                <i class="fa fa-star-o"></i>
-                <i class="fa fa-star-o"></i>
-                <i class="fa fa-star-o"></i>
-                <i class="fa fa-star-o"></i>
-                <i class="fa fa-star-o"></i>
+                <div class="title"><span>L'Arcoch</span></div>
             </div>
         </div>
         <div class="right-sec col-sm-8 col-md-10 clearfix">
@@ -68,74 +56,74 @@
 <div id="home-top-section">
 
     <!-- Main Slider -->
-    <div id="main-slider">
-        <div class="items">
-            <a href="http://google.com/">
-                <img src="{{ asset('rooms/img/slider/1.jpg') }}" alt="3"/><!-- Change the URL section based on your image\'s name -->
-            </a>
-        </div>
-        <div class="items">
-            <a href="http://google.com/">
-                <img src="{{ asset('rooms/img/slider/3.jpg') }}" alt="3"/>
-            </a>
-        </div>
-        <div class="items">
-            <a href="http://google.com/">
-                <img src="{{ asset('rooms/img/slider/4.jpg') }}" alt="4"/>
-            </a>
-        </div>
-        <div class="items">
-            <a href="http://google.com/">
-                <img src="{{ asset('rooms/img/slider/2.jpg') }}" alt="2"/>
-            </a>
-        </div>
-    </div>
+{{--    <div id="main-slider">--}}
+{{--        <div class="items">--}}
+{{--            <a href="http://google.com/">--}}
+{{--                <img src="{{ asset('rooms/img/slider/1.jpg') }}" alt="3"/><!-- Change the URL section based on your image\'s name -->--}}
+{{--            </a>--}}
+{{--        </div>--}}
+{{--        <div class="items">--}}
+{{--            <a href="http://google.com/">--}}
+{{--                <img src="{{ asset('rooms/img/slider/3.jpg') }}" alt="3"/>--}}
+{{--            </a>--}}
+{{--        </div>--}}
+{{--        <div class="items">--}}
+{{--            <a href="http://google.com/">--}}
+{{--                <img src="{{ asset('rooms/img/slider/4.jpg') }}" alt="4"/>--}}
+{{--            </a>--}}
+{{--        </div>--}}
+{{--        <div class="items">--}}
+{{--            <a href="http://google.com/">--}}
+{{--                <img src="{{ asset('rooms/img/slider/2.jpg') }}" alt="2"/>--}}
+{{--            </a>--}}
+{{--        </div>--}}
+{{--    </div>--}}
 
     <!-- Booking Form -->
-    <div class="booking-form-container container">
-        <div class="booking-form-inner-container">
-            <div id="main-booking-form" class="style-2">
-                <h2>Find A <span>Room</span></h2>
-                <form class="booking-form clearfix" action="#"><!-- Do Not remove the classes -->
-                    <div class="input-daterange clearfix">
-                        <div class="booking-fields col-xs-6 col-md-12">
-                            <input placeholder="Choose check in date" class="datepicker-fields check-in" type="text" name="start" /><!-- Date Picker field ( Do Not remove the "datepicker-fields" class ) -->
-                            <i class="fa fa-calendar"></i><!-- Date Picker Icon -->
-                        </div>
-                        <div class="booking-fields col-xs-6 col-md-12">
-                            <input placeholder="Choose check out date" class="datepicker-fields check-out" type="text" name="end" />
-                            <i class="fa fa-calendar"></i>
-                        </div>
-                    </div>
-                    <div class="booking-fields col-xs-6 col-md-12">
-                        <!-- Select boxes ( you can change the items and its value based on your project's needs ) -->
-                        <select name="room-type">
-                            <option value="">How Many Adult?</option><!-- Select box items ( you can change the items and its value based on your project's needs ) -->
-                            <option value="2">1</option>
-                            <option value="3">2</option>
-                            <option value="4">3</option>
-                            <option value="5">4</option>
-                            <option value="6">5</option>
-                        </select>
-                        <!-- End of Select boxes -->
-                    </div>
-                    <div class="booking-fields col-xs-6 col-md-12">
-                        <select name="guest">
-                            <option value="">How Many Children ?</option>
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                            <option value="5">5</option>
-                        </select>
-                    </div>
-                    <div class="booking-button-container">
-                        <input class="btn btn-default" value="Check Availability" type="submit"/><!-- Submit button -->
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div>
+{{--    <div class="booking-form-container container">--}}
+{{--        <div class="booking-form-inner-container">--}}
+{{--            <div id="main-booking-form" class="style-2">--}}
+{{--                <h2>Find A <span>Room</span></h2>--}}
+{{--                <form class="booking-form clearfix" action="#"><!-- Do Not remove the classes -->--}}
+{{--                    <div class="input-daterange clearfix">--}}
+{{--                        <div class="booking-fields col-xs-6 col-md-12">--}}
+{{--                            <input placeholder="Choose check in date" class="datepicker-fields check-in" type="text" name="start" /><!-- Date Picker field ( Do Not remove the "datepicker-fields" class ) -->--}}
+{{--                            <i class="fa fa-calendar"></i><!-- Date Picker Icon -->--}}
+{{--                        </div>--}}
+{{--                        <div class="booking-fields col-xs-6 col-md-12">--}}
+{{--                            <input placeholder="Choose check out date" class="datepicker-fields check-out" type="text" name="end" />--}}
+{{--                            <i class="fa fa-calendar"></i>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
+{{--                    <div class="booking-fields col-xs-6 col-md-12">--}}
+{{--                        <!-- Select boxes ( you can change the items and its value based on your project's needs ) -->--}}
+{{--                        <select name="room-type">--}}
+{{--                            <option value="">How Many Adult?</option><!-- Select box items ( you can change the items and its value based on your project's needs ) -->--}}
+{{--                            <option value="2">1</option>--}}
+{{--                            <option value="3">2</option>--}}
+{{--                            <option value="4">3</option>--}}
+{{--                            <option value="5">4</option>--}}
+{{--                            <option value="6">5</option>--}}
+{{--                        </select>--}}
+{{--                        <!-- End of Select boxes -->--}}
+{{--                    </div>--}}
+{{--                    <div class="booking-fields col-xs-6 col-md-12">--}}
+{{--                        <select name="guest">--}}
+{{--                            <option value="">How Many Children ?</option>--}}
+{{--                            <option value="1">1</option>--}}
+{{--                            <option value="2">2</option>--}}
+{{--                            <option value="3">3</option>--}}
+{{--                            <option value="4">4</option>--}}
+{{--                            <option value="5">5</option>--}}
+{{--                        </select>--}}
+{{--                    </div>--}}
+{{--                    <div class="booking-button-container">--}}
+{{--                        <input class="btn btn-default" value="Check Availability" type="submit"/><!-- Submit button -->--}}
+{{--                    </div>--}}
+{{--                </form>--}}
+{{--            </div>--}}
+{{--        </div>--}}
+{{--    </div>--}}
 </div>
 <!-- End of Top Slider and Booking form -->
 
@@ -143,8 +131,8 @@
 <div id="luxury-rooms">
     <!-- Heading box -->
     <div class="heading-box">
-        <h2>Luxury <span>Rooms</span></h2><!-- Title -->
-        <div class="subtitle">Best rooms with Best services</div><!-- Subtitle -->
+        <h2>Nos <span>chambres</span></h2><!-- Title -->
+        <div class="subtitle">Avec vue imprenable sur le lac de Payolle</div><!-- Subtitle -->
     </div>
 
     <!-- Room Box Container -->
@@ -153,56 +141,46 @@
         <div class="room-boxes">
             <img src="{{ asset('rooms/img/rooms/1.jpg') }}" alt="King Suit" class="room-img"><!-- Room Image -->
             <div class="room-details col-xs-6 col-md-4">
-                <div class="title">King Suit</div><!-- Room title -->
+                <div class="title">La chambre Cerf</div><!-- Room title -->
                 <div class="description"><!-- Room Description -->
-                    Short description of rooms will be located in this section that you can describe some special features and equipment of rooms. Visitors can get more information about this rooms by clicking on "Details" button.
+                    Chambres de 32m² pour deux personnes. Vue direct sur le lac et les montagnes. Petit déjeuner inclus.
+                    Une banquette amovible est disponible pour permettre le couchage de deux à quatre enfants ou adultes supplémentaires.<br>
+                    La chambre est à 120 € avec un supplément de 20 € par enfant ou 40 € par adulte.
                 </div>
-                <a href="#" class="btn btn-default">Details</a><!-- Detail link -->
+                <div class="btn btn-default">Réserver en appelant au 09 54 11 54 16</div><!-- Detail link -->
             </div>
             <div class="price-container col-xs-6 col-md-8">
-                <div class="price">
-                    <span>$550</span>
-                    - Per Night
+                <div class="price text-center">
+                    <span>
+                        120 € / nuit
+                        <br>
+                        Pour deux personnes
+                    </span>
                 </div>
             </div>
 
         </div>
-
         <!-- Room box -->
         <div class="room-boxes right">
             <img src="{{ asset('rooms/img/rooms/2.jpg') }}" alt="Royal Suit" class="room-img">
             <div class="room-details col-xs-6 col-md-4">
-                <div class="title">Royal Suit</div>
-                <div class="description">
-                    Short description of rooms will be located in this section that you can describe some special features and equipment of rooms. Visitors can get more information about this rooms by clicking on "Details" button.
+                <div class="title">La chambre Élan</div>
+                <div class="description"><!-- Room Description -->
+                    Chambres de 32m² pour deux personnes. Vue direct sur le lac et les montagnes. Petit déjeuner inclus.
+                    Une banquette amovible est disponible pour permettre le couchage de deux à quatre enfants ou adultes supplémentaires.<br>
+                    La chambre est à 120 € avec un supplément de 20 € par enfant ou 40 € par adulte.
                 </div>
-                <a href="#" class="btn btn-default">Details</a>
+                <div class="btn btn-default">Réserver en appelant au 09 54 11 54 16</div>
             </div>
             <div class="price-container col-xs-6 col-md-8">
-                <div class="price">
-                    <span>$490</span>
-                    - Per Night
+                <div class="price text-center">
+                    <span>
+                        120 € / nuit
+                        <br>
+                        Pour deux personnes
+                    </span>
                 </div>
             </div>
-
-        </div>
-        <!-- Room box -->
-        <div class="room-boxes">
-            <img src="{{ asset('rooms/img/rooms/3.jpg') }}" alt="Deluxe Two-bedroom Suite" class="room-img">
-            <div class="room-details col-xs-6 col-md-4">
-                <div class="title">Deluxe Two-bedroom Suite</div>
-                <div class="description">
-                    Short description of rooms will be located in this section that you can describe some special features and equipment of rooms. Visitors can get more information about this rooms by clicking on "Details" button.
-                </div>
-                <a href="#" class="btn btn-default">Details</a>
-            </div>
-            <div class="price-container col-xs-6 col-md-8">
-                <div class="price">
-                    <span>$370</span>
-                    - Per Night
-                </div>
-            </div>
-
         </div>
     </div>
 </div>

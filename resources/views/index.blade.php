@@ -233,18 +233,18 @@
                                     <li>Le restaurant L'Arcoch à l'inspiration canadienne</li>
                                     <li>Les chambres d'hôtes de l'Arcoch face au lac et disponible toute l'année</li>
                                     <li>Un gîte deluxe pour deux personnes avec un jaccuzi et un sauna privatif</li>
-                                    <li>La conciergerie de l'Arcoch pour ne plus vous occuper de vos locations</li>
+                                    <li>La conciergerie de l'Arcoch pour vous aider dans la gestion de vos locations</li>
                                     <li>Des activités sportives :</li>
                                         <ul>
                                             <li>Balades en poney ou à cheval</li>
                                             <li>Base nautique l'Aneto</li>
-                                            <li>Parcours d'accrobranche pour les petits Lou Farfadet</li>
+                                            <li>Parcours d'accrobranche pour les petits "Lou Farfadet"</li>
                                             <li>Terrain de tennis</li>
                                             <li>Terrain de pétanque</li>
-                                            <li>Ski de fond</li>
+                                            <li>Ski de fond et raquettes</li>
                                             <li>Balade en chiens de traineaux</li>
                                             <li>Parcours de VTT</li>
-                                            <li>Parcours de marche à pied</li>
+                                            <li>Randonnées</li>
                                         </ul>
                                 </ul>
                                 </p>

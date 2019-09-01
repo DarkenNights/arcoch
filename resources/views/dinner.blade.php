@@ -134,7 +134,7 @@
                             <span class="hero-text">L'Arcoch</span>
                             <span class="cd-words-wrapper">
                                     <b class="is-visible">Cafe & restaurant</b>
-                                    <b>Spécialité canadienne</b>
+                                    <b>Spécialités canadiennes</b>
                                 </span>
                         </h1>
                         <a class="home-reservation-button"  href="#reservation-form-modal" data-toggle="modal">Nous contacter</a>
