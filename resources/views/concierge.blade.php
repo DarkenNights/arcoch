@@ -29,17 +29,6 @@
 
 <!-- Main header -->
 <header class="header">
-    <div class="header-top" data-animate="fadeInDown" data-delay=".5">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-6 col-md-7">
-                    <div class="header-info text-center text-md-left">
-                        <span>Des offres différentes qui s'adaptent à vos besoins <a href="#">cliquez ici</a></span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
 
     <div class="main-header" data-animate="fadeInUp" data-delay=".9">
         <div class="container">

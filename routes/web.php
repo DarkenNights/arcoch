@@ -14,6 +14,7 @@
 Route::get('/', 'IndexController@index')->name('index');
 
 Route::get('/restaurant', 'DinnerController@dinner')->name('dinner');
+Route::get('/restaurant/carte', 'DinnerController@getCard')->name('dinnerCard');
 
 Route::get('/chambres', 'RoomsController@rooms')->name('rooms');
 

@@ -39,7 +39,7 @@ jQuery(document).on('ready', function ($) {
 
     function toggleSearch(type) {
         if (type === "close") {
-            //close serach 
+            //close serach
             $searchForm.removeClass('is-visible');
             $searchFormTrigger.removeClass('search-is-visible');
         } else {
@@ -247,33 +247,33 @@ jQuery(document).on('ready', function ($) {
         }
     });
 
-    
-    /*----------------------------
-        INSTAGRAM FEED ACTIVE
-    -----------------------------*/
-    var feed = new Instafeed({
-        get: 'user',
-        userId: 3287251940,
-        accessToken: '3287251940.4ac71b3.d88be01ca9c94e2e8a2d923fe0a5169e',
-        target: 'instagram',
-        limit: 10, //max 60 images..
-        resolution: 'standard_resolution',
-        after: function () {
-            var el = document.getElementById('instagram');
-            if (el.classList)
-                el.classList.add('show');
-            else
-                el.className += ' ' + 'show';
-        }
-    });
-    feed.run();
-    
-    
+
+    // /*----------------------------
+    //     INSTAGRAM FEED ACTIVE
+    // -----------------------------*/
+    // var feed = new Instafeed({
+    //     get: 'user',
+    //     userId: 3287251940,
+    //     accessToken: '3287251940.4ac71b3.d88be01ca9c94e2e8a2d923fe0a5169e',
+    //     target: 'instagram',
+    //     limit: 10, //max 60 images..
+    //     resolution: 'standard_resolution',
+    //     after: function () {
+    //         var el = document.getElementById('instagram');
+    //         if (el.classList)
+    //             el.classList.add('show');
+    //         else
+    //             el.className += ' ' + 'show';
+    //     }
+    // });
+    // feed.run();
+
+
     /*--------------------------
         ACTIVE WOW JS
     ----------------------------*/
     new WOW().init();
-    
+
 
 }(jQuery));
 
