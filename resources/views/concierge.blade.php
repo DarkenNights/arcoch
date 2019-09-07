@@ -56,7 +56,7 @@
                     <!-- Header Call -->
                     <div class="header-call text-right">
                         <span>Contactez-nous</span>
-                        <a href="tel:+330559055905">05 59 05 59 05</a>
+                        <a href="tel:+330954115416">09 54 11 54 16</a>
                     </div>
                 </div>
             </div>

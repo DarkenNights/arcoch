@@ -16501,6 +16501,14 @@ aside.sidebar {
 .comment-form-container .desc {
   line-height: 30px; }
 
+#main-header.sticky #top-logo img {
+    width: 45%;
+}
+
+#main-header #top-logo img {
+    width: 58%;
+}
+
 form.comment-form {
   margin: 50px 0 0; }
   form.comment-form .field-row {

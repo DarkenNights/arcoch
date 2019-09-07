@@ -150,7 +150,7 @@
     <section>
         <div class="lgx-banner lgx-banner-gradient">
             <div class="lgx-banner-style">
-                <div class="lgx-inner">
+                <div class="lgx-inner" style="background: none">
                     <div class="container">
                         <div class="row">
                             <div class="col-xs-12">

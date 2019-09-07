@@ -100,19 +100,10 @@
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button>
-                        <a href="#home" class="navbar-brand"><img src="{{ asset('dinner/img/main_logo_black.png') }}" alt="logo"></a>
-                        <a href="#home" class="navbar-brand white"><img src="{{ asset('dinner/img/main_logo.png') }}" alt="logo"></a>
+                        <a href="#home" class="navbar-brand"><img style="width: 75px" src="{{ asset('dinner/img/logo.png') }}" alt="logo"></a>
+                        <a href="#home" class="navbar-brand white"><img style="width: 200px" src="{{ asset('dinner/img/logo.png') }}" alt="logo"></a>
                     </div>
                     <div class="collapse navbar-collapse bs-example-js-navbar-scrollspy">
-                        <div class="search-form-area">
-                            <div class="search-form-overlay"></div>
-                            <a class="search-form-trigger" href="#search-form">Search<span></span></a>
-                            <div id="search-form" class="search-form">
-                                <form>
-                                    <input type="search" placeholder="Search...">
-                                </form>
-                            </div>
-                        </div>
                         <ul id="nav" class="nav navbar-nav">
                             @include('layout.menu', ['active' => 'dinner'])
                         </ul>

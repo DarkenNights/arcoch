@@ -32,7 +32,7 @@
         <div class="left-sec col-sm-4 col-md-2 clearfix">
             <!-- Top Logo -->
             <div id="top-logo">
-                <div class="title"><span>L'Arcoch</span></div>
+                <img src="{{ asset('rooms/img/logo.png') }}">
             </div>
         </div>
         <div class="right-sec col-sm-8 col-md-10 clearfix">
@@ -139,7 +139,7 @@
     <div class="room-container container">
         <!-- Room box -->
         <div class="room-boxes">
-            <img src="{{ asset('rooms/img/rooms/chambre_1.jpg') }}" alt="King Suit" class="room-img"><!-- Room Image -->
+            <img src="{{ asset('rooms/img/rooms/chambre_2.jpg') }}" alt="King Suit" class="room-img"><!-- Room Image -->
             <div class="room-details col-xs-6 col-md-4">
                 <div class="title">Les chambres</div><!-- Room title -->
                 <div class="description"><!-- Room Description -->
