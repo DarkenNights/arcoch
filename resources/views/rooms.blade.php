@@ -32,7 +32,7 @@
         <div class="left-sec col-sm-4 col-md-2 clearfix">
             <!-- Top Logo -->
             <div id="top-logo">
-                <img src="{{ asset('rooms/img/logo_menu.png') }}">
+                <img src="{{ asset('rooms/img/logo_menu_min.png') }}">
             </div>
         </div>
         <div class="right-sec col-sm-8 col-md-10 clearfix">

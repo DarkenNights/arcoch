@@ -115,7 +115,7 @@
                                                 </button>
                                                 <div class="lgx-logo">
                                                     <a href="{{ route('index') }}" class="lgx-scroll">
-                                                        <img src="{{ asset('index/img/logo_menu.png') }}" alt="Logo"/>
+                                                        <img src="{{ asset('index/img/logo_menu_min.png') }}" alt="Logo"/>
                                                     </a>
                                                 </div>
                                             </div>

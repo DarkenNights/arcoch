@@ -100,8 +100,8 @@
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button>
-                        <a href="#home" class="navbar-brand"><img style="width: 220px" src="{{ asset('dinner/img/logo_menu.png') }}" alt="logo"></a>
-                        <a href="#home" class="navbar-brand white"><img style="width: 220px" src="{{ asset('dinner/img/logo_menu.png') }}" alt="logo"></a>
+                        <a href="#home" class="navbar-brand"><img style="width: 220px" src="{{ asset('dinner/img/logo_menu_min.png') }}" alt="logo"></a>
+                        <a href="#home" class="navbar-brand white"><img style="width: 220px" src="{{ asset('dinner/img/logo_menu_min.png') }}" alt="logo"></a>
                     </div>
                     <div class="collapse navbar-collapse bs-example-js-navbar-scrollspy">
                         <ul id="nav" class="nav navbar-nav">
