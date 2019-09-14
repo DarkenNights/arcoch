@@ -194,20 +194,31 @@
             <div class="menu-discount-offer col-md-12 col-lg-12 col-sm-12 col-xs-12">
                 <div class="single-promotions">
                     <div class="promotions-img">
-                        <img src="{{ asset('dinner/img/caribou_show.jpg') }}" alt="">
+                        <img src="{{ asset('dinner/img/bieres_min.jpg') }}" alt="">
                     </div>
                     <div class="promotions-details">
-                        <h3>Le Caribou Show</h3>
-                        <p>Grand chocolat chaud, chantilly, copeaux de chocolat et mini gimauve.</p>
+                        <h3>Nos bières canadiennes</h3>
+                        <p>
+                        <ul>
+                            <li>
+                                La pisse du Caribou : Sous l'étiquette d'un caribou déjanté, se cache une bière de haute fermantation au vu de sa robe orangée et trouble et son dépot en fond de bouteille.
+                                La mousse blanche de cette bière retombe lentement en dégageant d'agréables parfums.
+                            </li>
+                            <li>
+                                La rouse du trappeur : La bière rousse du trappeur est bien houblonnée et épicée avec une mousse dense. Un goût nouveau, explosif, rafraîchissant, avec sun arôme rare.
+                                Cette bière, couleur caramel, ne vous laissera pas indifférent.
+                            </li>
+                        </ul>
+                        </p>
                     </div>
                 </div>
                 <div class="single-promotions">
                     <div class="promotions-img">
-                        <img src="{{ asset('dinner/img/cheesecake.jpg') }}" alt="">
+                        <img src="{{ asset('dinner/img/caribou_show_min.jpg') }}" alt="">
                     </div>
                     <div class="promotions-details">
-                        <h3>Canadian café</h3>
-                        <p>Café, Whisky Sortilège, sirop d'érable, chantilly</p>
+                        <h3>Le Caribou Show</h3>
+                        <p>Grand chocolat chaud, chantilly, copeaux de chocolat et mini gimauve.</p>
                     </div>
                 </div>
             </div>
