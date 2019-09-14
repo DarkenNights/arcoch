@@ -115,7 +115,7 @@
                                                 </button>
                                                 <div class="lgx-logo">
                                                     <a href="{{ route('index') }}" class="lgx-scroll">
-                                                        <img src="{{ asset('index/img/logo.png') }}" alt="Logo"/>
+                                                        <img src="{{ asset('index/img/logo_menu.png') }}" alt="Logo"/>
                                                     </a>
                                                 </div>
                                             </div>
@@ -161,15 +161,15 @@
                                     <h2 class="title">{{ $event->title }}</h2>
                                     @if ($event->start->day == $event->end->day)
                                         @if ($event->start->month == $event->end->month)
-                                            <h3 class="date"><span>Le {{ $event->start->day . ' ' . $event->start->monthName . ' ' . $event->start->year }} de {{ $event->start->hour }} à {{ $event->end->hour }} heure </span>, {{ $event->place }}</h3>
+                                            <h3 class="date"><span style="color: white">Le {{ $event->start->day . ' ' . $event->start->monthName . ' ' . $event->start->year }} de {{ $event->start->hour }} à {{ $event->end->hour }} heure </span>, {{ $event->place }}</h3>
                                         @else
-                                            <h3 class="date"><span>Du {{ $event->start->day }} {{ $event->start->monthName }} au {{ $event->end->day }} {{ $event->end->monthName }} {{ $event->end->year }} </span>, {{ $event->place }}</h3>
+                                            <h3 class="date"><span style="color: white">Du {{ $event->start->day }} {{ $event->start->monthName }} au {{ $event->end->day }} {{ $event->end->monthName }} {{ $event->end->year }} </span>, {{ $event->place }}</h3>
                                         @endif
                                     @else
                                         @if($event->start->month == $event->end->month)
-                                            <h3 class="date"><span>Du {{ $event->start->day }} au {{ $event->end->day }} {{ $event->end->monthName }} {{ $event->end->year }} </span>, {{ $event->place }}</h3>
+                                            <h3 class="date"><span style="color: white">Du {{ $event->start->day }} au {{ $event->end->day }} {{ $event->end->monthName }} {{ $event->end->year }} </span>, {{ $event->place }}</h3>
                                         @else
-                                            <h3 class="date"><span>Du {{ $event->start->day }} {{ $event->start->monthName }} au {{ $event->end->day }} {{ $event->end->monthName }} {{ $event->end->year }} </span>, {{ $event->place }}</h3>
+                                            <h3 class="date"><span style="color: white">Du {{ $event->start->day }} {{ $event->start->monthName }} au {{ $event->end->day }} {{ $event->end->monthName }} {{ $event->end->year }} </span>, {{ $event->place }}</h3>
                                         @endif
                                     @endif
                                 </div>
@@ -232,7 +232,7 @@
                                 <ul>
                                     <li>Le restaurant L'Arcoch à l'inspiration canadienne</li>
                                     <li>Les chambres d'hôtes de l'Arcoch face au lac et disponible toute l'année</li>
-                                    <li>Un gîte deluxe pour deux personnes avec un jaccuzi et un sauna privatif</li>
+                                    <li>Un gîte pour deux personnes avec un jacuzzi et un sauna privatif</li>
                                     <li>La conciergerie de l'Arcoch pour vous aider dans la gestion de vos locations</li>
                                     <li>Des activités sportives :</li>
                                         <ul>
@@ -585,7 +585,7 @@
                         <div class="col-xs-12 col-sm-6 col-md-4">
                             <div class="single">
                                 <img src="{{ asset('index/img/info-icon3.png') }}" alt="Hotel & Restaurant"/>
-                                <h3 class="title">Hotel & Restaurant</h3>
+                                <h3 class="title">Hébergements & Restaurant</h3>
                                 <p class="info">L'Arcoch vous propose des chambres d'hôtes et un restaurant attenant.</p>
                             </div>
                         </div>
@@ -627,17 +627,20 @@
                         {{--</div>--}}
                         <div class="lgx-logo">
                             <a href="{{ route ('index') }}" class="lgx-scroll">
-                                <img src="{{ asset('index/img/logo.png') }}" alt="Logo"/>
+                                <img style="width: 25%;" src="{{ asset('index/img/logo.png') }}" alt="Logo"/>
                             </a>
                         </div>
                         <div class="footer-social">
                             <ul class="list-inline">
                                 <li><a class="sp-fb" target="_blank" href="https://www.facebook.com/LArcoch-909597672726152/"><i class="fa fa-facebook"></i></a></li>
-                                <li><a class="sp-google" target="_blank" href="#"><i class="fa fa-instagram"></i></a></li>
-                                <li><a class="sp-google" target="_blank" href="#"><i class="fa fa-google"></i></a></li>
+                                <li><a class="sp-google" target="_blank" href="https://www.instagram.com/arcoch65/?hl=fr"><i class="fa fa-instagram"></i></a></li>
                             </ul>
                         </div>
-                        <p class="lgx-copyright"><span class="themename">EventPoint</span> <span class="text">is proudly powered by</span> <a href="http://www.themearth.com/">themearth.com</a></p>
+                        <p class="lgx-copyright">
+                            L'Arcoch, route du lac de Payolle quartier Serre Crampe, 65710 Campan <br>
+                            <a href="mailto:resto@arcoch.fr">resto@arcoch.fr</a><br>
+                            <a href="callto:+33954115416">09 54 11 54 16</a>
+                        </p>
                     </div>
                     <!-- //.CONTAINER -->
                 </div>

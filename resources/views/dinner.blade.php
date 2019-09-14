@@ -100,8 +100,8 @@
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button>
-                        <a href="#home" class="navbar-brand"><img style="width: 75px" src="{{ asset('dinner/img/logo.png') }}" alt="logo"></a>
-                        <a href="#home" class="navbar-brand white"><img style="width: 200px" src="{{ asset('dinner/img/logo.png') }}" alt="logo"></a>
+                        <a href="#home" class="navbar-brand"><img style="width: 220px" src="{{ asset('dinner/img/logo_menu.png') }}" alt="logo"></a>
+                        <a href="#home" class="navbar-brand white"><img style="width: 220px" src="{{ asset('dinner/img/logo_menu.png') }}" alt="logo"></a>
                     </div>
                     <div class="collapse navbar-collapse bs-example-js-navbar-scrollspy">
                         <ul id="nav" class="nav navbar-nav">
@@ -151,18 +151,21 @@
             <div class="col-md-6 col-lg-6 col-sm-12 col-xs-12">
                 <div class="about-content">
                     <p>
-                        <span class="big-text">A</span>yant déjà posséder un restaurant et salon de thé dans la ville de Pau. Nous avons fait le choix de recommencer l'aventure sur le lac de Payolle.
-                        Après avoir forcément trouvé l'endroit magique nous avons réfléchis pour créer une carte en adéquation avec le lieu et son environnement. Nous avons discuté avec plusieurs personnes
-                        habitants non loin du lac pour apprendre que le lac de Payolle s'appellait aussi "Le Petit Canada". C'est pourquoi nous avons choisis de créer une carte et un restaurant sur le thème du Canada.
+                        <span class="big-text">Q</span>uoi de mieux qu'une petite halte a l'Arcoch au pied des montagnes et du lac de Payolle.
+                        C'est un coup de coeur pour ce lieu enchanté qui nous à tous réuni dans cette aventure afin de faire revivre ce lieu.
+                        Cet endroit magique aussi appelé "Le petit Canada" par sa végétation et son lac a été la source d'inspiration pour la réalisation de notre carte que nous
+                        avons voulu orientée sur des saveurs et des spécialités canadiennes. Vous pourrez trouver à la carte des poutines, des burgers, des assiettes de charcuterie au fromage fondu
+                        revisités pour vous surprendre.
                     </p>
                 </div>
             </div>
             <div class="col-md-6 col-lg-6 col-sm-12 col-xs-12">
                 <div class="right-about-content">
                     <p>
-                        Le restaurant vous propose donc une multitude de plat, en passant par les poutines, les bugers, mais aussi les planches et les salades. Sur cette carte nous avons fais le choix de ne pas faire
-                        de la cuisine traditionnelle pour éviter au maximum les doublons avec les restaurants aux alentours. Ce ne sera donc pas chez nous que vous pourrez goûtter la traditionnelle garbure
-                        ou le porc noir de la région. Nous sommes impatients de vous voir et vous invitons à venir goûter notre carte.
+                        Tous nos plats peuvent être accompagnés de nos nombreuses bières aux saveurs originales et brassées par des micro brasserie au Quebec.
+                        Notre service du midi se déroule de 12h à 15h, mais tout au long de la journée vous pourrez vous faire plaisir en dégustant une de nos crèpes minutes au sirop
+                        d'érable ou au caramel beurre salé maison et bien d'autres accompagnées de notre incontournable "Caribou Show" chocolat chaud maison.
+                        Alors n'hésitez pas à venir passer un moment agréable au milieu de nul part le dépaysement est assuré et le souvenir inoubliable.
                     </p>
                 </div>
             </div>
@@ -191,22 +194,20 @@
             <div class="menu-discount-offer col-md-12 col-lg-12 col-sm-12 col-xs-12">
                 <div class="single-promotions">
                     <div class="promotions-img">
-                        <img src="{{ asset('dinner/img/promotions/promo_slide_1.jpg') }}" alt="">
+                        <img src="{{ asset('dinner/img/caribou_show.jpg') }}" alt="">
                     </div>
                     <div class="promotions-details">
-                        <h3>40% off for 9'' - 12'' pizza - Wed, Thu, Friday only</h3>
-                        <p>Pizza 12 inch + 1 Side Dish + 1,5L Coke Bottle Only From 209,000</p>
-                        <a href="#" class="read-more">Order now</a>
+                        <h3>Le Caribou Show</h3>
+                        <p>Grand chocolat chaud, chantilly, copeaux de chocolat et mini gimauve.</p>
                     </div>
                 </div>
                 <div class="single-promotions">
                     <div class="promotions-img">
-                        <img src="{{ asset('dinner/img/promotions/promo_slide_2.jpg') }}" alt="">
+                        <img src="{{ asset('dinner/img/cheesecake.jpg') }}" alt="">
                     </div>
                     <div class="promotions-details">
-                        <h3>40% off for 9'' - 12'' pizza - Wed, Thu, Friday only</h3>
-                        <p>Pizza 12 inch + 1 Side Dish + 1,5L Coke Bottle Only From 209,000</p>
-                        <a href="#" class="read-more">Order now</a>
+                        <h3>Canadian café</h3>
+                        <p>Café, Whisky Sortilège, sirop d'érable, chantilly</p>
                     </div>
                 </div>
             </div>
@@ -389,18 +390,17 @@
             <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
                 <div class="footer-top section-padding text-center">
                     <div class="footer-logo">
-                        <a href="#"><img src="{{ asset('dinner/img/main_logo.png') }}" alt=""></a>
+                        <a href="#"><img style="width: 25%" src="{{ asset('dinner/img/logo.png') }}" alt=""></a>
                     </div>
                     <div class="footer-address">
                         <p>L'Arcoch, route du lac de Payolle quartier Serre Crampe, 65710 Campan</p>
-                        <p><a href="mailto:contact@arcoch.fr">contact@arcoch.fr</a></p>
-                        <p><a href="callto:+33954115416">+33954115416</a></p>
+                        <p><a href="mailto:resto@arcoch.fr">resto@arcoch.fr</a></p>
+                        <p><a href="callto:+33954115416">09 54 11 54 16</a></p>
                     </div>
                     <div class="footer-social-bookmark">
                         <ul>
                             <li><a class="sp-fb" target="_blank" href="https://www.facebook.com/LArcoch-909597672726152/"><i class="fa fa-facebook"></i></a></li>
-                            <li><a class="sp-google" target="_blank" href="#"><i class="fa fa-instagram"></i></a></li>
-                            <li><a class="sp-google" target="_blank" href="#"><i class="fa fa-google"></i></a></li>
+                            <li><a class="sp-google" target="_blank" href="https://www.instagram.com/arcoch65/?hl=fr"><i class="fa fa-instagram"></i></a></li>
                         </ul>
                     </div>
                 </div>
@@ -410,7 +410,6 @@
             <div class="col-md-6 col-lg-6 col-sm-12 col-xs-12">
                 <div class="footer-menu">
                     <ul>
-                        <li><a href="{{ route('contact') }}">Contact</a></li>
                     </ul>
                 </div>
             </div>

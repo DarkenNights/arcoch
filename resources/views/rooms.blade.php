@@ -32,7 +32,7 @@
         <div class="left-sec col-sm-4 col-md-2 clearfix">
             <!-- Top Logo -->
             <div id="top-logo">
-                <img src="{{ asset('rooms/img/logo.png') }}">
+                <img src="{{ asset('rooms/img/logo_menu.png') }}">
             </div>
         </div>
         <div class="right-sec col-sm-8 col-md-10 clearfix">
@@ -143,7 +143,7 @@
             <div class="room-details col-xs-6 col-md-4">
                 <div class="title">Les chambres</div><!-- Room title -->
                 <div class="description"><!-- Room Description -->
-                    Chambres de 32m² pour deux personnes. Vue direct sur le lac et les montagnes. Petit déjeuner inclus.
+                    Chambres de 32m² pour deux personnes. Vue directe sur le lac et les montagnes. Petit déjeuner inclus.
                     Une banquette amovible est disponible pour permettre le couchage de deux enfants ou un adulte supplémentaire.<br>
                     La chambre est à 110 € avec un supplément de 30 € par enfant ou 50 € par adulte.
                 </div>
@@ -177,7 +177,7 @@
         <div class="package-box wow fadeInUp col-sm-6 col-md-4">
             <div class="package-inner">
                 <div class="title">Chambre double</div>
-                <div class="price"><span>110 €</span>par nuit</div>
+                <div class="price"><span>110 € par nuit</span>pour deux personnes</div>
                 <div class="package-details">
                     <ul>
                         <li>Grande chambre de 32m²</li>
@@ -263,38 +263,25 @@
 <div id="top-footer">
     <div id="go-up-box"><i class="fa fa-chevron-up"></i></div>
     <div class="inner-container container">
-        <div class="widget col-xs-6 col-md-4">
-            <h4>Text Widget</h4>
+        <div class="widget col-xs-12 col-md-6">
+            <h4>Nos chambres</h4>
             <div class="widget-content">
-                Text widget can be used for putting text, images and some other elements in the widget areas. As an example you can add your short description about your hotel and add your logo in this area. Also you can add some useful information like notification in this area.
+                Chambres de 32m² pour deux personnes. Vue directe sur le lac et les montagnes. Petit déjeuner inclus.
+                Une banquette amovible est disponible pour permettre le couchage de deux enfants ou un adulte supplémentaire.<br>
+                La chambre est à 110 € avec un supplément de 30 € par enfant ou 50 € par adulte.
             </div>
         </div>
-        <div class="widget col-xs-6 col-md-4">
-            <h4>Newsletter</h4>
-            <div class="widget-content">
-                <div class="desc">
-                    Some description of how your newsletter works will be located in this section.
-                </div>
-                <form class="news-letter-form">
-                    <input type="text" class="email" placeholder="Email">
-                    <input type="submit" class="btn btn-default" value="Sign up Now">
-                </form>
-            </div>
-        </div>
-        <div class="widget col-md-4 get-in-touch">
-            <h4>Get in Touch</h4>
+        <div class="widget col-xs-12 col-md-6 get-in-touch">
+            <h4>Nous contacter</h4>
             <div class="widget-content">
                 <ul>
-                    <li><i class="fa fa-map-marker "></i>133 Elizabethstreet, Sydney 4000, Australia</li>
-                    <li><i class="fa fa-phone"></i>0185 26 37 48 59</li>
-                    <li><i class="fa fa-envelope-o"></i>info@pinar.com</li>
+                    <li><i class="fa fa-map-marker "></i>L'Arcoch, route du lac de Payolle - Quartier Serre Crampe, 65710 Campan</li>
+                    <li><i class="fa fa-phone"></i>09 54 11 54 16</li>
+                    <li><i class="fa fa-envelope-o"></i>chambres@arcoch.fr</li>
                 </ul>
                 <ul class="list-inline social-icons">
-                    <li><a href="#"><i class="fa fa-facebook "></i></a></li>
-                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                    <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-                    <li><a href="#"><i class="fa fa-skype"></i></a></li>
-                    <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                    <li><a class="sp-fb" target="_blank" href="https://www.facebook.com/LArcoch-909597672726152/"><i class="fa fa-facebook"></i></a></li>
+                    <li><a class="sp-google" target="_blank" href="https://www.instagram.com/arcoch65/?hl=fr"><i class="fa fa-instagram"></i></a></li>
                 </ul>
             </div>
         </div>
@@ -302,7 +289,7 @@
     <!-- Footer -->
     <footer id="footer">
         <div class="copy-right">
-            &copy; 2018 Arcoch. Tous droits réservés.
+            &copy; 2019 Arcoch. Tous droits réservés.
         </div>
     </footer>
     <!-- End of Footer -->

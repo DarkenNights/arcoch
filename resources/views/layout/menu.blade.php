@@ -7,9 +7,9 @@
 <li class="@if($active == "rooms") active @endif">
     <a href="{{ route('rooms') }}">Les chambres</a>
 </li>
-<li class="@if($active == "concierge") active @endif">
-    <a href="{{ route('concierge') }}">La conciergerie</a>
-</li>
-<li class="@if($active == "contact") active @endif">
-    <a href="{{ route('contact') }}">Contact</a>
-</li>
+{{--<li class="@if($active == "concierge") active @endif">--}}
+{{--    <a href="{{ route('concierge') }}">La conciergerie</a>--}}
+{{--</li>--}}
+{{--<li class="@if($active == "contact") active @endif">--}}
+{{--    <a href="{{ route('contact') }}">Contact</a>--}}
+{{--</li>--}}
