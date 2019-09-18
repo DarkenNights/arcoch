@@ -165,7 +165,7 @@
                         Tous nos plats peuvent être accompagnés de nos nombreuses bières aux saveurs originales et brassées par des micro brasserie au Quebec.
                         Notre service du midi se déroule de 12h à 15h, mais tout au long de la journée vous pourrez vous faire plaisir en dégustant une de nos crèpes minutes au sirop
                         d'érable ou au caramel beurre salé maison et bien d'autres accompagnées de notre incontournable "Caribou Show" chocolat chaud maison.
-                        Alors n'hésitez pas à venir passer un moment agréable au milieu de nul part le dépaysement est assuré et le souvenir inoubliable.
+                        Alors n'hésitez pas à venir passer un moment agréable au milieu de nul part, le dépaysement est assuré et le souvenir inoubliable.
                     </p>
                 </div>
             </div>
@@ -382,11 +382,15 @@
 {{--                </div>--}}
 {{--            </div>--}}
 {{--        </div>--}}
-{{--        <div class="row">--}}
-{{--            <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">--}}
-{{--                <div class="instagram-feed-content text-center">--}}
-{{--                    <div class="instagram" id="instagram"></div>--}}
-{{--                </div>--}}
+{{--        <div class="row" style="margin-top: 15px">--}}
+{{--            <div class="col-sm-6" style="max-height: 160px">--}}
+{{--                <img src="{{ asset('dinner/img/salle_1.jpg') }}" height="160px" alt="salle_1"/>--}}
+{{--            </div>--}}
+{{--            <div class="col-sm-6" style="max-height: 160px">--}}
+{{--                <img src="{{ asset('dinner/img/salle_2.jpg') }}" height="160px" alt="salle_2"/>--}}
+{{--            </div>--}}
+{{--            <div class="col-sm-6" style="max-height: 160px">--}}
+{{--                <img src="{{ asset('dinner/img/salle_3.jpg') }}" height="160px" alt="salle_3"/>--}}
 {{--            </div>--}}
 {{--        </div>--}}
 {{--    </div>--}}
