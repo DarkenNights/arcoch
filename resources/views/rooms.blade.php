@@ -10,6 +10,8 @@
     <meta name="author" content="Thomas Lenormand, contact@arcoch.fr">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, user-scalable=no">
     <link href='https://fonts.googleapis.com/css?family=Lobster%7cRaleway:400,300,100,600,700,800' rel='stylesheet' type='text/css'><!-- Attach Google fonts -->
+    <!--  FAVICON AND TOUCH ICONS -->
+    @include('layout/favicon')
     <link rel="stylesheet" type="text/css" href="{{ asset('rooms/css/styles.css') }}"><!-- Attach the main stylesheet file -->
 </head>
 <body class="homepage trans-header sticky white-datepicker">

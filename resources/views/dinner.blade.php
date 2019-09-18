@@ -20,8 +20,8 @@
     <!--====== TITLE TAG ======-->
     <title>L'Arcoch | Restaurant</title>
 
-    <!--====== FAVICON ICON =======-->
-    <link rel="shortcut icon" type="image/ico" href="{{ asset('dinner/img/favicon.png') }}" />
+    <!--  FAVICON AND TOUCH ICONS -->
+    @include('layout/favicon')
 
     <!--====== STYLESHEETS ======-->
     <link rel="stylesheet" href="{{ asset('dinner/css/normalize.css') }}">

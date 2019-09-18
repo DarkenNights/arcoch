@@ -8,8 +8,8 @@
     <!-- Document Title -->
     <title>L'Arcoch | Conciergerie</title>
 
-    <!-- Favicon -->
-    <link rel="shortcut icon" type="image/png" href="{{ asset('concierge/favicon.png') }}">
+    <!--  FAVICON AND TOUCH ICONS -->
+    @include('layout/favicon')
 
     <!-- CSS Files -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik:400,500,700%7CSource+Sans+Pro:300i,400,400i,600,700">
