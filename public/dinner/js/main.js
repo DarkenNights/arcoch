@@ -298,10 +298,10 @@ jQuery(document).on('ready', function ($) {
 }(jQuery));
 
 
-jQuery(window).on('load', function () {
-
-    /*--------------------------
-        PRE LOADER
-    ----------------------------*/
-    $(".preeloader").fadeOut(1000);
-});
+// jQuery(window).on('load', function () {
+//
+//     /*--------------------------
+//         PRE LOADER
+//     ----------------------------*/
+//     $(".preeloader").fadeOut(1000);
+// });

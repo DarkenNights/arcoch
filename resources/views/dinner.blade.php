@@ -52,9 +52,9 @@
 <![endif]-->
 
 <!--- PRELOADER -->
-<div class="preeloader">
-    <div class="preloader-spinner"><i class="fa fa-cutlery"></i></div>
-</div>
+{{--<div class="preeloader">--}}
+{{--    <div class="preloader-spinner"><i class="fa fa-cutlery"></i></div>--}}
+{{--</div>--}}
 
 <!--SCROLL TO TOP-->
 <a href="#home" class="scrolltotop"><i class="fa fa-long-arrow-up"></i></a>
