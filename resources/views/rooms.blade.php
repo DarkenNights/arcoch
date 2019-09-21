@@ -237,14 +237,6 @@
 
     <!-- Gallery Container -->
     <div class="gallery-container">
-        <div class="sort-section">
-            <div class="sort-section-container">
-                <div class="sort-handle">Filters</div>
-{{--                <ul class="list-inline">--}}
-{{--                    <li><a href="#" data-filter="*" class="active">Tout</a></li>--}}
-{{--                </ul>--}}
-            </div>
-        </div>
         <ul class="image-main-box clearfix">
             @for($i=1; $i<13; $i++)
                 <li class="item col-xs-6 col-md-3">

@@ -373,28 +373,53 @@
 <!--TEAM AREA END-->
 
 <!--INSTAGRAM GALLERY FEED-->
-{{--<section class="gallery-area section-padding" id="gallery">--}}
-{{--    <div class="container wow fadeIn">--}}
-{{--        <div class="row">--}}
-{{--            <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">--}}
-{{--                <div class="area-title text-center">--}}
-{{--                    <h2>Galerie</h2>--}}
-{{--                </div>--}}
-{{--            </div>--}}
-{{--        </div>--}}
-{{--        <div class="row" style="margin-top: 15px">--}}
-{{--            <div class="col-sm-6" style="max-height: 160px">--}}
-{{--                <img src="{{ asset('dinner/img/salle_1.jpg') }}" height="160px" alt="salle_1"/>--}}
-{{--            </div>--}}
-{{--            <div class="col-sm-6" style="max-height: 160px">--}}
-{{--                <img src="{{ asset('dinner/img/salle_2.jpg') }}" height="160px" alt="salle_2"/>--}}
-{{--            </div>--}}
-{{--            <div class="col-sm-6" style="max-height: 160px">--}}
-{{--                <img src="{{ asset('dinner/img/salle_3.jpg') }}" height="160px" alt="salle_3"/>--}}
-{{--            </div>--}}
-{{--        </div>--}}
-{{--    </div>--}}
-{{--</section>--}}
+<section class="gallery-area section-padding" id="gallery">
+    <div class="container wow fadeIn">
+        <div class="row">
+            <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+                <div class="area-title text-center">
+                    <h2>Galerie</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row" style="margin-top: 15px">
+            <div class="gallery-container">
+                <div class="image-main-box clearfix">
+                    <div class="item col-xs-6">
+                        <figure>
+                            <img src="{{ asset('dinner/img/salle_1.jpg') }}" alt="salle_1"/>
+                            <a href="{{ asset('dinner/img/salle_1.jpg') }}" class="more-details" data-title="">Enlarge</a>
+                        </figure>
+                    </div>
+                    <div class="item col-xs-6">
+                        <figure>
+                            <img src="{{ asset('dinner/img/salle_2.jpg') }}" alt="salle_2"/>
+                            <a href="{{ asset('dinner/img/salle_2.jpg') }}" class="more-details" data-title="">Enlarge</a>
+                        </figure>
+                    </div>
+                    <div class="item col-xs-6">
+                        <figure>
+                            <img src="{{ asset('dinner/img/salle_3.jpg') }}" alt="salle_3"/>
+                            <a href="{{ asset('dinner/img/salle_3.jpg') }}" class="more-details" data-title="">Enlarge</a>
+                        </figure>
+                    </div>
+                    <div class="item col-xs-6">
+                        <figure>
+                            <img src="{{ asset('dinner/img/salle_4.jpg') }}" alt="salle_4"/>
+                            <a href="{{ asset('dinner/img/salle_4.jpg') }}" class="more-details" data-title="">Enlarge</a>
+                        </figure>
+                    </div>
+                    <div class="item col-xs-6">
+                        <figure>
+                            <img src="{{ asset('dinner/img/salle_5.jpg') }}" alt="salle_5"/>
+                            <a href="{{ asset('dinner/img/salle_5.jpg') }}" class="more-details" data-title="">Enlarge</a>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 <!--INSTAGRAM GALLERY FEED END-->
 
 <!--FOOER AREA-->

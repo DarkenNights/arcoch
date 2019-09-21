@@ -248,6 +248,25 @@ jQuery(document).on('ready', function ($) {
         }
     });
 
+    // /*----------------------------
+    // Enable the magnificPopup
+    // -----------------------------*/
+    jQuery('.image-main-box').magnificPopup({
+        delegate: '.more-details',
+        type: 'image',
+        removalDelay: 600,
+        mainClass: 'mfp-fade',
+        gallery: {
+            enabled: true,
+            navigateByImgClick: true,
+            preload: [0,1] // Will preload 0 - before current, and 1 after the current image
+        },
+        image: {
+            titleSrc: 'data-title',
+            tError: '<a href="%url%">The image #%curr%</a> could not be loaded.'
+        }
+    });
+
 
     // /*----------------------------
     //     INSTAGRAM FEED ACTIVE

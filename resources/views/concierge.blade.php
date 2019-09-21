@@ -37,7 +37,7 @@
                     <!-- Logo -->
                     <div class="logo">
                         <a href="index-2.html">
-                            <img src="{{ asset('concierge/img/logo.png') }}" data-rjs="2" alt="VPNet">
+                            <img src="{{ asset('concierge/img/logo_menu_min.png') }}" data-rjs="2" alt="VPNet">
                         </a>
                     </div>
                 </div>
@@ -77,7 +77,7 @@
                         <div class="col-xl-6 col-lg-8">
                             <div class="slide-content-inner">
                                 <h4 data-animate="fadeInUp" data-delay=".05">Des offres dont vous avez besoin</h4>
-                                <h2 data-animate="fadeInUp" data-delay=".3">Ne perdez plus de temps sur des tâches que l'on peut faire pour vous</h2>
+                                <h2 data-animate="fadeInUp" data-delay=".3">Gagner du temps sur des tâches que l'on peut faire pour vous</h2>
                             </div>
                         </div>
                     </div>
