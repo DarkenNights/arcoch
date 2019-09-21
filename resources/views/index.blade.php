@@ -138,22 +138,26 @@
                         <div class="row">
                             <div class="col-xs-12">
                                 <div class="banner-info">
-                                    <div class="circular-countdown-area">
-                                        <div id="circular-countdown" data-date="{{ $event->start->toDateTimeString() }}" ></div>
-                                    </div>
-                                    <h2 class="title">{{ $event->title }}</h2>
-                                    @if ($event->start->day == $event->end->day)
-                                        @if ($event->start->month == $event->end->month)
-                                            <h3 class="date"><span style="color: white">Le {{ $event->start->day . ' ' . $event->start->monthName . ' ' . $event->start->year }} de {{ $event->start->hour }} à {{ $event->end->hour }} heure </span>, {{ $event->place }}</h3>
+                                    @if (!empty($event))
+                                        <div class="circular-countdown-area">
+                                            <div id="circular-countdown" data-date="{{ $event->start->toDateTimeString() }}" ></div>
+                                        </div>
+                                        <h2 class="title">{{ $event->title }}</h2>
+                                        @if ($event->start->day == $event->end->day)
+                                            @if ($event->start->month == $event->end->month)
+                                                <h3 class="date"><span style="color: white">Le {{ $event->start->day . ' ' . $event->start->monthName . ' ' . $event->start->year }} de {{ $event->start->hour }} à {{ $event->end->hour }} heure </span>, {{ $event->place }}</h3>
+                                            @else
+                                                <h3 class="date"><span style="color: white">Du {{ $event->start->day }} {{ $event->start->monthName }} au {{ $event->end->day }} {{ $event->end->monthName }} {{ $event->end->year }} </span>, {{ $event->place }}</h3>
+                                            @endif
                                         @else
-                                            <h3 class="date"><span style="color: white">Du {{ $event->start->day }} {{ $event->start->monthName }} au {{ $event->end->day }} {{ $event->end->monthName }} {{ $event->end->year }} </span>, {{ $event->place }}</h3>
+                                            @if($event->start->month == $event->end->month)
+                                                <h3 class="date"><span style="color: white">Du {{ $event->start->day }} au {{ $event->end->day }} {{ $event->end->monthName }} {{ $event->end->year }} </span>, {{ $event->place }}</h3>
+                                            @else
+                                                <h3 class="date"><span style="color: white">Du {{ $event->start->day }} {{ $event->start->monthName }} au {{ $event->end->day }} {{ $event->end->monthName }} {{ $event->end->year }} </span>, {{ $event->place }}</h3>
+                                            @endif
                                         @endif
                                     @else
-                                        @if($event->start->month == $event->end->month)
-                                            <h3 class="date"><span style="color: white">Du {{ $event->start->day }} au {{ $event->end->day }} {{ $event->end->monthName }} {{ $event->end->year }} </span>, {{ $event->place }}</h3>
-                                        @else
-                                            <h3 class="date"><span style="color: white">Du {{ $event->start->day }} {{ $event->start->monthName }} au {{ $event->end->day }} {{ $event->end->monthName }} {{ $event->end->year }} </span>, {{ $event->place }}</h3>
-                                        @endif
+                                        <h1 class="date" style="margin-top: 50px; font-size: 4rem;">Bienvenue sur le site de l'Arcoch</h1>
                                     @endif
                                 </div>
                             </div>
