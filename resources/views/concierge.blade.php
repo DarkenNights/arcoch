@@ -14,7 +14,6 @@
     <!-- CSS Files -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik:400,500,700%7CSource+Sans+Pro:300i,400,400i,600,700">
     <link rel="stylesheet" href="{{ asset('concierge/css/bootstrap.min.css') }}">
-    <link rel="stylesheet" href="{{ asset('concierge/css/font-awesome.min.css') }}">
     <link rel="stylesheet" href="{{ asset('concierge/plugins/swiper/swiper.min.css') }}">
     <link rel="stylesheet" href="{{ asset('concierge/plugins/magnific-popup/magnific-popup.min.css') }}">
     <link rel="stylesheet" href="{{ asset('concierge/css/style.css') }}">
@@ -71,13 +70,13 @@
         <div class="swiper-wrapper">
             <!-- Single slide -->
             <div class="swiper-slide position-relative">
-                <img src="{{ asset('concierge/img/slide1.jpg') }}" data-rjs="2" alt="">
+                <img src="{{ asset('concierge/img/slide2.jpg') }}" data-rjs="2" alt="">
                 <div class="slide-content container">
                     <div class="row align-items-center">
-                        <div class="col-xl-6 col-lg-8">
+                        <div class=" col-xl-6 col-lg-8">
                             <div class="slide-content-inner">
-                                <h4 data-animate="fadeInUp" data-delay=".05">Des offres dont vous avez besoin</h4>
-                                <h2 data-animate="fadeInUp" data-delay=".3">Gagner du temps sur des tâches que l'on peut faire pour vous</h2>
+                                <h4 data-animate="fadeInUp" data-delay=".05">On s'occupe de tout</h4>
+                                <h2 data-animate="fadeInUp" data-delay=".3">De la remise des clés au ménage nous pouvons tout faire pour vous et vos clients</h2>
                             </div>
                         </div>
                     </div>
@@ -87,13 +86,13 @@
 
             <!-- Single slide -->
             <div class="swiper-slide position-relative">
-                <img src="{{ asset('concierge/img/slide2.jpg') }}" data-rjs="2" alt="">
+                <img src="{{ asset('concierge/img/slide1.jpg') }}" data-rjs="2" alt="">
                 <div class="slide-content container">
                     <div class="row align-items-center">
-                        <div class=" col-xl-6 col-lg-8">
+                        <div class="col-xl-6 col-lg-8">
                             <div class="slide-content-inner">
-                                <h4 data-animate="fadeInUp" data-delay=".05">On s'occupe de tout</h4>
-                                <h2 data-animate="fadeInUp" data-delay=".3">De la remise des clés au ménage nous pouvons tout faire pour vous et vos clients</h2>
+                                <h4 data-animate="fadeInUp" data-delay=".05">Des offres dont vous avez besoin</h4>
+                                <h2 data-animate="fadeInUp" data-delay=".3">Gagner du temps sur des tâches que l'on peut faire pour vous</h2>
                             </div>
                         </div>
                     </div>
@@ -118,9 +117,11 @@
             </div>
             <div class="col-lg-6">
                 <div class="number-one-content" data-animate="fadeInUp" data-delay=".5">
-                    <h2 class="mb-3">We are no. 1 internet service provider company in United States.</h2>
-                    <p>On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil and pain.</p>
-                    <a href="#" class="btn">View Details</a>
+                    <h2 class="mb-3">La conciergerie de l'Arcoch vous propose ses services</h2>
+                    <p>
+                        Nous souhaitons répondre à un besoin simple des propriétaire : "Ne plus avoir à gérer les départs et les arrivées des vacanciers". Pour cela nous avons mis en place plusieurs types de services ainsi
+                        que plusieurs offres pour vous permettre de répondre au mieux à vos besoins et vos attentes.
+                    </p>
                 </div>
             </div>
         </div>
@@ -128,33 +129,39 @@
             <div class="col-md-4 col-sm-6">
                 <div class="single-feature single-feature-img-top text-center" data-animate="fadeInUp" data-delay=".1">
                     <div class="single-feature-img">
-                        <img src="{{ asset('concierge/img/icons/setup.svg') }}" alt="" class="svg">
+                        <i class="fas fa-globe fa-3x"></i>
                     </div>
                     <div class="single-feature-content">
-                        <h4>Free Installations & Setup</h4>
-                        <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum.</p>
+                        <h4>Mise en ligne de vos annonces</h4>
+                        <p>
+                            Au vu du nombre croissant de site de location, il peut être rapidement compliqué et fastidieux de gérer la mise en ligne de votre location.
+                            Nous sommes la pour vous aider et vous accompagner dans cette démarche de visibilité de votre location.
+                        </p>
                     </div>
                 </div>
             </div>
             <div class="col-md-4 col-sm-6">
                 <div class="single-feature single-feature-img-top text-center" data-animate="fadeInUp" data-delay=".4">
                     <div class="single-feature-img">
-                        <img src="{{ asset('concierge/img/icons/download.svg') }}" alt="" class="svg">
+                        <i class="fas fa-key fa-3x"></i>
                     </div>
                     <div class="single-feature-content">
-                        <h4>Up to 1 Gpbs Download Speed</h4>
-                        <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum.</p>
+                        <h4>Remise des clés et états de lieux</h4>
+                        <p>Nous nous déplaçons à votre place pour effectuer la remise des clés au départ et à l'arriver ainsi que l'état des lieux d'entrée et de sortie.</p>
                     </div>
                 </div>
             </div>
             <div class="col-md-4 col-sm-6">
                 <div class="single-feature single-feature-img-top text-center" data-animate="fadeInUp" data-delay=".7">
                     <div class="single-feature-img">
-                        <img src="{{ asset('concierge/img/icons/support.svg') }}" alt="" class="svg">
+                        <i class="fas fa-broom fa-3x"></i>
                     </div>
                     <div class="single-feature-content">
-                        <h4>24/7 Customer Support</h4>
-                        <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum.</p>
+                        <h4>Ménage</h4>
+                        <p>
+                            Il est primordial de rendre votre location propre après chaque passage. Nous laissons le choix aux locataires de faire le ménage eux même. une femme de ménage sera commissionner.
+                            Ainsi vous êtes toujours sur que votre location est propre et prête à accueillir de nouvelles personnes.
+                        </p>
                     </div>
                 </div>
             </div>
@@ -380,155 +387,64 @@
 
 
 <!-- FAQ -->
-<section class="pt-120 pb-70">
-    <div class="container">
-        <div class="row align-items-center">
-            <div class="col-lg-6">
-                <div class="faq pb-50" data-animate="fadeInUp" data-delay=".1">
-                    <div class="section-title">
-                        <h2>Frequently Asked Questions</h2>
-                        <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some</p>
-                    </div>
-                    <div class="accordion" id="accordionFaq">
-                        <div class="single-faq">
-                            <div class="faq-title d-flex align-items-center">
-                                <h3 class="h5" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">I can’t access my internet. How do i contact with support center?</h3>
-                            </div>
-                            <div id="collapseOne" class="collapse show" data-parent="#accordionFaq">
-                                <div class="faq-answer">
-                                    <p><span>Ans: </span>I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="single-faq">
-                            <div class="faq-title d-flex align-items-center">
-                                <h3 class="h5" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">I already paid my bill but still its showing Due. Why is that?</h3>
-                            </div>
-                            <div id="collapseTwo" class="collapse" data-parent="#accordionFaq">
-                                <div class="faq-answer">
-                                    <p><span>Ans: </span>Pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="single-faq">
-                            <div class="faq-title d-flex align-items-center">
-                                <h3 class="h5" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">How can I contact with your emergency higher management?</h3>
-                            </div>
-                            <div id="collapseThree" class="collapse" data-parent="#accordionFaq">
-                                <div class="faq-answer">
-                                    <p><span>Ans: </span>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-6">
-                <div class="popup-video mb-50" data-animate="fadeInUp" data-delay=".4">
-                    <img src="{{ asset('concierge/img/video-thumb.jpg') }}" data-rjs="2" alt="">
-                    <a href="https://www.youtube.com/watch?v=6ZfuNTqbHE8" class="youtube-popup play-btn ripple">
-                        <i class="fa fa-play"></i>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+{{--<section class="pt-120 pb-70">--}}
+{{--    <div class="container">--}}
+{{--        <div class="row align-items-center">--}}
+{{--            <div class="col-lg-6">--}}
+{{--                <div class="faq pb-50" data-animate="fadeInUp" data-delay=".1">--}}
+{{--                    <div class="section-title">--}}
+{{--                        <h2>Frequently Asked Questions</h2>--}}
+{{--                        <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some</p>--}}
+{{--                    </div>--}}
+{{--                    <div class="accordion" id="accordionFaq">--}}
+{{--                        <div class="single-faq">--}}
+{{--                            <div class="faq-title d-flex align-items-center">--}}
+{{--                                <h3 class="h5" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">I can’t access my internet. How do i contact with support center?</h3>--}}
+{{--                            </div>--}}
+{{--                            <div id="collapseOne" class="collapse show" data-parent="#accordionFaq">--}}
+{{--                                <div class="faq-answer">--}}
+{{--                                    <p><span>Ans: </span>I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness.</p>--}}
+{{--                                </div>--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
+{{--                        <div class="single-faq">--}}
+{{--                            <div class="faq-title d-flex align-items-center">--}}
+{{--                                <h3 class="h5" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">I already paid my bill but still its showing Due. Why is that?</h3>--}}
+{{--                            </div>--}}
+{{--                            <div id="collapseTwo" class="collapse" data-parent="#accordionFaq">--}}
+{{--                                <div class="faq-answer">--}}
+{{--                                    <p><span>Ans: </span>Pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.</p>--}}
+{{--                                </div>--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
+{{--                        <div class="single-faq">--}}
+{{--                            <div class="faq-title d-flex align-items-center">--}}
+{{--                                <h3 class="h5" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">How can I contact with your emergency higher management?</h3>--}}
+{{--                            </div>--}}
+{{--                            <div id="collapseThree" class="collapse" data-parent="#accordionFaq">--}}
+{{--                                <div class="faq-answer">--}}
+{{--                                    <p><span>Ans: </span>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.</p>--}}
+{{--                                </div>--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
+{{--                </div>--}}
+{{--            </div>--}}
+{{--            <div class="col-lg-6">--}}
+{{--                <div class="popup-video mb-50" data-animate="fadeInUp" data-delay=".4">--}}
+{{--                    <img src="{{ asset('concierge/img/video-thumb.jpg') }}" data-rjs="2" alt="">--}}
+{{--                    <a href="https://www.youtube.com/watch?v=6ZfuNTqbHE8" class="youtube-popup play-btn ripple">--}}
+{{--                        <i class="fa fa-play"></i>--}}
+{{--                    </a>--}}
+{{--                </div>--}}
+{{--            </div>--}}
+{{--        </div>--}}
+{{--    </div>--}}
+{{--</section>--}}
 <!-- End of FAQ -->
 
 <!-- Footer -->
 <footer class="main-footer">
-    <div class="footer-widgets light-bg border-top pt-80 pb-50">
-        <div class="container">
-            <div class="row">
-                <!-- Footer Widget -->
-                <div class="col-lg-3 col-sm-6">
-                    <div class="footer-widget mb-30" data-animate="fadeInUp" data-delay=".1">
-                        <h3 class="h4">Contact Us</h3>
-                        <div class="contact-widget-content">
-                            <p>Sed ut perspiciatis unde omnis natus vitae dicta sunt explicabo.</p>
-                            <ul class="list-unstyled">
-                                <li>
-                                    <i class="fa fa-phone"></i>
-                                    <a href="tel:+1234567890">(+1) 234-567-890</a>
-                                </li>
-                                <li>
-                                    <i class="fa fa-envelope-o"></i>
-                                    <a href="mailto:serviney.demo@fakemail.com">serviney.demo@fakemail.com</a>
-                                </li>
-                                <li>
-                                    <i class="fa fa-map-marker"></i>
-                                    <span>784/A Zirtoli Bazar, Begumgonj, Noakhali-3800, BD</span>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <!-- End of Footer Widget -->
-
-                <!-- Footer Widget -->
-                <div class="col-lg-3 col-sm-6">
-                    <div class="footer-widget mb-30" data-animate="fadeInUp" data-delay=".3">
-                        <h3 class="h4">My Account</h3>
-                        <div class="menu-wrap">
-                            <ul class="menu">
-                                <li><a href="#">Pay My Bills</a></li>
-                                <li><a href="#">Manage My Account</a></li>
-                                <li><a href="#">Constant Guard</a></li>
-                                <li><a href="#">Cable Customer Agreement</a></li>
-                                <li><a href="#">Move Services</a></li>
-                                <li><a href="#">Manage Users & Alerts</a></li>
-                                <li><a href="#">Log Out</a></li>
-                                <li><a href="#">Internet Help</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <!-- End of Footer Widget -->
-
-                <!-- Footer Widget -->
-                <div class="col-lg-3 col-sm-6">
-                    <div class="footer-widget mb-30" data-animate="fadeInUp" data-delay=".5">
-                        <h3 class="h4">Support Links</h3>
-                        <div class="menu-wrap">
-                            <ul class="menu">
-                                <li><a href="#">Comcast Customer Service</a></li>
-                                <li><a href="#">Bill & Payment Methods</a></li>
-                                <li><a href="#">Support Forums</a></li>
-                                <li><a href="#">Privacy Statement</a></li>
-                                <li><a href="#">Comcast Customer Service</a></li>
-                                <li><a href="#">Social Responsibility</a></li>
-                                <li><a href="#">Support Forums</a></li>
-                                <li><a href="#">Internet Help</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <!-- End of Footer Widget -->
-
-                <!-- Footer Widget -->
-                <div class="col-lg-3 col-sm-6">
-                    <div class="footer-widget mb-30" data-animate="fadeInUp" data-delay=".7">
-                        <h3 class="h4">Popular Products</h3>
-                        <div class="menu-wrap">
-                            <ul class="menu">
-                                <li><a href="#">CC TV Camera</a></li>
-                                <li><a href="#">Internet Connection Modem</a></li>
-                                <li><a href="#">Wireless Router</a></li>
-                                <li><a href="#">Update Anti-virus Softwares</a></li>
-                                <li><a href="#">Fingerprint Access</a></li>
-                                <li><a href="#">Powerful Switch Cable</a></li>
-                                <li><a href="#">Wireless USB Adapter/Card</a></li>
-                                <li><a href="#">Internet Help</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <!-- End of Footer Widget -->
-            </div>
-        </div>
-    </div>
-
     <div class="bottom-footer dark-bg">
         <div class="container">
             <div class="row align-items-center">
@@ -571,6 +487,7 @@
 <script src="{{ asset('concierge/plugins/retinajs/retina.min.js') }}"></script>
 <script src="{{ asset('concierge/plugins/isotope/isotope.pkgd.min.js') }}"></script>
 <script src="{{ asset('concierge/js/menu.min.js') }}"></script>
+<script src="{{ asset('concierge/js/all.min.js') }}"></script>
 <script src="{{ asset('concierge/js/scripts.js') }}"></script>
 <script src="{{ asset('concierge/js/custom.js') }}"></script>
 </body>

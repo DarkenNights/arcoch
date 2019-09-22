@@ -145,7 +145,7 @@
                                         <h2 class="title">{{ $event->title }}</h2>
                                         @if ($event->start->day == $event->end->day)
                                             @if ($event->start->month == $event->end->month)
-                                                <h3 class="date"><span style="color: white">Le {{ $event->start->day . ' ' . $event->start->monthName . ' ' . $event->start->year }} de {{ $event->start->hour }} à {{ $event->end->hour }} heure </span>, {{ $event->place }}</h3>
+                                                <h3 class="date"><span style="color: white">Le {{ $event->start->day . ' ' . $event->start->monthName . ' ' . $event->start->year }} de {{ $event->start->hour . 'h' . $event->start->minute }} à {{ $event->end->hour . 'h' . $event->end->minute }} heure </span>, {{ $event->place }}</h3>
                                             @else
                                                 <h3 class="date"><span style="color: white">Du {{ $event->start->day }} {{ $event->start->monthName }} au {{ $event->end->day }} {{ $event->end->monthName }} {{ $event->end->year }} </span>, {{ $event->place }}</h3>
                                             @endif
@@ -402,7 +402,7 @@
                                                                 <h4 class="time">
                                                                     @if ($event->start->day == $event->end->day)
                                                                         @if ($event->start->month == $event->end->month)
-                                                                            <span>Le</span> {{ $event->start->day . '/' . $event->start->month }} <span>de</span> <br> {{ $event->start->hour }}h <span>à</span> {{ $event->end->hour }}h  </span>
+                                                                            <span>Le</span> {{ $event->start->day . '/' . $event->start->month }} <span>de</span> <br> {{ $event->start->hour . 'h' . $event->start->minute }} <span>à</span> {{ $event->end->hour . 'h' . $event->end->minute }}
                                                                         @else
                                                                             <span>Du</span> {{ $event->start->day . '/' . $event->start->month }} <span>au</span> {{ $event->end->day . '/' . $event->end->month }}
                                                                         @endif
