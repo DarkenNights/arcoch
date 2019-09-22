@@ -145,7 +145,7 @@
                                         <h2 class="title">{{ $event->title }}</h2>
                                         @if ($event->start->day == $event->end->day)
                                             @if ($event->start->month == $event->end->month)
-                                                <h3 class="date"><span style="color: white">Le {{ $event->start->day . ' ' . $event->start->monthName . ' ' . $event->start->year }} de {{ $event->start->hour . 'h' }} @if($event->start->minute == 0) 00 @else $event->start->minute @endif <span>à</span> {{ $event->end->hour . 'h' }} @if($event->end->minute == 0) 00 @else $event->end->minute @endif </span>, {{ $event->place }}</h3>
+                                                <h3 class="date"><span style="color: white">Le {{ $event->start->day . ' ' . $event->start->monthName . ' ' . $event->start->year }} de {{ $event->start->hour . 'h' }} @if($event->start->minute == 0) 00 @else {{ $event->start->minute }} @endif <span>à</span> {{ $event->end->hour . 'h' }} @if($event->end->minute == 0) 00 @else {{ $event->end->minute}} @endif </span>, {{ $event->place }}</h3>
                                             @else
                                                 <h3 class="date"><span style="color: white">Du {{ $event->start->day }} {{ $event->start->monthName }} au {{ $event->end->day }} {{ $event->end->monthName }} {{ $event->end->year }} </span>, {{ $event->place }}</h3>
                                             @endif
@@ -216,24 +216,24 @@
                             <div class="lgx-about-text">
                                 <h4 class="hi-text">Le lac de Payolle vous invite à essayer</h4>
                                 <p class="text">
-                                <ul>
-                                    <li>Le restaurant L'Arcoch à l'inspiration canadienne</li>
-                                    <li>Les chambres d'hôtes de l'Arcoch face au lac et disponible toute l'année</li>
-                                    <li>Un gîte pour deux personnes avec un jacuzzi et un sauna privatif</li>
-                                    <li>La conciergerie de l'Arcoch pour vous aider dans la gestion de vos locations</li>
-                                    <li>Des activités sportives :</li>
-                                        <ul>
-                                            <li>Balades en poney ou à cheval</li>
-                                            <li>Base nautique l'Aneto</li>
-                                            <li>Parcours d'accrobranche pour les petits "Lou Farfadet"</li>
-                                            <li>Terrain de tennis</li>
-                                            <li>Terrain de pétanque</li>
-                                            <li>Ski de fond et raquettes</li>
-                                            <li>Balade en chiens de traineaux</li>
-                                            <li>Parcours de VTT</li>
-                                            <li>Randonnées</li>
-                                        </ul>
-                                </ul>
+                                    <ul>
+                                        <li>Le restaurant L'Arcoch à l'inspiration canadienne</li>
+                                        <li>Les chambres d'hôtes de l'Arcoch face au lac et disponible toute l'année</li>
+                                        <li>Un gîte pour deux personnes avec un jacuzzi et un sauna privatif</li>
+                                        <li>La conciergerie de l'Arcoch pour vous aider dans la gestion de vos locations</li>
+                                        <li>Des activités sportives :</li>
+                                            <ul>
+                                                <li>Balades en poney ou à cheval</li>
+                                                <li>Base nautique l'Aneto</li>
+                                                <li>Parcours d'accrobranche pour les petits "Lou Farfadet"</li>
+                                                <li>Terrain de tennis</li>
+                                                <li>Terrain de pétanque</li>
+                                                <li>Ski de fond et raquettes</li>
+                                                <li>Balade en chiens de traineaux</li>
+                                                <li>Parcours de VTT</li>
+                                                <li>Randonnées</li>
+                                            </ul>
+                                    </ul>
                                 </p>
                             </div>
                         </div>
@@ -402,7 +402,7 @@
                                                                 <h4 class="time">
                                                                     @if ($event->start->day == $event->end->day)
                                                                         @if ($event->start->month == $event->end->month)
-                                                                            <span>Le</span> {{ $event->start->day . '/' . $event->start->month }} <span>de</span> <br> {{ $event->start->hour . 'h' }} @if($event->start->minute == 0) 00 @else $event->start->minute @endif <span>à</span> {{ $event->end->hour . 'h' }} @if($event->end->minute == 0) 00 @else $event->end->minute @endif
+                                                                            <span>Le</span> {{ $event->start->day . '/' . $event->start->month }} <span>de</span> <br> {{ $event->start->hour . 'h' }} @if($event->start->minute == 0) 00 @else {{ $event->start->minute }} @endif <span>à</span> {{ $event->end->hour . 'h' }} @if($event->end->minute == 0) 00 @else {{ $event->end->minute }} @endif
                                                                         @else
                                                                             <span>Du</span> {{ $event->start->day . '/' . $event->start->month }} <span>au</span> {{ $event->end->day . '/' . $event->end->month }}
                                                                         @endif
