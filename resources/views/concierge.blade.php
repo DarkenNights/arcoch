@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="{{ asset('concierge/css/bootstrap.min.css') }}">
     <link rel="stylesheet" href="{{ asset('concierge/plugins/swiper/swiper.min.css') }}">
     <link rel="stylesheet" href="{{ asset('concierge/plugins/magnific-popup/magnific-popup.min.css') }}">
+    <link href="{{ asset('dinner/css/font-awesome.min.css') }}" rel="stylesheet">
     <link rel="stylesheet" href="{{ asset('concierge/css/style.css') }}">
     <link rel="stylesheet" href="{{ asset('concierge/css/responsive.css') }}">
     <link rel="stylesheet" href="{{ asset('concierge/css/colors/theme-color-1.css') }}">
@@ -70,7 +71,7 @@
         <div class="swiper-wrapper">
             <!-- Single slide -->
             <div class="swiper-slide position-relative">
-                <img src="{{ asset('concierge/img/slide2.jpg') }}" data-rjs="2" alt="">
+                <img src="{{ asset('concierge/img/slide2.jpg') }}" data-rjs="10" alt="">
                 <div class="slide-content container">
                     <div class="row align-items-center">
                         <div class=" col-xl-6 col-lg-8">
@@ -86,7 +87,7 @@
 
             <!-- Single slide -->
             <div class="swiper-slide position-relative">
-                <img src="{{ asset('concierge/img/slide1.jpg') }}" data-rjs="2" alt="">
+                <img src="{{ asset('concierge/img/slide1.jpg') }}" data-rjs="10" alt="">
                 <div class="slide-content container">
                     <div class="row align-items-center">
                         <div class="col-xl-6 col-lg-8">
@@ -135,7 +136,7 @@
                         <h4>Mise en ligne de vos annonces</h4>
                         <p>
                             Au vu du nombre croissant de site de location, il peut être rapidement compliqué et fastidieux de gérer la mise en ligne de votre location.
-                            Nous sommes la pour vous aider et vous accompagner dans cette démarche de visibilité de votre location.
+                            Nous sommes la pour vous aider et vous accompagner dans cette démarche de visibilité.
                         </p>
                     </div>
                 </div>
@@ -147,7 +148,7 @@
                     </div>
                     <div class="single-feature-content">
                         <h4>Remise des clés et états de lieux</h4>
-                        <p>Nous nous déplaçons à votre place pour effectuer la remise des clés au départ et à l'arriver ainsi que l'état des lieux d'entrée et de sortie.</p>
+                        <p>Nous nous déplaçons à votre place pour effectuer la remise des clés à l'arrivée et au départ ainsi que pour l'état des lieux d'entrée et de sortie.</p>
                     </div>
                 </div>
             </div>
@@ -159,8 +160,8 @@
                     <div class="single-feature-content">
                         <h4>Ménage</h4>
                         <p>
-                            Il est primordial de rendre votre location propre après chaque passage. Nous laissons le choix aux locataires de faire le ménage eux même. une femme de ménage sera commissionner.
-                            Ainsi vous êtes toujours sur que votre location est propre et prête à accueillir de nouvelles personnes.
+                            Il est primordial de rendre votre location propre après chaque passage. Une femme de ménage passera après le départ de chaque vacancier pour rendre votre location
+                            prête à accueillir de nouvelles personnes.
                         </p>
                     </div>
                 </div>
@@ -170,216 +171,59 @@
 </section>
 <!-- End of About Us -->
 
-<!-- Services -->
-<section class="theme-bg-overlay bg-img-md-none pt-120 pb-90" data-bg-img="{{ asset('concierge/img/rocket.jpg') }}" data-rjs="2">
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-xl-6 col-lg-8 col-md-10">
-                <div class="section-title section-title-white text-center" data-animate="fadeInUp" data-delay=".1">
-                    <h2>Services We Provide</h2>
-                    <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form by injected humour.</p>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-3 col-sm-6">
-                <div class="single-service single-service-white text-center" data-animate="fadeInUp" data-delay=".1">
-                    <img src="{{ asset('concierge/img/icons/earth.svg') }}" alt="" class="svg">
-                    <h4>High Speed Internet</h4>
-                    <p>Lorem ipsum dolor sit ametteturmpor incididunt most popular.</p>
-                    <a href="internet.html">Learn More <i class="fa fa-angle-right"></i></a>
-                </div>
-            </div>
-            <div class="col-lg-3 col-sm-6">
-                <div class="single-service single-service-white text-center" data-animate="fadeInUp" data-delay=".4">
-                    <img src="{{ asset('concierge/img/icons/phone.svg') }}" alt="" class="svg">
-                    <h4>Phone Service</h4>
-                    <p>Lorem ipsum dolor sit ametteturmpor incididunt most popular.</p>
-                    <a href="mobile.html">Learn More <i class="fa fa-angle-right"></i></a>
-                </div>
-            </div>
-            <div class="col-lg-3 col-sm-6">
-                <div class="single-service single-service-white text-center" data-animate="fadeInUp" data-delay=".7">
-                    <img src="{{ asset('concierge/img/icons/tv.svg') }}" alt="" class="svg">
-                    <h4>Cable TV</h4>
-                    <p>Lorem ipsum dolor sit ametteturmpor incididunt most popular.</p>
-                    <a href="cable-tv.html">Learn More <i class="fa fa-angle-right"></i></a>
-                </div>
-            </div>
-            <div class="col-lg-3 col-sm-6">
-                <div class="single-service single-service-white text-center" data-animate="fadeInUp" data-delay="1">
-                    <img src="{{ asset('concierge/img/icons/server.svg') }}" alt="" class="svg">
-                    <h4>Dedicated Server</h4>
-                    <p>Lorem ipsum dolor sit ametteturmpor incididunt most popular.</p>
-                    <a href="dedicated-server.html">Learn More <i class="fa fa-angle-right"></i></a>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- End of Services -->
-
 <!-- Packages Wrap -->
-<section class="pt-120 pb-55">
+<section class="theme-bg-overlay bg-img-md-none pt-120 pb-90">
     <div class="container">
         <div class="row justify-content-center">
-            <div class="col-xl-6 col-lg-8 col-md-10">
-                <div class="section-title text-center" data-animate="fadeInUp" data-delay=".1">
-                    <h2>Choose Affordable Packages</h2>
-                    <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+            <div class="col-xl-8 col-lg-8 col-md-10">
+                <div class="section-title section-title-white text-center" data-animate="fadeInUp" data-delay=".1">
+                    <h2>Tarifs</h2>
+                    <p>Deux tarifs sont disponibles. Un tarif pour des locations ponctuelles ou un tarif avec reconduction tacite</p>
                 </div>
             </div>
         </div>
 
         <!-- Packages -->
         <div class="row pb-90">
-            <div class="col-lg-3 col-sm-6">
+            <div class="col-sm-6">
                 <div class="single-package text-center" data-animate="fadeInUp" data-delay=".1">
-                    <h4>Personal Pack</h4>
-                    <span>for personal user</span>
+                    <h4>Services classiques</h4>
+                    <span>pour des besoins ponctuels </span>
                     <hr>
                     <ul class="list-unstyled">
-                        <li>Free installation</li>
-                        <li>Up to <span>15 Mpbs</span> download speed</li>
-                        <li>Unlimited data usages</li>
-                        <li><span>01 year</span> pricing lock guarantee</li>
-                        <li>Unlimited bandwidth</li>
+                        <li>Remise des clés à l'arrivée</li>
+                        <li>État des lieux d'entrée</li>
+                        <li>Récupération des clés à la sortie</li>
+                        <li>État des lieux de sortie</li>
+                        <li>Ménage (50 € supplémentaire)</li>
                     </ul>
-                    <p><sup>$</sup>12.50 <span>/Monthly</span></p>
-                    <a href="#" class="btn">Order This Plan</a>
+                    <p>40 € <span>par location</span></p>
+                    <a href="#" class="btn">Contactez-nous pour plus d'informations</a>
                 </div>
             </div>
-            <div class="col-lg-3 col-sm-6">
+            <div class="col-sm-6">
                 <div class="single-package text-center" data-animate="fadeInUp" data-delay=".4">
-                    <span class="pupular-pack">Most popular package</span>
-                    <h4>Family Pack</h4>
-                    <span>for family user</span>
+                    <span class="pupular-pack">Meilleure offre</span>
+                    <h4 class="section-title-white">Service tout en un</h4>
+                    <span>pour des besoins annuels</span>
                     <hr>
                     <ul class="list-unstyled">
-                        <li>Free installation</li>
-                        <li>Up to <span>25 Mpbs</span> download speed</li>
-                        <li>Unlimited data usages</li>
-                        <li><span>02 year</span> pricing lock guarantee</li>
-                        <li>Unlimited bandwidth</li>
+                        <li>Mise en ligne de vos annonces</li>
+                        <li>Prise en charge des réservations</li>
+                        <li>Remise des clés à l'arrivée</li>
+                        <li>État des lieux d'entrée</li>
+                        <li>Récupération des clés à la sortie</li>
+                        <li>État des lieux de sortie</li>
+                        <li>Ménage (50 € supplémentaire par location)</li>
+                        <li>Entretien de votre bien</li>
+                        <li>Astreinte pour vos locataires</li>
                     </ul>
-                    <p><sup>$</sup>24.50 <span>/Monthly</span></p>
-                    <a href="#" class="btn">Order This Plan</a>
-                </div>
-            </div>
-            <div class="col-lg-3 col-sm-6">
-                <div class="single-package text-center" data-animate="fadeInUp" data-delay=".7">
-                    <h4>Business Pack</h4>
-                    <span>for business user</span>
-                    <hr>
-                    <ul class="list-unstyled">
-                        <li>Free installation</li>
-                        <li>Up to <span>30 Mpbs</span> download speed</li>
-                        <li>Unlimited data usages</li>
-                        <li><span>03 year</span> pricing lock guarantee</li>
-                        <li>Unlimited bandwidth</li>
-                    </ul>
-                    <p><sup>$</sup>49.50 <span>/Monthly</span></p>
-                    <a href="#" class="btn">Order This Plan</a>
-                </div>
-            </div>
-            <div class="col-lg-3 col-sm-6">
-                <div class="single-package text-center" data-animate="fadeInUp" data-delay="1">
-                    <h4>Corporate Pack</h4>
-                    <span>for corporate user</span>
-                    <hr>
-                    <ul class="list-unstyled">
-                        <li>Free installation</li>
-                        <li>Up to <span>39 Mpbs</span> download speed</li>
-                        <li>Unlimited data usages</li>
-                        <li><span>Unlimited</span> pricing lock guarantee</li>
-                        <li>Unlimited bandwidth</li>
-                    </ul>
-                    <p><sup>$</sup>79.50 <span>/Monthly</span></p>
-                    <a href="#" class="btn">Order This Plan</a>
+                    <p>20 € <br> + <br> 20% du montant des locations <span>par mois et par location</span></p>
+                    <a href="#" class="btn">Contactez-nous pour plus d'informations</a>
                 </div>
             </div>
         </div>
         <!-- End of Packages -->
-
-        <!-- Packages Includes -->
-        <div class="row justify-content-center">
-            <div class="col-xl-6 col-lg-8 col-md-10">
-                <div class="section-title text-center" data-animate="fadeInUp" data-delay=".1">
-                    <h2>All Plans Included</h2>
-                    <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-lg-4 col-sm-6">
-                <div class="single-feature single-feature-img-left text-left" data-animate="fadeInUp" data-delay=".05">
-                    <div class="single-feature-img">
-                        <img src="{{ asset('concierge/img/icons/ftp.svg') }}" alt="" class="svg">
-                    </div>
-                    <div class="single-feature-content">
-                        <h4>Own FTP Server</h4>
-                        <p>At vero eos et accusamus et iusto dignissimosus qui blanditiis praesentium uptatum</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-sm-6">
-                <div class="single-feature single-feature-img-left text-left" data-animate="fadeInUp" data-delay=".2">
-                    <div class="single-feature-img">
-                        <img src="{{ asset('concierge/img/icons/upgrade.svg') }}" alt="" class="svg">
-                    </div>
-                    <div class="single-feature-content">
-                        <h4>Upgrade or Downgrade</h4>
-                        <p>At vero eos et accusamus et iusto dignissimosus qui blanditiis praesentium uptatum</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-sm-6">
-                <div class="single-feature single-feature-img-left text-left" data-animate="fadeInUp" data-delay=".35">
-                    <div class="single-feature-img">
-                        <img src="{{ asset('concierge') }}" alt="" class="svg">
-                    </div>
-                    <div class="single-feature-content">
-                        <h4>No Hard Data Limit</h4>
-                        <p>At vero eos et accusamus et iusto dignissimosus qui blanditiis praesentium uptatum</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-sm-6">
-                <div class="single-feature single-feature-img-left text-left" data-animate="fadeInUp" data-delay=".5">
-                    <div class="single-feature-img">
-                        <img src="{{ asset('concierge/img/icons/lock.svg') }}" alt="" class="svg">
-                    </div>
-                    <div class="single-feature-content">
-                        <h4>Lock in Low Rates</h4>
-                        <p>At vero eos et accusamus et iusto dignissimosus qui blanditiis praesentium uptatum</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-sm-6">
-                <div class="single-feature single-feature-img-left text-left" data-animate="fadeInUp" data-delay=".65">
-                    <div class="single-feature-img">
-                        <img src="{{ asset('concierge/img/icons/cloud.svg') }}" alt="" class="svg">
-                    </div>
-                    <div class="single-feature-content">
-                        <h4>No Video Streaming</h4>
-                        <p>At vero eos et accusamus et iusto dignissimosus qui blanditiis praesentium uptatum</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-sm-6">
-                <div class="single-feature single-feature-img-left text-left" data-animate="fadeInUp" data-delay=".8">
-                    <div class="single-feature-img">
-                        <img src="{{ asset('concierge/img/icons/access.svg') }}" alt="" class="svg">
-                    </div>
-                    <div class="single-feature-content">
-                        <h4>Access to All Website</h4>
-                        <p>At vero eos et accusamus et iusto dignissimosus qui blanditiis praesentium uptatum</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- End of Packages Includes -->
     </div>
 </section>
 <!-- End of Packages Wrap -->
@@ -451,20 +295,17 @@
                 <!-- Copyright -->
                 <div class="col-md-6">
                     <div class="copyright-text text-center text-md-left">
-                        <p class="mb-md-0">&copy; 2018 Arcoch. Tous droits réservés.</p>
+                        <p class="mb-md-0">&copy; 2019 Arcoch. Tous droits réservés.</p>
                     </div>
                 </div>
 
                 <!-- Social Profiles -->
-                <div class="col-md-6">
-                    <ul class="social-profiles nav justify-content-center justify-content-md-end">
-                        <li><a href="#" target="_blank"><i class="fa fa-facebook"></i></a></li>
-                        <li><a href="#" target="_blank"><i class="fa fa-twitter"></i></a></li>
-                        <li><a href="#" target="_blank"><i class="fa fa-google-plus"></i></a></li>
-                        <li><a href="#" target="_blank"><i class="fa fa-linkedin"></i></a></li>
-                        <li><a href="#" target="_blank"><i class="fa fa-vimeo"></i></a></li>
-                    </ul>
-                </div>
+{{--                <div class="col-md-6">--}}
+{{--                    <ul class="social-profiles nav justify-content-center justify-content-md-end">--}}
+{{--                        <li><a target="_blank" href="https://www.facebook.com/LArcoch-909597672726152/"><i class="fa fa-facebook"></i></a></li>--}}
+{{--                        <li><a target="_blank" href="https://www.instagram.com/arcoch65/?hl=fr"><i class="fa fa-instagram"></i></a></li>--}}
+{{--                    </ul>--}}
+{{--                </div>--}}
             </div>
         </div>
     </div>

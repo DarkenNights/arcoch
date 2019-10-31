@@ -1127,10 +1127,11 @@ label input[type=radio] {
 }
 .single-package h4 {
     margin-top: -3px;
+    color: #FFFFFF;
 }
 .single-package h4 + span {
     font-size: 0.75rem;
-    color: #979797;
+    color: #FFFFFF;
     text-transform: uppercase;
     letter-spacing: 3px;
     display: block;
@@ -1139,15 +1140,17 @@ label input[type=radio] {
 .single-package ul {
     font-size: 0.9375rem;
     margin-top: 25px;
+    color: #FFFFFF;
 }
 .single-package ul li {
     margin-top: 8px;
+    color: #FFFFFF;
 }
 .single-package ul li span {
     color: #60c2a4;
 }
 .single-package p {
-    color: #202e39;
+    color: #FFFFFF;
     font-size: 1.875rem;
     line-height: 1.2;
     font-weight: 500;
@@ -1155,16 +1158,17 @@ label input[type=radio] {
     -webkit-transition: all .2s;
     transition: all .2s;
 }
-.single-package:hover p {
+.single-package:hover p, .single-package:hover p sup, .single-package:hover p span {
     color: #60c2a4;
 }
 .single-package p sup {
     font-size: 0.875rem;
+    color: #FFFFFF;
 }
 .single-package p span {
     display: block;
     font-size: 0.75rem;
-    color: #979797;
+    color: #FFFFFF;
     text-transform: uppercase;
     font-family: 'Source Sans Pro', sans-serif;
 }
