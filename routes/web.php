@@ -21,3 +21,5 @@ Route::get('/chambres', 'RoomsController@rooms')->name('rooms');
 Route::get('/conciergerie', 'ConciergeController@concierge')->name('concierge');
 
 Route::get('/contact', 'ContactController@contact')->name('contact');
+
+Auth::routes();
