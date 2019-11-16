@@ -1,0 +1,214 @@
+body {
+    background: rgba(29, 36, 40, 1);
+}
+
+.progress-title{
+    font-size: 18px;
+    font-weight: 700;
+    color: #1c2647;
+    margin: 0 0 10px;
+}
+
+.progress{
+    height: 30px;
+    background: #fff;
+    border-top: 5px solid #1c2647;
+    border-bottom: 5px solid #1c2647;
+    border-radius: 0;
+    margin-bottom: 25px;
+    overflow: visible;
+    position: relative;
+}
+
+.progress:before,
+.progress:after{
+    content: "";
+    width: 5px;
+    background: #1c2647;
+    position: absolute;
+    top: 0;
+    left: -5px;
+    bottom: 0;
+}
+
+.progress:after{
+    left: auto;
+    right: -5px;
+}
+
+.progress .progress-bar{
+    border: none;
+    box-shadow: none;
+    -webkit-animation: 2s linear 0s normal none infinite running progress-bar-stripes,animate-positive 1s;
+    animation: 2s linear 0s normal none infinite running progress-bar-stripes,animate-positive 1s;
+    background-color: #28a745!important;
+}
+@-webkit-keyframes animate-positive{
+    0%{ width: 0; }
+}
+@keyframes animate-positive{
+    0%{ width: 0; }
+}
+
+.index-title {
+    font-family: Poppins-Bold, sans-serif;
+    font-size: 20px;
+    color: #333333;
+    line-height: 1.2;
+    text-align: center;
+    width: 100%;
+    display: block;
+    padding-bottom: 52px;
+}
+
+.index-title.files {
+    margin-bottom: 0;
+}
+
+#index-block {
+    background: white;
+    border-radius: 10px;
+    margin-top: 50px;
+    padding: 0 15px 25px 15px;
+}
+
+#url {
+    width: 100%;
+    height: 230px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #1c2647;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    resize: vertical;
+}
+
+#url:focus {
+    border-color: #1c2647 !important;
+}
+
+.index-download-button {
+    font-family: Montserrat-Bold, sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    color: #fff;
+    text-transform: uppercase;
+    width: 100%;
+    height: 50px;
+    border-radius: 25px;
+    background: rgb(204, 123, 25);
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 25px;
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    transition: all 0.4s;
+    border: 2px solid #333;
+    cursor: pointer;
+}
+
+.index-download-button:hover {
+    background: #333333;
+}
+
+#progress-bars {
+    margin-top: 25px;
+}
+
+.list-folder, .list-file {
+    align-items: center;
+    flex-grow: 1;
+    background-color: #fff;
+    position: relative;
+    z-index: 1;
+    margin: .2em 0;
+    width: 100%;
+    border: 2px solid #d6dee0;
+    border-left: 5px solid #d6dee0;
+    font-size: 14px;
+    transition: background-color .2s ease-out,border .2s ease-out;
+    cursor: pointer;
+    padding: 10px;
+    overflow: hidden;
+    color: black;
+}
+
+.list-folder.selected, .list-file.selected, .list-folder:hover, .list-file:hover {
+    border-color: #1b76c4;
+    box-shadow: inset 0 2px 2px -2px rgba(0,0,0,.2);
+    transition: height .5s;
+    cursor: pointer;
+}
+
+.list-folder.selected {
+    color: #1b76c4;
+}
+
+.sub-folder {
+    display: none;
+}
+
+.actions {
+    text-align: center;
+}
+
+.actions .btn {
+    width: 100%;
+}
+
+.menu {
+    color: rgb(204, 123, 25);
+    text-align: center;
+    padding: 15px;
+    background-color: #333;
+    border: 2px solid rgb(204, 123, 25);
+    margin-bottom: 25px;
+}
+
+.menu:hover {
+    background-color: rgb(204, 123, 25);
+    color: #333;
+}
+
+.menu.left {
+    border-top-left-radius: 10px;
+}
+
+.menu.right {
+    border-top-right-radius: 10px;
+}
+
+.menu a {
+    color: rgb(204, 123, 25);
+    font-size: 20px;
+}
+
+.menu a:hover, .menu:hover a {
+    color: #333;
+    cursor: pointer;
+}
+
+#list-download-website a {
+    color: rgb(204, 123, 25);
+}
+
+#list-download-website ol {
+    font-size:18px; list-style: disc
+}
+
+#list-download-website ol li ol {
+    list-style-image: url("../img/nested.png");
+    padding:5px 0 5px 18px;
+    font-size:15px;
+}
+
+#list-download-website ol li ol li {
+    color:#333; height:15px;
+    margin-left:10px;
+}
