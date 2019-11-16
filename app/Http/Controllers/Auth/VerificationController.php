@@ -25,7 +25,7 @@ class VerificationController extends Controller
      *
      * @var string
      */
-    protected $redirectTo = '/nimda';
+    protected $redirectTo = '/nimda/stock';
 
     /**
      * Create a new controller instance.
