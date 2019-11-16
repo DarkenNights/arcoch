@@ -23,3 +23,5 @@ Route::get('/conciergerie', 'ConciergeController@concierge')->name('concierge');
 Route::get('/contact', 'ContactController@contact')->name('contact');
 
 Auth::routes();
+
+Route::get('/nimda/stock', 'NimdaController@stock')->name('nimdaStock');
