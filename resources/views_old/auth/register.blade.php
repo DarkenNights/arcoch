@@ -1,4 +1,4 @@
-@extends('nimda.layout.layout')
+@extends('layout.nimda')
 
 @section('content')
     <div class="limiter">

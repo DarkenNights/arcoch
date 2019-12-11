@@ -8,12 +8,14 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 class Event extends Model
 {
     use SoftDeletes;
+
     /**
      * The table associated with the model.
      *
      * @var string
      */
     protected $table = 'event';
+
     /**
      * The attributes that are mass assignable.
      *
@@ -22,6 +24,7 @@ class Event extends Model
     protected $fillable = [
         'title', 'start', 'end', 'place', 'highlight', 'text', 'creator'
     ];
+
     /**
      * Add dates attributes for Carbon use
      *
