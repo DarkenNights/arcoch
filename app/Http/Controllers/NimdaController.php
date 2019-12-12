@@ -46,6 +46,13 @@ class NimdaController extends Controller
         ));
     }
 
+    public function addOrder()
+    {
+        $providerShortName = Input::get('providerShortName');
+        $productId = Input::get('productId');
+        $quantityCarton = Input::get('quantityCarton');
+    }
+
     public function orderHistory()
     {
         return view('nimda.orderHistory');

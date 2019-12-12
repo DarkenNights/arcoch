@@ -30,5 +30,7 @@ Route::get('logout', '\App\Http\Controllers\Auth\LoginController@logout')->name(
 
 Route::get('/nimda/stocks', 'NimdaController@stock')->name('nimdaStock');
 Route::post('/nimda/saveNewStocks', 'NimdaController@saveStocks')->name('nimdaSaveStocks');
+
 Route::get('/nimda/commandes', 'NimdaController@order')->name('nimdaOrder');
+Route::post('/nimda/addNewOrder', 'NimdaController@addOrder')->name('nimdaAddOrder');
 Route::get('/nimda/historique-des-commandes', 'NimdaController@orderHistory')->name('nimdaOrderHistory');
