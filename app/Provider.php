@@ -29,4 +29,20 @@ class Provider extends Model
     {
         return $this->hasMany('App\Product');
     }
+
+    /**
+     * Get the orders for the provider.
+     */
+    public function orders()
+    {
+        return $this->hasMany('App\Order');
+    }
+
+    /**
+     * Get the losses for the provider.
+     */
+    public function losses()
+    {
+        return $this->hasMany('App\Loss');
+    }
 }

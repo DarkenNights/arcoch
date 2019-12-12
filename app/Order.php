@@ -19,6 +19,22 @@ class Order extends Model
      * @var array
      */
     protected $fillable = [
-        'product_id', 'quantity', 'price'
+        'orderNumber', 'provider_id', 'product_id', 'quantity', 'price'
     ];
+
+    /**
+     * Get the provider that owns the order.
+     */
+    public function provider()
+    {
+        return $this->belongsTo('App\Provider');
+    }
+
+    /**
+     * Get the product that owns the order.
+     */
+    public function product()
+    {
+        return $this->belongsTo('App\Product');
+    }
 }

@@ -17,6 +17,13 @@
     <script defer src="https://use.fontawesome.com/releases/v5.7.2/js/all.js" integrity="sha384-0pzryjIRos8mFBWMzSSZApWtPl/5++eIfzYmTgBBmXYdhvxPc+XcFEk+zJwDgWbP" crossorigin="anonymous"></script>
     <script type="text/javascript" src="{{ asset('nimda/js/library/jquery-3.3.1.min.js') }}"></script>
     <script type="text/javascript" src="{{ asset('nimda/js/library/bootstrap.min.js') }}"></script>
+    <script type="text/javascript">
+        $.ajaxSetup({
+            headers: {
+                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+            }
+        });
+    </script>
     @yield('javascripts')
 </body>
 </html>

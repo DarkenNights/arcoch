@@ -21,4 +21,12 @@ class Loss extends Model
     protected $fillable = [
         'product_id', 'quantity', 'price'
     ];
+
+    /**
+     * Get the product that owns the loss.
+     */
+    public function provider()
+    {
+        return $this->belongsTo('App\Product');
+    }
 }
