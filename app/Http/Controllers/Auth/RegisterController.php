@@ -28,7 +28,7 @@ class RegisterController extends Controller
      *
      * @var string
      */
-    protected $redirectTo = '/nimda/stock';
+    protected $redirectTo = '/nimda/stocks';
 
     /**
      * Create a new controller instance.

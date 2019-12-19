@@ -72,7 +72,7 @@
 @endsection
 
 @section('javascripts')
-    <script src="{{ asset('nimda/js/library/popper.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('nimda/js/library/popper.js') }}"></script>
     <script src="{{ asset('nimda/js/library/select2.min.js') }}"></script>
     <script src="{{ asset('nimda/js/library/tilt.jquery.min.js') }}"></script>
     <script >

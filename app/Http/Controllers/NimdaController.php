@@ -4,9 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Product;
 use App\Provider;
-use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Input;
-use mysql_xdevapi\Exception;
 
 class NimdaController extends Controller
 {
