@@ -15,6 +15,9 @@
                     @endforeach
                 </div>
                 <div class="row">
+                    <div class="col-lg-12" id="alertMsg"></div>
+                </div>
+                <div class="row">
                     <div class="col-12">
                         @foreach($providers as $provider)
                             <div class="collapse multi-collapse @if($provider->id == 1) show @endif" id="{{ $provider->short_name }}">
@@ -44,7 +47,7 @@
                                                 <td><input type="number" name="buffer" class="buffer" value="{{ $product->buffer }}" min=0 disabled></td>
                                                 <td><input type="number" name="quantityUnit" class="quantityUnit" onchange="modifyInfos('{{ $product->id }}', '{{ $product->conditioning_per_carton }}', '{{ $product->price }}', '{{ $product->quantity_per_carton }}')" value="@if($quantity <= 0){{ intval(0) }}@else{{ $quantity }}@endif" min=0></td>
                                                 <td><input type="number" name="quantityCarton[]" class="quantityCarton" value="@if($quantity <= 0){{ intval(0) }}@else{{ $neededCarton }}@endif" min=0 disabled></td>
-                                                <td class="price">@if($price > 0) {{ $price }} @else 0 @endif €</td>
+                                                <td><input type="number" name="price[]" class="price" min="0" value="@if($price > 0){{ $price }}@else{{ '0' }}@endif" disabled> €</td>
                                             </tr>
                                         @endforeach
                                         </tbody>
@@ -76,46 +79,48 @@
         function modifyInfos(productId, productConditioningPerCarton, productPrice, productQuantityPerCarton) {
             const target = '#' + productId;
             if($(target + ' .quantityUnit').val() <= 0){
-                console.log('toto');
                 $(target + ' .quantityCarton').val(0);
-                $(target + ' .price').html(0 + ' €');
+                $(target + ' .price').val(0);
             }
             else {
-                console.log('titi');
-                console.log(Math.ceil($(target + ' .quantityUnit').val() / productConditioningPerCarton));
                 $(target + ' .quantityCarton').val(Math.ceil($(target + ' .quantityUnit').val() / productConditioningPerCarton));
-                $(target + ' .price').html(Math.round((productPrice * productQuantityPerCarton * Math.ceil($(target + ' .quantityUnit').val() / productConditioningPerCarton))*100) / 100 + ' €');
+                $(target + ' .price').val(Math.round((productPrice * productQuantityPerCarton * Math.ceil($(target + ' .quantityUnit').val() / productConditioningPerCarton))*100) / 100);
             }
         }
 
         function order(providerShortName) {
-            let productId = [];
+            let productIds = [];
             $('#' + providerShortName + ' input[name="productId[]"]').each( function() {
-                productId.push(this.value);
+                productIds.push(this.value);
             });
-            let quantityCarton = [];
+            let quantitiesCarton = [];
             $('#' + providerShortName + ' input[name="quantityCarton[]"]').each( function() {
-                quantityCarton.push(this.value);
+                quantitiesCarton.push(this.value);
             });
-            console.log(productId);
-            console.log(quantityCarton);
+            let prices = [];
+            $('#' + providerShortName + ' input[name="price[]"]').each( function() {
+                prices.push(this.value);
+            });
             $.ajax({
                 type: "POST",
                 url: "/nimda/addNewOrder",
-                data: "providerShortName="+providerShortName+"&productId="+productId+"&quantityCarton="+quantityCarton,
+                data: "providerShortName="+providerShortName+"&productIds="+productIds+"&quantitiesCarton="+quantitiesCarton+"&prices="+prices,
                 dataType: "json"
             }).done(function(data) {
-                const productName = $(target + ' .productName').html();
-                $(target + ' .productName').html(data);
-                // $('#alertMsg').html(
-                //     "<div class=\"alert alert-success\" role=\"alert\">" + data + "</div>"
-                // );
+                if(data == 'save_ok') {
+                    $('#alertMsg').html(
+                        "<div class=\"alert alert-success\" role=\"alert\">La commande a été envoyée avec succès.</div>"
+                    );
+                    $('html,body').animate({scrollTop: 0}, 'slow');
+                }
+                else {
+                    $('#alertMsg').html(
+                        "<div class=\"alert alert-danger\" role=\"alert\">La commande n'a pas pu être envoyé. Demander à Thomas.</div>"
+                    );
+                    $('html,body').animate({scrollTop: 0}, 'slow');
+                }
             }).fail(function(data) {
-                const productName = $(target + ' .productName').html();
-                $(target + ' .productName').html('<strong>' + productName + '</strong> : Une erreur s\'est produite.');
-                // $('#alertMsg').html(
-                //     "<div class=\"alert alert-danger\" role=\"alert\">" + data + "</div>"
-                // );
+                console.log(data.responseText);
             });
         }
     </script>
