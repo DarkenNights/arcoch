@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Order;
 use App\Product;
 use App\Provider;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Input;
 
 class NimdaController extends Controller
@@ -67,19 +68,34 @@ class NimdaController extends Controller
             $newOrder->provider()->associate($provider);
             $newOrder->quantity = $quantitiesCarton[$i];
             $newOrder->price = $prices[$i];
+
             try {
                 $newOrder->save();
             } catch (\Exception $e) {
                 $response = 'save_ko';
             } finally {
-                return response()->json($response);
+                if($response == 'save_ko') return response()->json($response);
             }
         }
+        return response()->json($response);
     }
 
     public function orderHistory()
     {
-        return view('nimda.orderHistory');
+        $providers = Provider::all();
+        $orders = Order::groupBy('provider_id', 'id')->get();
+        dump($orders);
+        exit;
+        foreach ($providers->orders as $order) {
+            dump($order->price);
+        }
+        exit;
+        $orders = $providers->orders();
+        dump($orders);
+        exit;
+        return view('nimda.orderHistory', array(
+            'providers' => $providers
+        ));
     }
 
 }

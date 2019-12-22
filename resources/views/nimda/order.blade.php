@@ -101,12 +101,16 @@
             $('#' + providerShortName + ' input[name="price[]"]').each( function() {
                 prices.push(this.value);
             });
+            console.log(productIds);
+            console.log(quantitiesCarton);
+            console.log(prices);
             $.ajax({
                 type: "POST",
                 url: "/nimda/addNewOrder",
                 data: "providerShortName="+providerShortName+"&productIds="+productIds+"&quantitiesCarton="+quantitiesCarton+"&prices="+prices,
                 dataType: "json"
             }).done(function(data) {
+                console.log(data);
                 if(data == 'save_ok') {
                     $('#alertMsg').html(
                         "<div class=\"alert alert-success\" role=\"alert\">La commande a été envoyée avec succès.</div>"
