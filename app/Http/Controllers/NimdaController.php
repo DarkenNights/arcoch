@@ -60,21 +60,23 @@ class NimdaController extends Controller
 
         for ($i = 0; $i < count($productIds); $i++)
         {
-            $product = Product::find($productIds[$i]);
+            if($quantitiesCarton[$i] > 0) {
+                $product = Product::find($productIds[$i]);
 
-            $newOrder = new Order();
-            $newOrder->orderNumber = $nextOrderNumber;
-            $newOrder->product()->associate($product);
-            $newOrder->provider()->associate($provider);
-            $newOrder->quantity = $quantitiesCarton[$i];
-            $newOrder->price = $prices[$i];
+                $newOrder = new Order();
+                $newOrder->orderNumber = $nextOrderNumber;
+                $newOrder->product()->associate($product);
+                $newOrder->provider()->associate($provider);
+                $newOrder->quantity = $quantitiesCarton[$i];
+                $newOrder->price = $prices[$i];
 
-            try {
-                $newOrder->save();
-            } catch (\Exception $e) {
-                $response = 'save_ko';
-            } finally {
-                if($response == 'save_ko') return response()->json($response);
+                try {
+                    $newOrder->save();
+                } catch (\Exception $e) {
+                    $response = 'save_ko';
+                } finally {
+                    if($response == 'save_ko') return response()->json($response);
+                }
             }
         }
         return response()->json($response);
@@ -83,18 +85,17 @@ class NimdaController extends Controller
     public function orderHistory()
     {
         $providers = Provider::all();
-        $orders = Order::groupBy('provider_id', 'id')->get();
-        dump($orders);
-        exit;
-        foreach ($providers->orders as $order) {
-            dump($order->price);
+        $ordersDB = Order::all();
+        $orders = [];
+        foreach ($ordersDB as $orderDB) {
+            if (empty($orders[$orderDB->provider_id])) $orders[$orderDB->provider_id] = [];
+            if (empty($orders[$orderDB->provider_id][$orderDB->orderNumber])) $orders[$orderDB->provider_id][$orderDB->orderNumber] = [];
+            $orders[$orderDB->provider_id][$orderDB->orderNumber][] = $orderDB;
         }
-        exit;
-        $orders = $providers->orders();
-        dump($orders);
-        exit;
+//        dump($orders);
         return view('nimda.orderHistory', array(
-            'providers' => $providers
+            'providers' => $providers,
+            'orders' => $orders
         ));
     }
 
