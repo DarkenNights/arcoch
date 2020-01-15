@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Loss;
 use App\Order;
 use App\Product;
 use App\Provider;
@@ -92,11 +93,32 @@ class NimdaController extends Controller
             if (empty($orders[$orderDB->provider_id][$orderDB->orderNumber])) $orders[$orderDB->provider_id][$orderDB->orderNumber] = [];
             $orders[$orderDB->provider_id][$orderDB->orderNumber][] = $orderDB;
         }
-//        dump($orders);
         return view('nimda.orderHistory', array(
             'providers' => $providers,
             'orders' => $orders
         ));
+    }
+
+    public function loss()
+    {
+        $losses = Loss::all();
+        $products = Product::orderBy('provider_id', 'ASC')->get();
+        $providers = Provider::all();
+        return view('nimda.loss', array(
+            'losses' => $losses,
+            'products' => $products,
+            'providers' => $providers
+        ));
+    }
+
+    public function addLoss()
+    {
+        $productId = Input::get('product');
+        $quantity = Input::get('quantity');
+        dump($productId);
+        dump($quantity);
+        exit;
+
     }
 
 }

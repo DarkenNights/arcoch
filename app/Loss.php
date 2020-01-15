@@ -25,7 +25,7 @@ class Loss extends Model
     /**
      * Get the product that owns the loss.
      */
-    public function provider()
+    public function product()
     {
         return $this->belongsTo('App\Product');
     }

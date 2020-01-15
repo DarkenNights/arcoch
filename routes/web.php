@@ -33,4 +33,8 @@ Route::post('/nimda/saveNewStocks', 'NimdaController@saveStocks')->name('nimdaSa
 
 Route::get('/nimda/commandes', 'NimdaController@order')->name('nimdaOrder');
 Route::post('/nimda/addNewOrder', 'NimdaController@addOrder')->name('nimdaAddOrder');
+
 Route::get('/nimda/historique-des-commandes', 'NimdaController@orderHistory')->name('nimdaOrderHistory');
+
+Route::get('/nimda/pertes', 'NimdaController@loss')->name('nimdaLoss');
+Route::post('/nimda/pertes/ajout', 'NimdaController@addLoss')->name('nimdaAddLoss');
