@@ -49,8 +49,8 @@ class ProviderSeeder extends Seeder
             'address' => '15 rue Jacques Choquard - ZI de Berhouague 40530 Labenne',
             'order_day' => 'Lundi et Jeudi',
             'shipping_day' => 'Mardi et Vendredi',
-            'commercial' => 'William ',
-            'phone' => '05 59 55 84 07 - '
+            'commercial' => 'William Salinas',
+            'phone' => '06 81 96 38 91 - 05 59 55 84 07'
         ]);
 
         \App\Provider::create([
@@ -60,8 +60,8 @@ class ProviderSeeder extends Seeder
             'email' => 'david.COUNILLON@brake.fr',
             'franco' => 100,
             'address' => 'A Baylac - 32550 Montegut',
-            'order_day' => '',
-            'shipping_day' => '',
+            'order_day' => 'Lundi et Jeudi',
+            'shipping_day' => 'Mardi et Vendredi',
             'commercial' => 'David Counillon',
             'phone' => '04 78 66 38 00 - 06 88 12 69 60'
         ]);
