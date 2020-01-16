@@ -19,7 +19,7 @@ class CreateProviderTable extends Migration
             $table->string('short_name');
             $table->string('color')->nullable();
             $table->string('email')->nullable();
-            $table->text('franco')->nullable();
+            $table->integer('franco')->nullable();
             $table->text('order_day')->nullable();
             $table->text('shipping_day')->nullable();
             $table->text('address')->nullable();

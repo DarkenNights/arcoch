@@ -54,7 +54,7 @@
                                     </table>
                                     <div class="row">
                                         <div class="col-lg-12" style="text-align: center">
-                                            <button class="btn btn-success" style="background-color: {{ $provider->color }}; border-color: {{ $provider->color }}; box-shadow: 0 0 0 0.2rem {{ $provider->color }}b5" onclick="order('{{ $provider->short_name }}')">
+                                            <button class="btn btn-success" style="background-color: {{ $provider->color }}; border-color: {{ $provider->color }}; box-shadow: 0 0 0 0.2rem {{ $provider->color }}b5" onclick="confirmOrder('{{ $provider->short_name }}', '{{ $provider->franco }}')">
                                                 Envoyer la commande pour {{ $provider->name }} en date du {{ \Carbon\Carbon::now()->format('d/m/Y') }}
                                             </button>
                                         </div>
@@ -88,7 +88,7 @@
             }
         }
 
-        function order(providerShortName) {
+        function confirmOrder(providerShortName, providerFranco) {
             let productIds = [];
             $('#' + providerShortName + ' input[name="productId[]"]').each( function() {
                 productIds.push(this.value);
@@ -98,19 +98,31 @@
                 quantitiesCarton.push(this.value);
             });
             let prices = [];
+            let total = 0.00;
             $('#' + providerShortName + ' input[name="price[]"]').each( function() {
                 prices.push(this.value);
+                total = total + parseFloat(this.value);
             });
-            console.log(productIds);
-            console.log(quantitiesCarton);
-            console.log(prices);
+            let message = "";
+            if(total < providerFranco) {
+                message = "Le franco de " + providerFranco + " € n'est pas atteint. Envoyé tout de même la commande ?";
+            }
+            else {
+                message = "Confirmez-vous l'envoie de la commande ?";
+            }
+            if(confirm(message)) {
+                order(providerShortName, productIds, quantitiesCarton, prices);
+            }
+        }
+
+        function order(providerShortName, productIds, quantitiesCarton, prices) {
+
             $.ajax({
                 type: "POST",
                 url: "/nimda/addNewOrder",
                 data: "providerShortName="+providerShortName+"&productIds="+productIds+"&quantitiesCarton="+quantitiesCarton+"&prices="+prices,
                 dataType: "json"
             }).done(function(data) {
-                console.log(data);
                 if(data == 'save_ok') {
                     $('#alertMsg').html(
                         "<div class=\"alert alert-success\" role=\"alert\">La commande a été envoyée avec succès.</div>"
