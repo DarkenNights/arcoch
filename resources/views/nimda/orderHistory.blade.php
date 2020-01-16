@@ -8,7 +8,7 @@
                 <div class="row" style="margin-bottom: 15px">
                     @foreach($providers as $provider)
                         <div class="col">
-                            <a class="col-lg-12 btn btn-primary" style="background-color: {{ $provider->color }}; border-color: {{ $provider->color }}; box-shadow: 0 0 0 0.2rem {{ $provider->color }}b5" data-toggle="collapse" data-target="#collapse{{$provider->short_name}}" aria-expanded="@if($provider->id == 1)true@else false @endif" aria-controls="collapse{{$provider->short_name}}">
+                            <a class="col-lg-12 btn btn-primary" style="background-color: {{ $provider->color }}; border-color: {{ $provider->color }}; box-shadow: 0 0 0 0.2rem {{ $provider->color }}b5; color: #ffffff" data-toggle="collapse" data-target="#collapse{{$provider->short_name}}" aria-expanded="@if($provider->id == 1)true@else false @endif" aria-controls="collapse{{$provider->short_name}}">
                                 {{ $provider->name }}
                             </a>
                         </div>
@@ -24,8 +24,8 @@
                                             <div class="card" style="margin-bottom: 15px">
                                                 <div class="card-header" id="heading{{$orderNumber}}" style="border-radius: 5px; background-color: {{ $provider->color }}; border-color: {{ $provider->color }}; box-shadow: 0 0 0 0.2rem {{ $provider->color }}b5">
                                                     <h5 class="mb-0" style="color: #000000">
-                                                        <button class="btn btn-link" style="color: #000000" data-toggle="collapse" data-target="#collapse{{$orderNumber}}" aria-expanded="false" aria-controls="collapse{{$orderNumber}}">
-                                                            {{ $provider->name }} - Commande {{ $orderNumber }} du {{ $order[0]->created_at }}
+                                                        <button class="btn btn-link" style="color: #ffffff" data-toggle="collapse" data-target="#collapse{{$orderNumber}}" aria-expanded="false" aria-controls="collapse{{$orderNumber}}">
+                                                            {{ $provider->name }} - Commande numéro {{ $orderNumber }} du {{ $order[0]->created_at->format('d/m/Y à H\hi') }}
                                                         </button>
                                                     </h5>
                                                 </div>

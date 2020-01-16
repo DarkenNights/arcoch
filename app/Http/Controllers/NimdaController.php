@@ -8,6 +8,8 @@ use App\Product;
 use App\Provider;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Input;
+use Illuminate\Support\Facades\Request;
+use Illuminate\Support\Facades\Session;
 
 class NimdaController extends Controller
 {
@@ -86,7 +88,7 @@ class NimdaController extends Controller
     public function orderHistory()
     {
         $providers = Provider::all();
-        $ordersDB = Order::all();
+        $ordersDB = Order::orderBy('created_at', 'DESC')->get();
         $orders = [];
         foreach ($ordersDB as $orderDB) {
             if (empty($orders[$orderDB->provider_id])) $orders[$orderDB->provider_id] = [];
@@ -101,7 +103,7 @@ class NimdaController extends Controller
 
     public function loss()
     {
-        $losses = Loss::all();
+        $losses = Loss::orderBy('created_at', 'DESC')->get();
         $products = Product::orderBy('provider_id', 'ASC')->get();
         $providers = Provider::all();
         return view('nimda.loss', array(
@@ -111,14 +113,28 @@ class NimdaController extends Controller
         ));
     }
 
-    public function addLoss()
+    public function addLoss(Request $request)
     {
         $productId = Input::get('product');
         $quantity = Input::get('quantity');
-        dump($productId);
-        dump($quantity);
-        exit;
 
+        $product = Product::find($productId);
+
+        $loss = new Loss();
+        $loss->product()->associate($product);
+        $loss->quantity = $quantity;
+        $loss->price = $product->price * $quantity;
+        try
+        {
+            $loss->save();
+            Session::flash('success', 'La perte a été enregistré');
+        }
+        catch (\Exception $e)
+        {
+            Session::flash('error', 'Erreur lors de l\'enregistrement de la perte');
+        }
+
+        return redirect()->route('nimdaLoss');
     }
 
 }
