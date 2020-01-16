@@ -11,13 +11,13 @@ class LossSeeder extends Seeder
      */
     public function run()
     {
-        \Illuminate\Support\Facades\DB::table('loss')->delete();
-        setlocale(LC_TIME, 'French');
-
-        \App\Loss::create([
-            'product_id' => 1,
-            'quantity' => 0,
-            'price' => 0,
-        ]);
+//        \Illuminate\Support\Facades\DB::table('loss')->delete();
+//        setlocale(LC_TIME, 'French');
+//
+//        \App\Loss::create([
+//            'product_id' => 1,
+//            'quantity' => 0,
+//            'price' => 0,
+//        ]);
     }
 }
