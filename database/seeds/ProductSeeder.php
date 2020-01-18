@@ -657,10 +657,10 @@ class ProductSeeder extends Seeder
             'name' => 'Frites',
             'reference' => '74636',
             'stock' => 0,
-            'buffer' => 0,
+            'buffer' => 24,
             'quantity_per_carton' => 1,
             'conditioning_per_carton' => 1,
-            'price' => 1,
+            'price' => 1.65,
             'provider_id' => 4
         ]);
 
@@ -668,10 +668,10 @@ class ProductSeeder extends Seeder
             'name' => 'Poêlée méditerranéenne aux légumes grillés',
             'reference' => '70008',
             'stock' => 0,
-            'buffer' => 0,
+            'buffer' => 3,
             'quantity_per_carton' => 1,
             'conditioning_per_carton' => 1,
-            'price' => 1,
+            'price' => 4.86,
             'provider_id' => 4
         ]);
 
@@ -679,10 +679,10 @@ class ProductSeeder extends Seeder
             'name' => 'Tomme de la montagne grise affinée',
             'reference' => '80113',
             'stock' => 0,
-            'buffer' => 0,
+            'buffer' => 1,
             'quantity_per_carton' => 1,
             'conditioning_per_carton' => 1,
-            'price' => 1,
+            'price' => 26.9,
             'provider_id' => 4
         ]);
 
@@ -690,10 +690,65 @@ class ProductSeeder extends Seeder
             'name' => 'Tomme des pyrénées',
             'reference' => '80336',
             'stock' => 0,
-            'buffer' => 0,
+            'buffer' => 1,
             'quantity_per_carton' => 1,
             'conditioning_per_carton' => 1,
-            'price' => 1,
+            'price' => 63.69,
+            'provider_id' => 4
+        ]);
+
+        \App\Product::create([
+            'name' => 'Ketchup en bidon',
+            'reference' => '17594',
+            'stock' => 0,
+            'buffer' => 2,
+            'quantity_per_carton' => 1,
+            'conditioning_per_carton' => 1,
+            'price' => 7.34,
+            'provider_id' => 4
+        ]);
+
+        \App\Product::create([
+            'name' => 'Nutella 3kg',
+            'reference' => '18572',
+            'stock' => 0,
+            'buffer' => 2,
+            'quantity_per_carton' => 1,
+            'conditioning_per_carton' => 1,
+            'price' => 11.50,
+            'provider_id' => 4
+        ]);
+
+        \App\Product::create([
+            'name' => 'Aiguillettes de poulet corn flakes',
+            'reference' => '75512',
+            'stock' => 0,
+            'buffer' => 3,
+            'quantity_per_carton' => 1,
+            'conditioning_per_carton' => 1,
+            'price' => 8.4,
+            'provider_id' => 4
+        ]);
+
+        \App\Product::create([
+            'name' => 'Lait 1/2 écrémé',
+            'reference' => '80001',
+            'stock' => 0,
+            'buffer' => 6,
+            'quantity_per_carton' => 1,
+            'conditioning_per_carton' => 1,
+            'price' => 1.01,
+            'provider_id' => 4
+        ]);
+
+        \App\Product::create([
+            'name' => 'Lait entier',
+            'reference' => '80265',
+            'stock' => 0,
+            'buffer' => 6,
+            'quantity_per_carton' => 1,
+            'conditioning_per_carton' => 1,
+            'price' => 1.26,
             'provider_id' => 4
         ]);
 
@@ -704,9 +759,9 @@ class ProductSeeder extends Seeder
             'name' => 'Earl grey royal',
             'reference' => '',
             'stock' => 0,
-            'buffer' => 0,
-            'quantity_per_carton' => 1,
-            'conditioning_per_carton' => 1,
+            'buffer' => 12,
+            'quantity_per_carton' => 12,
+            'conditioning_per_carton' => 12,
             'price' => 1,
             'provider_id' => 5
         ]);
@@ -715,7 +770,7 @@ class ProductSeeder extends Seeder
             'name' => 'Travel to India',
             'reference' => '',
             'stock' => 0,
-            'buffer' => 0,
+            'buffer' => 12,
             'quantity_per_carton' => 1,
             'conditioning_per_carton' => 1,
             'price' => 1,
@@ -726,7 +781,7 @@ class ProductSeeder extends Seeder
             'name' => 'Sans doute',
             'reference' => '',
             'stock' => 0,
-            'buffer' => 0,
+            'buffer' => 12,
             'quantity_per_carton' => 1,
             'conditioning_per_carton' => 1,
             'price' => 1,
@@ -737,7 +792,7 @@ class ProductSeeder extends Seeder
             'name' => 'Traditionnel nanah marocco',
             'reference' => '',
             'stock' => 0,
-            'buffer' => 0,
+            'buffer' => 12,
             'quantity_per_carton' => 1,
             'conditioning_per_carton' => 1,
             'price' => 1,
@@ -748,7 +803,7 @@ class ProductSeeder extends Seeder
             'name' => 'Jardin d\'Alix',
             'reference' => '',
             'stock' => 0,
-            'buffer' => 0,
+            'buffer' => 12,
             'quantity_per_carton' => 1,
             'conditioning_per_carton' => 1,
             'price' => 1,
@@ -759,7 +814,7 @@ class ProductSeeder extends Seeder
             'name' => 'Marabout',
             'reference' => '',
             'stock' => 0,
-            'buffer' => 0,
+            'buffer' => 12,
             'quantity_per_carton' => 1,
             'conditioning_per_carton' => 1,
             'price' => 1,
@@ -770,7 +825,7 @@ class ProductSeeder extends Seeder
             'name' => 'O. Bancha Arashiyama',
             'reference' => '',
             'stock' => 0,
-            'buffer' => 0,
+            'buffer' => 12,
             'quantity_per_carton' => 1,
             'conditioning_per_carton' => 1,
             'price' => 1,
@@ -781,7 +836,7 @@ class ProductSeeder extends Seeder
             'name' => 'Strong british Breakfast',
             'reference' => '',
             'stock' => 0,
-            'buffer' => 0,
+            'buffer' => 12,
             'quantity_per_carton' => 1,
             'conditioning_per_carton' => 1,
             'price' => 1,
@@ -792,7 +847,7 @@ class ProductSeeder extends Seeder
             'name' => 'Tisane de l\'abbaye',
             'reference' => '',
             'stock' => 0,
-            'buffer' => 0,
+            'buffer' => 12,
             'quantity_per_carton' => 1,
             'conditioning_per_carton' => 1,
             'price' => 1,
@@ -803,7 +858,7 @@ class ProductSeeder extends Seeder
             'name' => 'Les herbes insolentes',
             'reference' => '',
             'stock' => 0,
-            'buffer' => 0,
+            'buffer' => 12,
             'quantity_per_carton' => 1,
             'conditioning_per_carton' => 1,
             'price' => 1,
@@ -815,12 +870,34 @@ class ProductSeeder extends Seeder
         ============================*/
         \App\Product::create([
             'name' => 'Baba au rhum koughloff',
-            'reference' => '',
+            'reference' => '90605',
             'stock' => 3,
-            'buffer' => 0,
+            'buffer' => 2,
             'quantity_per_carton' => 1,
             'conditioning_per_carton' => 1,
-            'price' => 1,
+            'price' => 25.2,
+            'provider_id' => 6
+        ]);
+
+        \App\Product::create([
+            'name' => 'Chocolatine',
+            'reference' => '96112',
+            'stock' => 3,
+            'buffer' => 1,
+            'quantity_per_carton' => 1,
+            'conditioning_per_carton' => 1,
+            'price' => 33.84,
+            'provider_id' => 6
+        ]);
+
+        \App\Product::create([
+            'name' => 'Croissant',
+            'reference' => '96119',
+            'stock' => 3,
+            'buffer' => 1,
+            'quantity_per_carton' => 1,
+            'conditioning_per_carton' => 1,
+            'price' => 31.7,
             'provider_id' => 6
         ]);
 
@@ -831,54 +908,120 @@ class ProductSeeder extends Seeder
             'name' => 'Confiture de tomate verte',
             'reference' => '',
             'stock' => 1,
-            'buffer' => 0,
+            'buffer' => 1,
             'quantity_per_carton' => 1,
             'conditioning_per_carton' => 1,
-            'price' => 1,
+            'price' => 24,
             'provider_id' => 7
         ]);
 
         \App\Product::create([
             'name' => 'Configutre fraise',
-            'reference' => '',
+            'reference' => 'MUKDK2FR',
             'stock' => 1,
-            'buffer' => 0,
+            'buffer' => 1,
             'quantity_per_carton' => 1,
             'conditioning_per_carton' => 1,
-            'price' => 1,
+            'price' => 18,
             'provider_id' => 7
         ]);
 
         \App\Product::create([
             'name' => 'Confiture abricot',
-            'reference' => '',
+            'reference' => 'MUKDK2BB',
             'stock' => 1,
-            'buffer' => 0,
+            'buffer' => 1,
             'quantity_per_carton' => 1,
             'conditioning_per_carton' => 1,
-            'price' => 1,
+            'price' => 18,
             'provider_id' => 7
         ]);
 
         \App\Product::create([
             'name' => 'Confiture myrtille',
-            'reference' => '',
+            'reference' => 'MUKDK2MY',
             'stock' => 1,
-            'buffer' => 0,
+            'buffer' => 1,
             'quantity_per_carton' => 1,
             'conditioning_per_carton' => 1,
-            'price' => 1,
+            'price' => 24,
             'provider_id' => 7
         ]);
 
         \App\Product::create([
             'name' => 'Confiture figue violette',
-            'reference' => '',
+            'reference' => 'MUKDK2FI',
             'stock' => 1,
-            'buffer' => 0,
+            'buffer' => 1,
             'quantity_per_carton' => 1,
             'conditioning_per_carton' => 1,
-            'price' => 1,
+            'price' => 21.6,
+            'provider_id' => 7
+        ]);
+
+        \App\Product::create([
+            'name' => 'Jus de tomate',
+            'reference' => 'MILJT33',
+            'stock' => 1,
+            'buffer' => 12,
+            'quantity_per_carton' => 12,
+            'conditioning_per_carton' => 12,
+            'price' => 1.92,
+            'provider_id' => 7
+        ]);
+
+        \App\Product::create([
+            'name' => 'Jus de pamplemousse',
+            'reference' => 'MILJPAMROS33',
+            'stock' => 1,
+            'buffer' => 12,
+            'quantity_per_carton' => 12,
+            'conditioning_per_carton' => 12,
+            'price' => 1.92,
+            'provider_id' => 7
+        ]);
+
+        \App\Product::create([
+            'name' => 'Jus d\'abricot',
+            'reference' => 'MILNAB33',
+            'stock' => 1,
+            'buffer' => 12,
+            'quantity_per_carton' => 12,
+            'conditioning_per_carton' => 12,
+            'price' => 1.51,
+            'provider_id' => 7
+        ]);
+
+        \App\Product::create([
+            'name' => 'Jus de pomme',
+            'reference' => 'MILJPCOX33',
+            'stock' => 1,
+            'buffer' => 12,
+            'quantity_per_carton' => 12,
+            'conditioning_per_carton' => 12,
+            'price' => 1.92,
+            'provider_id' => 7
+        ]);
+
+        \App\Product::create([
+            'name' => 'Jus de pêche',
+            'reference' => 'MILNPV33',
+            'stock' => 1,
+            'buffer' => 12,
+            'quantity_per_carton' => 12,
+            'conditioning_per_carton' => 12,
+            'price' => 1.92,
+            'provider_id' => 7
+        ]);
+
+        \App\Product::create([
+            'name' => 'Jus de raisin',
+            'reference' => 'MILJRRMERLOT33',
+            'stock' => 1,
+            'buffer' => 12,
+            'quantity_per_carton' => 12,
+            'conditioning_per_carton' => 12,
+            'price' => 1.92,
             'provider_id' => 7
         ]);
 
@@ -886,46 +1029,13 @@ class ProductSeeder extends Seeder
         METRO
         ============================*/
         \App\Product::create([
-            'name' => 'Effiloché de boeuf',
-            'reference' => '220257',
-            'stock' => 2,
-            'buffer' => 0,
-            'quantity_per_carton' => 1,
-            'conditioning_per_carton' => 1,
-            'price' => 1,
-            'provider_id' => 8
-        ]);
-
-        \App\Product::create([
             'name' => 'Oignon rouge',
-            'reference' => '711368',
+            'reference' => '712875',
             'stock' => 0,
-            'buffer' => 0,
+            'buffer' => 1,
             'quantity_per_carton' => 1,
             'conditioning_per_carton' => 1,
-            'price' => 1,
-            'provider_id' => 8
-        ]);
-
-        \App\Product::create([
-            'name' => 'Ketchup tube',
-            'reference' => '36668',
-            'stock' => 5,
-            'buffer' => 0,
-            'quantity_per_carton' => 1,
-            'conditioning_per_carton' => 1,
-            'price' => 1,
-            'provider_id' => 8
-        ]);
-
-        \App\Product::create([
-            'name' => 'Aiguillettes de poulet panées aux corns flakes',
-            'reference' => '220664',
-            'stock' => 0,
-            'buffer' => 0,
-            'quantity_per_carton' => 1,
-            'conditioning_per_carton' => 1,
-            'price' => 1,
+            'price' => 7.16,
             'provider_id' => 8
         ]);
 
@@ -933,10 +1043,10 @@ class ProductSeeder extends Seeder
             'name' => 'Emmental râpé',
             'reference' => '207259',
             'stock' => 0,
-            'buffer' => 0,
+            'buffer' => 2,
             'quantity_per_carton' => 1,
             'conditioning_per_carton' => 1,
-            'price' => 1,
+            'price' => 11.17,
             'provider_id' => 8
         ]);
 
@@ -944,21 +1054,10 @@ class ProductSeeder extends Seeder
             'name' => 'Camembert',
             'reference' => '168944',
             'stock' => 0,
-            'buffer' => 0,
+            'buffer' => 30,
             'quantity_per_carton' => 1,
             'conditioning_per_carton' => 1,
-            'price' => 1,
-            'provider_id' => 8
-        ]);
-
-        \App\Product::create([
-            'name' => 'Reblochon',
-            'reference' => '6336',
-            'stock' => 0,
-            'buffer' => 0,
-            'quantity_per_carton' => 1,
-            'conditioning_per_carton' => 1,
-            'price' => 1,
+            'price' => 1.65,
             'provider_id' => 8
         ]);
 
@@ -966,10 +1065,10 @@ class ProductSeeder extends Seeder
             'name' => 'Salade',
             'reference' => '6234',
             'stock' => 0,
-            'buffer' => 0,
+            'buffer' => 12,
             'quantity_per_carton' => 1,
             'conditioning_per_carton' => 1,
-            'price' => 1,
+            'price' => 2.76,
             'provider_id' => 8
         ]);
 
@@ -977,10 +1076,10 @@ class ProductSeeder extends Seeder
             'name' => 'Noix',
             'reference' => '152447',
             'stock' => 1,
-            'buffer' => 0,
+            'buffer' => 2,
             'quantity_per_carton' => 1,
             'conditioning_per_carton' => 1,
-            'price' => 1,
+            'price' => 11.45,
             'provider_id' => 8
         ]);
 
@@ -988,43 +1087,10 @@ class ProductSeeder extends Seeder
             'name' => 'Noix de pecan',
             'reference' => '152516',
             'stock' => 1,
-            'buffer' => 0,
+            'buffer' => 2,
             'quantity_per_carton' => 1,
             'conditioning_per_carton' => 1,
-            'price' => 1,
-            'provider_id' => 8
-        ]);
-
-        \App\Product::create([
-            'name' => 'Thym',
-            'reference' => '49702',
-            'stock' => 0,
-            'buffer' => 0,
-            'quantity_per_carton' => 1,
-            'conditioning_per_carton' => 1,
-            'price' => 1,
-            'provider_id' => 8
-        ]);
-
-        \App\Product::create([
-            'name' => 'Romarin',
-            'reference' => '',
-            'stock' => 0,
-            'buffer' => 0,
-            'quantity_per_carton' => 1,
-            'conditioning_per_carton' => 1,
-            'price' => 1,
-            'provider_id' => 8
-        ]);
-
-        \App\Product::create([
-            'name' => 'Vin blanc',
-            'reference' => '',
-            'stock' => 0,
-            'buffer' => 0,
-            'quantity_per_carton' => 1,
-            'conditioning_per_carton' => 1,
-            'price' => 1,
+            'price' => 13.44,
             'provider_id' => 8
         ]);
 
@@ -1032,10 +1098,10 @@ class ProductSeeder extends Seeder
             'name' => 'Cornichons',
             'reference' => '74636',
             'stock' => 0,
-            'buffer' => 0,
+            'buffer' => 1,
             'quantity_per_carton' => 1,
             'conditioning_per_carton' => 1,
-            'price' => 1,
+            'price' => 7.27,
             'provider_id' => 8
         ]);
 
@@ -1043,10 +1109,10 @@ class ProductSeeder extends Seeder
             'name' => 'Oignon frits',
             'reference' => '',
             'stock' => 0,
-            'buffer' => 0,
+            'buffer' => 1,
             'quantity_per_carton' => 1,
             'conditioning_per_carton' => 1,
-            'price' => 1,
+            'price' => 3.33,
             'provider_id' => 8
         ]);
 
@@ -1054,10 +1120,10 @@ class ProductSeeder extends Seeder
             'name' => 'Parmesan',
             'reference' => '',
             'stock' => 0,
-            'buffer' => 0,
+            'buffer' => 2,
             'quantity_per_carton' => 1,
             'conditioning_per_carton' => 1,
-            'price' => 1,
+            'price' => 13.38,
             'provider_id' => 8
         ]);
 
@@ -1065,21 +1131,32 @@ class ProductSeeder extends Seeder
             'name' => 'Oeuf',
             'reference' => '169812',
             'stock' => 0,
-            'buffer' => 0,
+            'buffer' => 2,
             'quantity_per_carton' => 1,
             'conditioning_per_carton' => 1,
-            'price' => 1,
+            'price' => 17.59,
             'provider_id' => 8
         ]);
 
         \App\Product::create([
             'name' => 'Pain de mie',
-            'reference' => '44617',
+            'reference' => '44618',
             'stock' => 0,
-            'buffer' => 0,
+            'buffer' => 4,
             'quantity_per_carton' => 1,
             'conditioning_per_carton' => 1,
-            'price' => 1,
+            'price' => 1.15,
+            'provider_id' => 8
+        ]);
+
+        \App\Product::create([
+            'name' => 'Croûtons',
+            'reference' => '231986',
+            'stock' => 0,
+            'buffer' => 2,
+            'quantity_per_carton' => 1,
+            'conditioning_per_carton' => 1,
+            'price' => 2.7,
             'provider_id' => 8
         ]);
 
@@ -1087,43 +1164,10 @@ class ProductSeeder extends Seeder
             'name' => 'Bûche de chèvre',
             'reference' => '236227',
             'stock' => 0,
-            'buffer' => 0,
-            'quantity_per_carton' => 1,
-            'conditioning_per_carton' => 1,
-            'price' => 1,
-            'provider_id' => 8
-        ]);
-
-        \App\Product::create([
-            'name' => 'Miel',
-            'reference' => '74636',
-            'stock' => 0,
-            'buffer' => 0,
-            'quantity_per_carton' => 1,
-            'conditioning_per_carton' => 1,
-            'price' => 1,
-            'provider_id' => 8
-        ]);
-
-        \App\Product::create([
-            'name' => 'Lait demi écrémé',
-            'reference' => '247705',
-            'stock' => 5,
-            'buffer' => 0,
-            'quantity_per_carton' => 1,
-            'conditioning_per_carton' => 1,
-            'price' => 1,
-            'provider_id' => 8
-        ]);
-
-        \App\Product::create([
-            'name' => 'Lait entier',
-            'reference' => '247893',
-            'stock' => 5,
-            'buffer' => 0,
-            'quantity_per_carton' => 1,
-            'conditioning_per_carton' => 1,
-            'price' => 1,
+            'buffer' => 2,
+            'quantity_per_carton' => 6,
+            'conditioning_per_carton' => 6,
+            'price' => 11.59,
             'provider_id' => 8
         ]);
 
@@ -1131,10 +1175,10 @@ class ProductSeeder extends Seeder
             'name' => 'Chocolat poudre',
             'reference' => '2230',
             'stock' => 4,
-            'buffer' => 0,
+            'buffer' => 10,
             'quantity_per_carton' => 1,
             'conditioning_per_carton' => 1,
-            'price' => 1,
+            'price' => 7.58,
             'provider_id' => 8
         ]);
 
@@ -1142,10 +1186,10 @@ class ProductSeeder extends Seeder
             'name' => 'Cacao poudre',
             'reference' => '22642',
             'stock' => 2,
-            'buffer' => 0,
+            'buffer' => 4,
             'quantity_per_carton' => 1,
             'conditioning_per_carton' => 1,
-            'price' => 1,
+            'price' => 2.52,
             'provider_id' => 8
         ]);
 
@@ -1153,10 +1197,10 @@ class ProductSeeder extends Seeder
             'name' => 'Oreo brisure',
             'reference' => '68519',
             'stock' => 2,
-            'buffer' => 0,
+            'buffer' => 4,
             'quantity_per_carton' => 1,
             'conditioning_per_carton' => 1,
-            'price' => 1,
+            'price' => 3.75,
             'provider_id' => 8
         ]);
 
@@ -1164,10 +1208,10 @@ class ProductSeeder extends Seeder
             'name' => 'Granola brisure',
             'reference' => '182672',
             'stock' => 1,
-            'buffer' => 0,
+            'buffer' => 2,
             'quantity_per_carton' => 1,
             'conditioning_per_carton' => 1,
-            'price' => 1,
+            'price' => 6.16,
             'provider_id' => 8
         ]);
 
@@ -1175,10 +1219,10 @@ class ProductSeeder extends Seeder
             'name' => 'Spéculoos brisure',
             'reference' => '37460',
             'stock' => 4,
-            'buffer' => 0,
+            'buffer' => 4,
             'quantity_per_carton' => 1,
             'conditioning_per_carton' => 1,
-            'price' => 1,
+            'price' => 3.73,
             'provider_id' => 8
         ]);
 
@@ -1186,10 +1230,10 @@ class ProductSeeder extends Seeder
             'name' => 'Pépite caramélisée',
             'reference' => '100215',
             'stock' => 1,
-            'buffer' => 0,
+            'buffer' => 1,
             'quantity_per_carton' => 1,
             'conditioning_per_carton' => 1,
-            'price' => 1,
+            'price' => 10.71,
             'provider_id' => 8
         ]);
 
@@ -1197,10 +1241,10 @@ class ProductSeeder extends Seeder
             'name' => 'Smarties',
             'reference' => '116346',
             'stock' => 1,
-            'buffer' => 0,
+            'buffer' => 1,
             'quantity_per_carton' => 1,
             'conditioning_per_carton' => 1,
-            'price' => 1,
+            'price' => 11.85,
             'provider_id' => 8
         ]);
 
@@ -1208,10 +1252,10 @@ class ProductSeeder extends Seeder
             'name' => 'Ours au chocolat',
             'reference' => '247356',
             'stock' => 0,
-            'buffer' => 0,
+            'buffer' => 2,
             'quantity_per_carton' => 1,
             'conditioning_per_carton' => 1,
-            'price' => 1,
+            'price' => 15.70,
             'provider_id' => 8
         ]);
 
@@ -1219,10 +1263,10 @@ class ProductSeeder extends Seeder
             'name' => 'Crème fraîche',
             'reference' => '17521',
             'stock' => 0,
-            'buffer' => 0,
+            'buffer' => 4,
             'quantity_per_carton' => 1,
             'conditioning_per_carton' => 1,
-            'price' => 1,
+            'price' => 2.61,
             'provider_id' => 8
         ]);
 
@@ -1230,10 +1274,10 @@ class ProductSeeder extends Seeder
             'name' => 'Beurre doux',
             'reference' => '6223',
             'stock' => 0,
-            'buffer' => 0,
+            'buffer' => 4,
             'quantity_per_carton' => 1,
             'conditioning_per_carton' => 1,
-            'price' => 1,
+            'price' => 3.10,
             'provider_id' => 8
         ]);
 
@@ -1241,10 +1285,10 @@ class ProductSeeder extends Seeder
             'name' => 'Beurre demi sel',
             'reference' => '12384',
             'stock' => 0,
-            'buffer' => 0,
+            'buffer' => 4,
             'quantity_per_carton' => 1,
             'conditioning_per_carton' => 1,
-            'price' => 1,
+            'price' => 3.10,
             'provider_id' => 8
         ]);
 
@@ -1252,10 +1296,10 @@ class ProductSeeder extends Seeder
             'name' => 'Farine',
             'reference' => '242287',
             'stock' => 23,
-            'buffer' => 0,
-            'quantity_per_carton' => 1,
-            'conditioning_per_carton' => 1,
-            'price' => 1,
+            'buffer' => 18,
+            'quantity_per_carton' => 6,
+            'conditioning_per_carton' => 6,
+            'price' => 3.62,
             'provider_id' => 8
         ]);
 
@@ -1263,10 +1307,10 @@ class ProductSeeder extends Seeder
             'name' => 'Sucre roux',
             'reference' => '247887',
             'stock' => 1,
-            'buffer' => 0,
-            'quantity_per_carton' => 1,
-            'conditioning_per_carton' => 1,
-            'price' => 1,
+            'buffer' => 1,
+            'quantity_per_carton' => 6,
+            'conditioning_per_carton' => 6,
+            'price' => 12.92,
             'provider_id' => 8
         ]);
 
@@ -1274,65 +1318,21 @@ class ProductSeeder extends Seeder
             'name' => 'Sucre blanc',
             'reference' => '247300',
             'stock' => 17,
-            'buffer' => 0,
-            'quantity_per_carton' => 1,
-            'conditioning_per_carton' => 1,
-            'price' => 1,
-            'provider_id' => 8
-        ]);
-
-        \App\Product::create([
-            'name' => 'Pépite de chocolat patisserie',
-            'reference' => '74636',
-            'stock' => 1,
-            'buffer' => 0,
-            'quantity_per_carton' => 1,
-            'conditioning_per_carton' => 1,
-            'price' => 1,
-            'provider_id' => 8
-        ]);
-
-        \App\Product::create([
-            'name' => 'Brisure de chocolat noir',
-            'reference' => '',
-            'stock' => 0,
-            'buffer' => 0,
-            'quantity_per_carton' => 1,
-            'conditioning_per_carton' => 1,
-            'price' => 1,
+            'buffer' => 12,
+            'quantity_per_carton' => 6,
+            'conditioning_per_carton' => 6,
+            'price' => 4.82,
             'provider_id' => 8
         ]);
 
         \App\Product::create([
             'name' => 'Levure',
-            'reference' => '',
+            'reference' => '73726',
             'stock' => 0,
-            'buffer' => 0,
+            'buffer' => 1,
             'quantity_per_carton' => 1,
             'conditioning_per_carton' => 1,
-            'price' => 1,
-            'provider_id' => 8
-        ]);
-
-        \App\Product::create([
-            'name' => 'Pommes pour crumble',
-            'reference' => '',
-            'stock' => 0,
-            'buffer' => 0,
-            'quantity_per_carton' => 1,
-            'conditioning_per_carton' => 1,
-            'price' => 1,
-            'provider_id' => 8
-        ]);
-
-        \App\Product::create([
-            'name' => 'Nutella',
-            'reference' => '215451',
-            'stock' => 3,
-            'buffer' => 0,
-            'quantity_per_carton' => 1,
-            'conditioning_per_carton' => 1,
-            'price' => 1,
+            'price' => 4.29,
             'provider_id' => 8
         ]);
 
@@ -1340,21 +1340,21 @@ class ProductSeeder extends Seeder
             'name' => 'Cigarette',
             'reference' => '200600',
             'stock' => 1,
-            'buffer' => 0,
+            'buffer' => 1,
             'quantity_per_carton' => 1,
             'conditioning_per_carton' => 1,
-            'price' => 1,
+            'price' => 19.98,
             'provider_id' => 8
         ]);
 
         \App\Product::create([
-            'name' => 'Cacahuète',
+            'name' => 'Cacahuète en seau',
             'reference' => '179898',
             'stock' => 1,
-            'buffer' => 0,
+            'buffer' => 1,
             'quantity_per_carton' => 1,
             'conditioning_per_carton' => 1,
-            'price' => 1,
+            'price' => 15.37,
             'provider_id' => 8
         ]);
 
@@ -1362,10 +1362,10 @@ class ProductSeeder extends Seeder
             'name' => 'Nougats',
             'reference' => '62239',
             'stock' => 3,
-            'buffer' => 0,
+            'buffer' => 8,
             'quantity_per_carton' => 1,
             'conditioning_per_carton' => 1,
-            'price' => 1,
+            'price' => 12.59,
             'provider_id' => 8
         ]);
     }
