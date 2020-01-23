@@ -22,7 +22,7 @@
         <!-- Contact Info -->
         <ul class="contact-info list-inline">
             <li><i class="fa fa-phone"></i>09 54 11 54 16</li>
-            <li><i class="fa fa-envelope-o"></i>chambres@arcoch.fr</li>
+            <li><i class="fa fa-envelope-o"></i>hebergement@arcoch.fr</li>
         </ul>
     </div>
 </div>
@@ -271,7 +271,7 @@
                 <ul>
                     <li><i class="fa fa-map-marker "></i>L'Arcoch, route du lac de Payolle - Quartier Serre Crampe, 65710 Campan</li>
                     <li><i class="fa fa-phone"></i>09 54 11 54 16</li>
-                    <li><i class="fa fa-envelope-o"></i>chambres@arcoch.fr</li>
+                    <li><i class="fa fa-envelope-o"></i>hebergement@arcoch.fr</li>
                 </ul>
                 <ul class="list-inline social-icons">
                     <li><a class="sp-fb" target="_blank" href="https://www.facebook.com/LArcoch-909597672726152/"><i class="fa fa-facebook"></i></a></li>
