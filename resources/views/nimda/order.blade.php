@@ -21,33 +21,33 @@
                     <div class="col-12">
                         @foreach($providers as $provider)
                             <div class="collapse multi-collapse @if($provider->id == 1) show @endif" id="{{ $provider->short_name }}">
-                                <div>
+                                <div class="table-responsive">
                                     <table class="table table-bordered">
                                         <thead style="background-color: {{ $provider->color }}; color: #FFFFFF">
-                                        <tr>
-                                            <th scope="col">Produit</th>
-                                            <th scope="col">Quantité en stock</th>
-                                            <th scope="col">Stock tampon</th>
-                                            <th scope="col">Quantité nécessaire (à l'unité)</th>
-                                            <th scope="col">Quantité à commander (en carton)</th>
-                                            <th scope="col">Prix</th>
+                                        <tr class="d-flex">
+                                            <th class="col-5">Produit</th>
+                                            <th class="col-1">Quantité en stock</th>
+                                            <th class="col-1">Stock tampon</th>
+                                            <th class="col-1">Quantité nécessaire (à l'unité)</th>
+                                            <th class="col-1">Quantité à commander (en carton)</th>
+                                            <th class="col-3">Prix</th>
                                         </tr>
                                         </thead>
                                         <tbody>
                                         @foreach($provider->products as $product)
-                                            <tr id="{{ $product->id }}">
+                                            <tr class="d-flex" id="{{ $product->id }}">
                                                 @php
                                                     $quantity = $product->buffer - $product->stock;
                                                     $neededCarton = ceil($quantity / $product->conditioning_per_carton);
                                                     $price = round($product->price * $product->quantity_per_carton * $neededCarton,2);
                                                 @endphp
-                                                <th scope="row">{{ $product->name }}</th>
+                                                <td class="col-5">{{ $product->name }}</td>
                                                 <input type="hidden" name="productId[]" class="productId" value="{{ $product->id }}">
-                                                <td><input type="number" name="stock" class="stock" value="{{ $product->stock }}" min=0 disabled></td>
-                                                <td><input type="number" name="buffer" class="buffer" value="{{ $product->buffer }}" min=0 disabled></td>
-                                                <td><input type="number" name="quantityUnit" class="quantityUnit" onchange="modifyInfos('{{ $product->id }}', '{{ $product->conditioning_per_carton }}', '{{ $product->price }}', '{{ $product->quantity_per_carton }}')" value="@if($quantity <= 0){{ intval(0) }}@else{{ $quantity }}@endif" min=0></td>
-                                                <td><input type="number" name="quantityCarton[]" class="quantityCarton" value="@if($quantity <= 0){{ intval(0) }}@else{{ $neededCarton }}@endif" min=0 disabled></td>
-                                                <td><input type="number" name="price[]" class="price" min="0" value="@if($price > 0){{ $price }}@else{{ '0' }}@endif" disabled> €</td>
+                                                <td class="col-1"><input class="col-12 stock" type="number" name="stock" value="{{ $product->stock }}" min=0 disabled></td>
+                                                <td class="col-1"><input class="col-12 buffer" type="number" name="buffer" value="{{ $product->buffer }}" min=0 disabled></td>
+                                                <td class="col-1"><input class="col-12 quantityUnit" type="number" name="quantityUnit" onchange="modifyInfos('{{ $product->id }}', '{{ $product->conditioning_per_carton }}', '{{ $product->price }}', '{{ $product->quantity_per_carton }}')" value="@if($quantity <= 0){{ intval(0) }}@else{{ $quantity }}@endif" min=0></td>
+                                                <td class="col-1"><input class="col-12 quantityCarton" type="number" name="quantityCarton[]" value="@if($quantity <= 0){{ intval(0) }}@else{{ $neededCarton }}@endif" min=0 disabled></td>
+                                                <td class="col-3"><div class="col-12"><input class="col-12 price" type="number" name="price[]" min="0" value="@if($price > 0){{ $price }}@else{{ '0' }}@endif" disabled></div></td>
                                             </tr>
                                         @endforeach
                                         </tbody>
