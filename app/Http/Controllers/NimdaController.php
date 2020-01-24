@@ -8,6 +8,7 @@ use App\Product;
 use App\Provider;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Input;
+use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Request;
 use Illuminate\Support\Facades\Session;
 
@@ -60,6 +61,7 @@ class NimdaController extends Controller
         $orderNumber = Order::max('orderNumber');
         $nextOrderNumber = $orderNumber + 1;
         $response = 'save_ok';
+        $orders = [];
 
         for ($i = 0; $i < count($productIds); $i++)
         {
@@ -72,9 +74,11 @@ class NimdaController extends Controller
                 $newOrder->provider()->associate($provider);
                 $newOrder->quantity = $quantitiesCarton[$i];
                 $newOrder->price = $prices[$i];
+                $orders[] = $newOrder;
 
                 try {
                     $newOrder->save();
+                    Mail::to('resto@arcoch.fr')->send($orders);
                 } catch (\Exception $e) {
                     $response = 'save_ko';
                 } finally {

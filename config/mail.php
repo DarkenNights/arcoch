@@ -29,7 +29,7 @@ return [
     |
     */
 
-    'host' => env('MAIL_HOST', 'smtp.mailgun.org'),
+    'host' => env('MAIL_HOST', 'ssl0.ovh.net'),
 
     /*
     |--------------------------------------------------------------------------
@@ -42,11 +42,11 @@ return [
     |
     */
 
-    'port' => env('MAIL_PORT', 587),
+    'port' => env('MAIL_PORT', 993),
 
     /*
     |--------------------------------------------------------------------------
-    | Global "From" Address
+    | Global "From" and "Reply" Address
     |--------------------------------------------------------------------------
     |
     | You may wish for all e-mails sent by your application to be sent from
@@ -56,9 +56,11 @@ return [
     */
 
     'from' => [
-        'address' => env('MAIL_FROM_ADDRESS', 'hello@example.com'),
-        'name' => env('MAIL_FROM_NAME', 'Example'),
+        'address' => env('MAIL_FROM_ADDRESS', 'contact@arcoch.fr'),
+        'name' => env('MAIL_FROM_NAME', 'L\'Arcoch'),
     ],
+
+    'reply_to' => ['address' => 'resto@arcoch.fr', 'name' => 'L\'Arcoch'],
 
     /*
     |--------------------------------------------------------------------------
