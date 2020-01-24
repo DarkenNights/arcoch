@@ -79,7 +79,6 @@ class NimdaController extends Controller
 
                 try {
                     $newOrder->save();
-                    Mail::to('resto@arcoch.fr')->send(new SendOrder($orders));
                 } catch (\Exception $e) {
                     $response = $e;
                 } finally {
@@ -87,6 +86,7 @@ class NimdaController extends Controller
                 }
             }
         }
+        Mail::to('resto@arcoch.fr')->send(new SendOrder($orders));
         return response()->json($response);
     }
 
