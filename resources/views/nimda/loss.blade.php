@@ -17,24 +17,25 @@
                 <form class="col-12" method="POST" action="{{ route('nimdaAddLoss') }}">
                     {{ csrf_field() }}
                     <div class="row">
-                        <div class="col-4 form-group">
+                        <div class="col-6 form-group">
                             <label for="product">Produit</label>
                             <select class="form-control" name="product">
                                 @foreach($providers as $provider)
-                                    <option style="background-color: {{ $provider->color }}; color: #FFFFFF" name="{{ $provider->short_name }}" disabled>{{ $provider->name }}</option>
-                                    @foreach($products as $product)
-                                        @if($product->provider_id === $provider->id)
-                                            <option value="{{ $product->id }}">{{ $product->name }}</option>
-                                        @endif
-                                    @endforeach
+                                    <optgroup style="background-color: {{ $provider->color }}; color: #FFFFFF;" label="{{ $provider->name }}" name="{{ $provider->short_name }}">
+                                        @foreach($products as $product)
+                                            @if($product->provider_id === $provider->id)
+                                                <option value="{{ $product->id }}">{{ $product->name }}</option>
+                                            @endif
+                                        @endforeach
+                                    </optgroup>
                                 @endforeach
                             </select>
                         </div>
-                        <div class="col-2 form-group">
+                        <div class="col-3 form-group">
                             <label for="quantity">Quantité à l'unité ou en kg</label>
                             <input class="form-control" type="number" name="quantity" min="0" step="0.01" value="0">
                         </div>
-                        <div class="col-2">
+                        <div class="col-3">
                             <button style="margin-top: 32px" type="submit" class="btn btn-success">Enregistrer la perte</button>
                         </div>
                     </div>
