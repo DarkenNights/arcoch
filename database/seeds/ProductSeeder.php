@@ -24,7 +24,7 @@ class ProductSeeder extends Seeder
             'buffer' => 6,
             'quantity_per_carton' => 1,
             'conditioning_per_carton' => 1,
-            'price' => 1,
+            'price' => 5.93,
             'provider_id' => 1
         ]);
 
@@ -35,7 +35,7 @@ class ProductSeeder extends Seeder
             'buffer' => 6,
             'quantity_per_carton' => 1,
             'conditioning_per_carton' => 1,
-            'price' => 1,
+            'price' => 8.55,
             'provider_id' => 1
         ]);
 
@@ -46,7 +46,7 @@ class ProductSeeder extends Seeder
             'buffer' => 8,
             'quantity_per_carton' => 1,
             'conditioning_per_carton' => 1,
-            'price' => 1,
+            'price' => 13.85,
             'provider_id' => 1
         ]);
 
@@ -55,9 +55,9 @@ class ProductSeeder extends Seeder
             'reference' => '41066',
             'stock' => 0,
             'buffer' => 2,
-            'quantity_per_carton' => 2.275,
+            'quantity_per_carton' => 1,
             'conditioning_per_carton' => 1,
-            'price' => 1,
+            'price' => 9.41,
             'provider_id' => 1
         ]);
 
@@ -68,7 +68,7 @@ class ProductSeeder extends Seeder
             'buffer' => 2,
             'quantity_per_carton' => 1,
             'conditioning_per_carton' => 1,
-            'price' => 0,
+            'price' => 7.65,
             'provider_id' => 1
         ]);
 
@@ -79,7 +79,7 @@ class ProductSeeder extends Seeder
             'buffer' => 4,
             'quantity_per_carton' => 1,
             'conditioning_per_carton' => 1,
-            'price' => 1,
+            'price' => 6.74,
             'provider_id' => 1
         ]);
 
@@ -90,7 +90,7 @@ class ProductSeeder extends Seeder
             'buffer' => 6,
             'quantity_per_carton' => 1,
             'conditioning_per_carton' => 1,
-            'price' => 1,
+            'price' => 7.28,
             'provider_id' => 1
         ]);
 
@@ -101,7 +101,7 @@ class ProductSeeder extends Seeder
             'buffer' => 12,
             'quantity_per_carton' => 1,
             'conditioning_per_carton' => 1,
-            'price' => 1,
+            'price' => 3.17,
             'provider_id' => 1
         ]);
 
@@ -112,7 +112,7 @@ class ProductSeeder extends Seeder
             'buffer' => 6,
             'quantity_per_carton' => 1,
             'conditioning_per_carton' => 1,
-            'price' => 1,
+            'price' => 4.05,
             'provider_id' => 1
         ]);
 
@@ -123,7 +123,7 @@ class ProductSeeder extends Seeder
             'buffer' => 4,
             'quantity_per_carton' => 1,
             'conditioning_per_carton' => 1,
-            'price' => 1,
+            'price' => 2.03,
             'provider_id' => 1
         ]);
 
@@ -134,7 +134,7 @@ class ProductSeeder extends Seeder
             'buffer' => 3,
             'quantity_per_carton' => 1,
             'conditioning_per_carton' => 1,
-            'price' => 1,
+            'price' => 7.85,
             'provider_id' => 1
         ]);
 
@@ -145,18 +145,18 @@ class ProductSeeder extends Seeder
             'buffer' => 2,
             'quantity_per_carton' => 1,
             'conditioning_per_carton' => 1,
-            'price' => 1,
+            'price' => 7.25,
             'provider_id' => 1
         ]);
 
         \App\Product::create([
             'name' => 'Mélange de graines',
-            'reference' => '44750',
+            'reference' => '44450',
             'stock' => 2,
             'buffer' => 4,
             'quantity_per_carton' => 1,
             'conditioning_per_carton' => 1,
-            'price' => 1,
+            'price' => 8.51,
             'provider_id' => 1
         ]);
 
@@ -167,7 +167,7 @@ class ProductSeeder extends Seeder
             'buffer' => 2,
             'quantity_per_carton' => 1,
             'conditioning_per_carton' => 1,
-            'price' => 1,
+            'price' => 4.3,
             'provider_id' => 1
         ]);
 
@@ -178,7 +178,7 @@ class ProductSeeder extends Seeder
             'buffer' => 6,
             'quantity_per_carton' => 1,
             'conditioning_per_carton' => 1,
-            'price' => 1,
+            'price' => 2.83,
             'provider_id' => 1
         ]);
 
@@ -189,7 +189,7 @@ class ProductSeeder extends Seeder
             'buffer' => 1,
             'quantity_per_carton' => 1,
             'conditioning_per_carton' => 1,
-            'price' => 1,
+            'price' => 11.82,
             'provider_id' => 1
         ]);
 
@@ -200,7 +200,7 @@ class ProductSeeder extends Seeder
             'buffer' => 1,
             'quantity_per_carton' => 1,
             'conditioning_per_carton' => 1,
-            'price' => 1,
+            'price' => 50.2,
             'provider_id' => 1
         ]);
 
@@ -211,7 +211,7 @@ class ProductSeeder extends Seeder
             'buffer' => 1,
             'quantity_per_carton' => 1,
             'conditioning_per_carton' => 1,
-            'price' => 1,
+            'price' => 23.8,
             'provider_id' => 1
         ]);
 
@@ -222,7 +222,7 @@ class ProductSeeder extends Seeder
             'buffer' => 12,
             'quantity_per_carton' => 1,
             'conditioning_per_carton' => 1,
-            'price' => 1,
+            'price' => 2.61,
             'provider_id' => 1
         ]);
 
@@ -233,7 +233,7 @@ class ProductSeeder extends Seeder
             'buffer' => 2,
             'quantity_per_carton' => 1,
             'conditioning_per_carton' => 1,
-            'price' => 1,
+            'price' => 4.83,
             'provider_id' => 1
         ]);
 
@@ -244,7 +244,7 @@ class ProductSeeder extends Seeder
             'buffer' => 3,
             'quantity_per_carton' => 1,
             'conditioning_per_carton' => 1,
-            'price' => 1,
+            'price' => 0,
             'provider_id' => 1
         ]);
 
@@ -255,18 +255,18 @@ class ProductSeeder extends Seeder
             'buffer' => 2,
             'quantity_per_carton' => 1,
             'conditioning_per_carton' => 1,
-            'price' => 1,
+            'price' => 10.18,
             'provider_id' => 1
         ]);
 
         \App\Product::create([
-            'name' => 'Soupe petits poids',
+            'name' => 'Soupe petits pois',
             'reference' => '36071',
             'stock' => 0,
             'buffer' => 6,
             'quantity_per_carton' => 1,
             'conditioning_per_carton' => 1,
-            'price' => 1,
+            'price' => 3.88,
             'provider_id' => 1
         ]);
 
@@ -277,7 +277,7 @@ class ProductSeeder extends Seeder
             'buffer' => 6,
             'quantity_per_carton' => 1,
             'conditioning_per_carton' => 1,
-            'price' => 1,
+            'price' => 3.88,
             'provider_id' => 1
         ]);
 
@@ -288,7 +288,7 @@ class ProductSeeder extends Seeder
             'buffer' => 6,
             'quantity_per_carton' => 1,
             'conditioning_per_carton' => 1,
-            'price' => 1,
+            'price' => 3.88,
             'provider_id' => 1
         ]);
 
@@ -299,7 +299,7 @@ class ProductSeeder extends Seeder
             'buffer' => 6,
             'quantity_per_carton' => 1,
             'conditioning_per_carton' => 1,
-            'price' => 1,
+            'price' => 3.88,
             'provider_id' => 1
         ]);
 
@@ -310,7 +310,7 @@ class ProductSeeder extends Seeder
             'buffer' => 4,
             'quantity_per_carton' => 1.2,
             'conditioning_per_carton' => 1,
-            'price' => 1,
+            'price' => 9.48,
             'provider_id' => 1
         ]);
 
@@ -321,7 +321,7 @@ class ProductSeeder extends Seeder
             'buffer' => 5,
             'quantity_per_carton' => 5,
             'conditioning_per_carton' => 5,
-            'price' => 1,
+            'price' => 22.86,
             'provider_id' => 1
         ]);
 
@@ -332,7 +332,7 @@ class ProductSeeder extends Seeder
             'buffer' => 10,
             'quantity_per_carton' => 5,
             'conditioning_per_carton' => 10,
-            'price' => 1,
+            'price' => 6.06,
             'provider_id' => 1
         ]);
 
