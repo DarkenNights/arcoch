@@ -113,6 +113,9 @@
             if(confirm(message)) {
                 order(providerShortName, productIds, quantitiesCarton, prices);
             }
+            else {
+                alert("Impossible d'envoyer la commande");
+            }
         }
 
         function order(providerShortName, productIds, quantitiesCarton, prices) {

@@ -5,7 +5,7 @@
         <div class="container-login100">
             <div class="wrap-login100">
                 <div class="login100-pic js-tilt" data-tilt>
-                    <img src="{{ asset('nimda/img/connect.png') }}" alt="connect">
+                    <img src="{{ asset('admin/img/connect.png') }}" alt="connect">
                 </div>
 
                 <form class="login100-form validate-form" method="post" action="{{ route('register') }}">
@@ -80,18 +80,17 @@
 @endsection
 
 @section('css')
-    <link rel="stylesheet" type="text/css" href="{{ asset('nimda/css/library/font-awesome.min.css') }}">
-    <link rel="stylesheet" type="text/css" href="{{ asset('nimda/css/library/animate.css') }}">
-    <link rel="stylesheet" type="text/css" href="{{ asset('nimda/css/library/hamburgers.min.css') }}">
-    <link rel="stylesheet" type="text/css" href="{{ asset('nimda/css/library/select2.min.css') }}">
-    <link rel="stylesheet" type="text/css" href="{{ asset('nimda/css/util.css') }}">
-    <link rel="stylesheet" type="text/css" href="{{ asset('nimda/css/main.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('admin/css/library/font-awesome.min.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('admin/css/library/animate.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('admin/css/library/hamburgers.min.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('admin/css/library/select2.min.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('admin/css/main.css') }}">
 @endsection
 
 @section('javascripts')
-    <script src="{{ asset('nimda/js/library/popper.js') }}"></script>
-    <script src="{{ asset('nimda/js/library/select2.min.js') }}"></script>
-    <script src="{{ asset('nimda/js/library/tilt.jquery.min.js') }}"></script>
+    <script src="{{ asset('admin/js/library/popper.js') }}"></script>
+    <script src="{{ asset('admin/js/library/select2.min.js') }}"></script>
+    <script src="{{ asset('admin') }}"></script>
     <script >
         $('.js-tilt').tilt({
             scale: 1.1

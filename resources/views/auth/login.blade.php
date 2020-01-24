@@ -63,18 +63,18 @@
 @endsection
 
 @section('css')
-    <link rel="stylesheet" type="text/css" href="{{ asset('nimda/css/library/font-awesome.min.css') }}">
-    <link rel="stylesheet" type="text/css" href="{{ asset('nimda/css/library/animate.css') }}">
-    <link rel="stylesheet" type="text/css" href="{{ asset('nimda/css/library/hamburgers.min.css') }}">
-    <link rel="stylesheet" type="text/css" href="{{ asset('nimda/css/library/select2.min.css') }}">
-    <link rel="stylesheet" type="text/css" href="{{ asset('nimda/css/util.css') }}">
-    <link rel="stylesheet" type="text/css" href="{{ asset('nimda/css/main.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('admin/css/library/font-awesome.min.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('admin/css/library/animate.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('admin/css/library/hamburgers.min.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('admin/css/library/select2.min.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('admin/css/util.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('admin/css/main.css') }}">
 @endsection
 
 @section('javascripts')
-    <script type="text/javascript" src="{{ asset('nimda/js/library/popper.js') }}"></script>
-    <script src="{{ asset('nimda/js/library/select2.min.js') }}"></script>
-    <script src="{{ asset('nimda/js/library/tilt.jquery.min.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('admin/js/library/popper.js') }}"></script>
+    <script src="{{ asset('admin/js/library/select2.min.js') }}"></script>
+    <script src="{{ asset('admin/js/library/tilt.jquery.min.js') }}"></script>
     <script >
         $('.js-tilt').tilt({
             scale: 1.1
