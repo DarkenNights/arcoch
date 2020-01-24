@@ -45,7 +45,7 @@
                                                 <input type="hidden" name="productId[]" class="productId" value="{{ $product->id }}">
                                                 <td class="col-1"><input class="col-12 stock" type="number" name="stock" value="{{ $product->stock }}" min=0 disabled></td>
                                                 <td class="col-1"><input class="col-12 buffer" type="number" name="buffer" value="{{ $product->buffer }}" min=0 disabled></td>
-                                                <td class="col-1"><input class="col-12 quantityUnit" type="number" name="quantityUnit" onchange="modifyInfos('{{ $product->id }}', '{{ $product->conditioning_per_carton }}', '{{ $product->price }}', '{{ $product->quantity_per_carton }}')" value="@if($quantity <= 0){{ intval(0) }}@else{{ $quantity }}@endif" min=0></td>
+                                                <td class="col-1"><input class="col-12 quantityUnit" type="number" name="quantityUnit" onchange="modifyInfos('{{ $product->id }}', '{{ $product->conditioning_per_carton }}', '{{ $product->price }}', '{{ $product->quantity_per_carton }}', '{{ $provider->short_name }}')" value="@if($quantity <= 0){{ intval(0) }}@else{{ $quantity }}@endif" min=0></td>
                                                 <td class="col-1"><input class="col-12 quantityCarton" type="number" name="quantityCarton[]" value="@if($quantity <= 0){{ intval(0) }}@else{{ $neededCarton }}@endif" min=0 disabled></td>
                                                 <td class="col-3"><div class="col-12"><input class="col-12 price" type="number" name="price[]" min="0" value="@if($price > 0){{ $price }}@else{{ '0' }}@endif" disabled></div></td>
                                             </tr>
@@ -55,18 +55,31 @@
                                     <div class="row">
                                         <div class="col-lg-12" style="text-align: center">
                                             <button class="btn btn-success" style="margin-bottom: 25px; background-color: {{ $provider->color }}; border-color: {{ $provider->color }}; box-shadow: 0 0 0 0.2rem {{ $provider->color }}b5" onclick="confirmOrder('{{ $provider->short_name }}', '{{ $provider->franco }}')">
-                                                Envoyer la commande pour {{ $provider->name }} en date du {{ \Carbon\Carbon::now()->format('d/m/Y') }}
+                                                Envoyer la commande pour {{ $provider->name }} en date du {{ \Carbon\Carbon::now()->format('d/m/Y') }} pour un total de <span id="total-{{$provider->short_name}}">0</span> €
                                             </button>
                                         </div>
                                     </div>
                                 </div>
                             </div>
+                            <script type="text/javascript">modifyTotal('{{ $provider->short_name }}')</script>
                         @endforeach
                     </div>
                 </div>
             </div>
         </div>
     </div>
+@endsection
+
+@section('javascript-header')
+    <script type="text/javascript">
+        function modifyTotal(providerShortName) {
+            let total = 0.00;
+            $('#' + providerShortName + ' input[name="price[]"]').each( function() {
+                total = total + parseFloat(this.value);
+            });
+            $('#total-' + providerShortName).html(total.toFixed(2));
+        }
+    </script>
 @endsection
 
 @section('javascripts')
@@ -76,7 +89,7 @@
             $myGroup.find('.collapse.show').collapse('hide');
         });
 
-        function modifyInfos(productId, productConditioningPerCarton, productPrice, productQuantityPerCarton) {
+        function modifyInfos(productId, productConditioningPerCarton, productPrice, productQuantityPerCarton, providerShortName) {
             const target = '#' + productId;
             if($(target + ' .quantityUnit').val() <= 0){
                 $(target + ' .quantityCarton').val(0);
@@ -86,6 +99,7 @@
                 $(target + ' .quantityCarton').val(Math.ceil($(target + ' .quantityUnit').val() / productConditioningPerCarton));
                 $(target + ' .price').val(Math.round((productPrice * productQuantityPerCarton * Math.ceil($(target + ' .quantityUnit').val() / productConditioningPerCarton))*100) / 100);
             }
+            modifyTotal(providerShortName);
         }
 
         function confirmOrder(providerShortName, providerFranco) {
