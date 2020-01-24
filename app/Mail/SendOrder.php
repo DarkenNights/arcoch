@@ -21,7 +21,7 @@ class SendOrder extends Mailable
      *
      * @param array $order
      */
-    public function __construct(Array $order)
+    public function __construct($order)
     {
         $this->order = $order;
     }
@@ -34,6 +34,9 @@ class SendOrder extends Mailable
     public function build()
     {
         return $this->from('resto@arcoch.fr')
-                    ->view('nimda.emails.sendOrder');
+                    ->view('nimda.emails.sendOrder')
+                    ->with([
+                        'order' => $this->order
+                    ]);
     }
 }
