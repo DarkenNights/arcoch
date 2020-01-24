@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Loss;
+use App\Mail\SendOrder;
 use App\Order;
 use App\Product;
 use App\Provider;
@@ -78,7 +79,7 @@ class NimdaController extends Controller
 
                 try {
                     $newOrder->save();
-                    Mail::to('resto@arcoch.fr')->send($orders);
+                    Mail::to('resto@arcoch.fr')->send(new SendOrder($orders));
                 } catch (\Exception $e) {
                     $response = 'save_ko';
                 } finally {
