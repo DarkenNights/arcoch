@@ -54,7 +54,7 @@
                                     </table>
                                     <div class="row">
                                         <div class="col-lg-12" style="text-align: center">
-                                            <button class="btn btn-success" style="background-color: {{ $provider->color }}; border-color: {{ $provider->color }}; box-shadow: 0 0 0 0.2rem {{ $provider->color }}b5" onclick="confirmOrder('{{ $provider->short_name }}', '{{ $provider->franco }}')">
+                                            <button class="btn btn-success" style="margin-bottom: 25px; background-color: {{ $provider->color }}; border-color: {{ $provider->color }}; box-shadow: 0 0 0 0.2rem {{ $provider->color }}b5" onclick="confirmOrder('{{ $provider->short_name }}', '{{ $provider->franco }}')">
                                                 Envoyer la commande pour {{ $provider->name }} en date du {{ \Carbon\Carbon::now()->format('d/m/Y') }}
                                             </button>
                                         </div>
@@ -114,7 +114,7 @@
                 order(providerShortName, productIds, quantitiesCarton, prices);
             }
             else {
-                alert("Impossible d'envoyer la commande");
+                alert("La commande n'a pas été envoyée !");
             }
         }
 
