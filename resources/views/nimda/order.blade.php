@@ -150,6 +150,7 @@
                     $('#alertMsg').html(
                         "<div class=\"alert alert-danger\" role=\"alert\">La commande n'a pas pu être envoyé. Demander à Thomas.</div>"
                     );
+                    console.log(data);
                     $('html,body').animate({scrollTop: 0}, 'slow');
                 }
             }).fail(function(data) {

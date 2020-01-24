@@ -81,9 +81,9 @@ class NimdaController extends Controller
                     $newOrder->save();
                     Mail::to('resto@arcoch.fr')->send(new SendOrder($orders));
                 } catch (\Exception $e) {
-                    $response = 'save_ko';
+                    $response = $e;
                 } finally {
-                    if($response == 'save_ko') return response()->json($response);
+                    if($response != 'save_ok') return response()->json($response);
                 }
             }
         }
