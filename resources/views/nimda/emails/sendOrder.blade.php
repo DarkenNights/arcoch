@@ -4,7 +4,7 @@ Voici la commande que nous souhaiterions passer pour la prochaine livraison :
 
 <ul>
     @foreach($order as $product)
-        <li>{{ $product->quantity }} x {{ $product->product->name }} @if(!empty($product->product->reference)) ( {{ $product->product->reference }} ) @endif</li>
+        <li>{{ $product->quantity }} x {{ $product->product->name }} @if(!empty($product->product->reference)) ( ref: {{ $product->product->reference }} ) @endif</li>
     @endforeach
 </ul>
 
