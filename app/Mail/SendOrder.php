@@ -34,6 +34,7 @@ class SendOrder extends Mailable
     public function build()
     {
         return $this->from('resto@arcoch.fr')
+                    ->subject('[L\'Arcoch] Commande pour prochaine livraison')
                     ->view('nimda.emails.sendOrder')
                     ->with([
                         'order' => $this->order
