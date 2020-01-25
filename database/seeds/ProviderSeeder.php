@@ -37,7 +37,8 @@ class ProviderSeeder extends Seeder
             'order_day' => 'Dimanche et Mardi',
             'shipping_day' => 'Mardi et Jeudi',
             'commercial' => 'William JOLY',
-            'phone' => '03 84 67 05 67 - 06 72 86 59 59'
+            'phone' => '03 84 67 05 67 - 06 72 86 59 59',
+            'order_message' => 'Toutes les quantités demandées sont à l\'unité.'
         ]);
 
         \App\Provider::create([

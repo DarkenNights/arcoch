@@ -8,6 +8,11 @@ Voici la commande que nous souhaiterions passer pour la prochaine livraison :
     @endforeach
 </ul>
 
+@if(!empty($product->product->provider->orderMessage))
+    {{ $product->product->provider->order_message }}
+    <br><br>
+@endif
+
 Merci d'avance pour vos actions.
 <br><br>
 Cordialement,<br>
