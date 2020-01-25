@@ -14,5 +14,5 @@ Cordialement,<br>
 L'équipe de l'Arcoch - SAS Le Petit Canada <br>
 Tel: 09 54 11 54 16 <br>
 Addresse : Route du lac de Payolle, 65710 Campan<br>
-<img src="{{ asset('index/img/logo_menu.png') }}" width="800px">
+<img src="{{ asset('index/img/logo_mail.png') }}">
 
