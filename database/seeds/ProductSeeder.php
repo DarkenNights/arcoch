@@ -1139,7 +1139,7 @@ class ProductSeeder extends Seeder
         ]);
 
         \App\Product::create([
-            'name' => 'Pain de mie',
+            'name' => 'Pain de mie complet',
             'reference' => '44618',
             'stock' => 0,
             'buffer' => 4,
@@ -1297,8 +1297,8 @@ class ProductSeeder extends Seeder
             'reference' => '242287',
             'stock' => 23,
             'buffer' => 18,
-            'quantity_per_carton' => 6,
-            'conditioning_per_carton' => 6,
+            'quantity_per_carton' => 1,
+            'conditioning_per_carton' => 1,
             'price' => 3.62,
             'provider_id' => 8
         ]);
@@ -1308,8 +1308,8 @@ class ProductSeeder extends Seeder
             'reference' => '247887',
             'stock' => 1,
             'buffer' => 1,
-            'quantity_per_carton' => 6,
-            'conditioning_per_carton' => 6,
+            'quantity_per_carton' => 1,
+            'conditioning_per_carton' => 1,
             'price' => 12.92,
             'provider_id' => 8
         ]);
@@ -1319,8 +1319,8 @@ class ProductSeeder extends Seeder
             'reference' => '247300',
             'stock' => 17,
             'buffer' => 12,
-            'quantity_per_carton' => 6,
-            'conditioning_per_carton' => 6,
+            'quantity_per_carton' => 1,
+            'conditioning_per_carton' => 1,
             'price' => 4.82,
             'provider_id' => 8
         ]);
