@@ -38,3 +38,5 @@ Route::get('/nimda/historique-des-commandes', 'NimdaController@orderHistory')->n
 
 Route::get('/nimda/pertes', 'NimdaController@loss')->name('nimdaLoss');
 Route::post('/nimda/pertes/ajout', 'NimdaController@addLoss')->name('nimdaAddLoss');
+
+Route::get('/nimda/marges', 'NimdaController@cost')->name('nimdaCost');
