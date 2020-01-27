@@ -142,4 +142,14 @@ class NimdaController extends Controller
         return redirect()->route('nimdaLoss');
     }
 
+    public function cost()
+    {
+        $products = Product::orderBy('provider_id', 'ASC')->get();
+        $providers = Provider::all();
+        return view('nimda.cost', array(
+            'products' => $products,
+            'providers' => $providers
+        ));
+    }
+
 }
