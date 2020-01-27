@@ -19,7 +19,7 @@ class ProviderSeeder extends Seeder
             'short_name' => 'forezia',
             'color' => '#417d8a',
             'email' => 'gaelle.chorot@foreziasnacking.fr',
-            'franco' => 300,
+            'franco' => 200,
             'address' => 'ZAC des Platières - 26 Chemin des Platières - 38670 Chasse-Sur-Rhône',
             'order_day' => 'Mardi',
             'shipping_day' => 'Jeudi',
