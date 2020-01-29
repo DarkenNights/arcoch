@@ -912,6 +912,7 @@ class ProductSeeder extends Seeder
             'quantity_per_carton' => 1,
             'conditioning_per_carton' => 1,
             'price' => 24,
+            'price_kg' => 13.34,
             'provider_id' => 7
         ]);
 
@@ -923,6 +924,7 @@ class ProductSeeder extends Seeder
             'quantity_per_carton' => 1,
             'conditioning_per_carton' => 1,
             'price' => 18,
+            'price_kg' => 10,
             'provider_id' => 7
         ]);
 
@@ -934,6 +936,7 @@ class ProductSeeder extends Seeder
             'quantity_per_carton' => 1,
             'conditioning_per_carton' => 1,
             'price' => 18,
+            'price_kg' => 10,
             'provider_id' => 7
         ]);
 
@@ -945,6 +948,7 @@ class ProductSeeder extends Seeder
             'quantity_per_carton' => 1,
             'conditioning_per_carton' => 1,
             'price' => 24,
+            'price_kg' => 13.33,
             'provider_id' => 7
         ]);
 
@@ -956,6 +960,7 @@ class ProductSeeder extends Seeder
             'quantity_per_carton' => 1,
             'conditioning_per_carton' => 1,
             'price' => 21.6,
+            'price_kg' => 12,
             'provider_id' => 7
         ]);
 
@@ -967,6 +972,7 @@ class ProductSeeder extends Seeder
             'quantity_per_carton' => 12,
             'conditioning_per_carton' => 12,
             'price' => 1.92,
+            'price_kg' => 5.82,
             'provider_id' => 7
         ]);
 
@@ -978,6 +984,7 @@ class ProductSeeder extends Seeder
             'quantity_per_carton' => 12,
             'conditioning_per_carton' => 12,
             'price' => 1.92,
+            'price_kg' => 5.82,
             'provider_id' => 7
         ]);
 
@@ -989,6 +996,7 @@ class ProductSeeder extends Seeder
             'quantity_per_carton' => 12,
             'conditioning_per_carton' => 12,
             'price' => 1.51,
+            'price_kg' => 4.58,
             'provider_id' => 7
         ]);
 
@@ -1000,6 +1008,7 @@ class ProductSeeder extends Seeder
             'quantity_per_carton' => 12,
             'conditioning_per_carton' => 12,
             'price' => 1.92,
+            'price_kg' => 5.82,
             'provider_id' => 7
         ]);
 
@@ -1011,6 +1020,7 @@ class ProductSeeder extends Seeder
             'quantity_per_carton' => 12,
             'conditioning_per_carton' => 12,
             'price' => 1.92,
+            'price_kg' => 5.82,
             'provider_id' => 7
         ]);
 
@@ -1022,6 +1032,7 @@ class ProductSeeder extends Seeder
             'quantity_per_carton' => 12,
             'conditioning_per_carton' => 12,
             'price' => 1.92,
+            'price_kg' => 5.82,
             'provider_id' => 7
         ]);
 
