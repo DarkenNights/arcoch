@@ -730,28 +730,6 @@ class ProductSeeder extends Seeder
             'provider_id' => 4
         ]);
 
-        \App\Product::create([
-            'name' => 'Lait 1/2 écrémé',
-            'reference' => '80001',
-            'stock' => 0,
-            'buffer' => 6,
-            'quantity_per_carton' => 1,
-            'conditioning_per_carton' => 1,
-            'price' => 1.01,
-            'provider_id' => 4
-        ]);
-
-        \App\Product::create([
-            'name' => 'Lait entier',
-            'reference' => '80265',
-            'stock' => 0,
-            'buffer' => 6,
-            'quantity_per_carton' => 1,
-            'conditioning_per_carton' => 1,
-            'price' => 1.26,
-            'provider_id' => 4
-        ]);
-
         /*============================
         THE THEODORE
         ============================*/
@@ -763,6 +741,7 @@ class ProductSeeder extends Seeder
             'quantity_per_carton' => 12,
             'conditioning_per_carton' => 12,
             'price' => 1,
+            'price_kg' => 0.32,
             'provider_id' => 5
         ]);
 
@@ -774,6 +753,7 @@ class ProductSeeder extends Seeder
             'quantity_per_carton' => 1,
             'conditioning_per_carton' => 1,
             'price' => 1,
+            'price_kg' => 0.32,
             'provider_id' => 5
         ]);
 
@@ -785,6 +765,7 @@ class ProductSeeder extends Seeder
             'quantity_per_carton' => 1,
             'conditioning_per_carton' => 1,
             'price' => 1,
+            'price_kg' => 0.32,
             'provider_id' => 5
         ]);
 
@@ -796,6 +777,7 @@ class ProductSeeder extends Seeder
             'quantity_per_carton' => 1,
             'conditioning_per_carton' => 1,
             'price' => 1,
+            'price_kg' => 0.32,
             'provider_id' => 5
         ]);
 
@@ -807,6 +789,7 @@ class ProductSeeder extends Seeder
             'quantity_per_carton' => 1,
             'conditioning_per_carton' => 1,
             'price' => 1,
+            'price_kg' => 0.32,
             'provider_id' => 5
         ]);
 
@@ -818,6 +801,7 @@ class ProductSeeder extends Seeder
             'quantity_per_carton' => 1,
             'conditioning_per_carton' => 1,
             'price' => 1,
+            'price_kg' => 0.32,
             'provider_id' => 5
         ]);
 
@@ -829,6 +813,7 @@ class ProductSeeder extends Seeder
             'quantity_per_carton' => 1,
             'conditioning_per_carton' => 1,
             'price' => 1,
+            'price_kg' => 0.32,
             'provider_id' => 5
         ]);
 
@@ -840,6 +825,7 @@ class ProductSeeder extends Seeder
             'quantity_per_carton' => 1,
             'conditioning_per_carton' => 1,
             'price' => 1,
+            'price_kg' => 0.32,
             'provider_id' => 5
         ]);
 
@@ -851,6 +837,7 @@ class ProductSeeder extends Seeder
             'quantity_per_carton' => 1,
             'conditioning_per_carton' => 1,
             'price' => 1,
+            'price_kg' => 0.32,
             'provider_id' => 5
         ]);
 
@@ -862,6 +849,7 @@ class ProductSeeder extends Seeder
             'quantity_per_carton' => 1,
             'conditioning_per_carton' => 1,
             'price' => 1,
+            'price_kg' => 0.32,
             'provider_id' => 5
         ]);
 
@@ -1042,6 +1030,30 @@ class ProductSeeder extends Seeder
         /*============================
         METRO
         ============================*/
+        \App\Product::create([
+            'name' => 'Lait 1/2 écrémé',
+            'reference' => '80001',
+            'stock' => 0,
+            'buffer' => 6,
+            'quantity_per_carton' => 1,
+            'conditioning_per_carton' => 1,
+            'price' => 4.15,
+            'price_kg' => 0.69,
+            'provider_id' => 4
+        ]);
+
+        \App\Product::create([
+            'name' => 'Lait entier',
+            'reference' => '80265',
+            'stock' => 0,
+            'buffer' => 6,
+            'quantity_per_carton' => 1,
+            'conditioning_per_carton' => 1,
+            'price' => 5.06,
+            'price_kg' => 0.85,
+            'provider_id' => 4
+        ]);
+
         \App\Product::create([
             'name' => 'Oignon rouge',
             'reference' => '712875',
