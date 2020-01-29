@@ -660,7 +660,8 @@ class ProductSeeder extends Seeder
             'buffer' => 24,
             'quantity_per_carton' => 1,
             'conditioning_per_carton' => 1,
-            'price' => 1.65,
+            'price' => 4.13,
+            'price_kg' => 1.65,
             'provider_id' => 4
         ]);
 
@@ -671,7 +672,8 @@ class ProductSeeder extends Seeder
             'buffer' => 3,
             'quantity_per_carton' => 1,
             'conditioning_per_carton' => 1,
-            'price' => 4.86,
+            'price' => 9.25,
+            'price_kg' => 3.70,
             'provider_id' => 4
         ]);
 
@@ -683,6 +685,7 @@ class ProductSeeder extends Seeder
             'quantity_per_carton' => 1,
             'conditioning_per_carton' => 1,
             'price' => 26.9,
+            'price_kg' => 7.45,
             'provider_id' => 4
         ]);
 
@@ -694,6 +697,7 @@ class ProductSeeder extends Seeder
             'quantity_per_carton' => 1,
             'conditioning_per_carton' => 1,
             'price' => 63.69,
+            'price_kg' => 9.55,
             'provider_id' => 4
         ]);
 
@@ -705,17 +709,7 @@ class ProductSeeder extends Seeder
             'quantity_per_carton' => 1,
             'conditioning_per_carton' => 1,
             'price' => 7.34,
-            'provider_id' => 4
-        ]);
-
-        \App\Product::create([
-            'name' => 'Nutella 3kg',
-            'reference' => '18572',
-            'stock' => 0,
-            'buffer' => 2,
-            'quantity_per_carton' => 1,
-            'conditioning_per_carton' => 1,
-            'price' => 11.50,
+            'price_kg' => 1.47,
             'provider_id' => 4
         ]);
 
@@ -726,7 +720,8 @@ class ProductSeeder extends Seeder
             'buffer' => 3,
             'quantity_per_carton' => 1,
             'conditioning_per_carton' => 1,
-            'price' => 8.4,
+            'price' => 42,
+            'price_kg' => 8.4,
             'provider_id' => 4
         ]);
 
