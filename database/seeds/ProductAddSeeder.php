@@ -24,6 +24,7 @@ class ProductAddSeeder extends Seeder
             'quantity_per_carton' => 1,
             'conditioning_per_carton' => 1,
             'price' => 16.37,
+            'price_kg' => 16.37,
             'provider_id' => 8
         ]);
 
@@ -35,6 +36,7 @@ class ProductAddSeeder extends Seeder
             'quantity_per_carton' => 1,
             'conditioning_per_carton' => 1,
             'price' => 2.14,
+            'price_kg' => 0.04,
             'provider_id' => 8
         ]);
 
@@ -46,6 +48,7 @@ class ProductAddSeeder extends Seeder
             'quantity_per_carton' => 1,
             'conditioning_per_carton' => 1,
             'price' => 4.49,
+            'price_kg' => 0.02,
             'provider_id' => 8
         ]);
 
@@ -57,6 +60,7 @@ class ProductAddSeeder extends Seeder
             'quantity_per_carton' => 1,
             'conditioning_per_carton' => 1,
             'price' => 2.88,
+            'price_kg' => 0.006,
             'provider_id' => 8
         ]);
 
@@ -68,6 +72,7 @@ class ProductAddSeeder extends Seeder
             'quantity_per_carton' => 1,
             'conditioning_per_carton' => 1,
             'price' => 3.66,
+            'price_kg' => 7.32,
             'provider_id' => 8
         ]);
 
@@ -79,28 +84,31 @@ class ProductAddSeeder extends Seeder
             'quantity_per_carton' => 1,
             'conditioning_per_carton' => 1,
             'price' => 5.28,
-            'provider_id' => 8
+            'price_kg' => 2.64,
+                'provider_id' => 8
         ]);
 
         \App\Product::create([
-            'name' => 'Chantilly',
+            'name' => 'Chantilly 700mL Debic',
             'reference' => '252072',
             'stock' => 13,
             'buffer' => 15,
             'quantity_per_carton' => 1,
             'conditioning_per_carton' => 1,
             'price' => 6.59,
+            'price_kg' => 9.42,
             'provider_id' => 8
         ]);
 
         \App\Product::create([
-            'name' => 'Vinaigre de cidre 1l',
+            'name' => 'Vinaigre de cidre 1L',
             'reference' => '159256',
             'stock' => 2,
             'buffer' => 2,
             'quantity_per_carton' => 1,
             'conditioning_per_carton' => 1,
             'price' => 2.23,
+            'price_kg' => 2.23,
             'provider_id' => 8
         ]);
 
@@ -112,6 +120,7 @@ class ProductAddSeeder extends Seeder
             'quantity_per_carton' => 1,
             'conditioning_per_carton' => 1,
             'price' => 25.38,
+            'price_kg' => 5.08,
             'provider_id' => 8
         ]);
 
@@ -123,6 +132,7 @@ class ProductAddSeeder extends Seeder
             'quantity_per_carton' => 1,
             'conditioning_per_carton' => 1,
             'price' => 34.70,
+            'price_kg' => 1.39,
             'provider_id' => 8
         ]);
 
@@ -134,6 +144,7 @@ class ProductAddSeeder extends Seeder
             'quantity_per_carton' => 1,
             'conditioning_per_carton' => 1,
             'price' => 14.09,
+            'price_kg' => 1.41,
             'provider_id' => 8
         ]);
 
@@ -145,6 +156,7 @@ class ProductAddSeeder extends Seeder
             'quantity_per_carton' => 1,
             'conditioning_per_carton' => 1,
             'price' => 3.53,
+            'price_kg' => 29.42,
             'provider_id' => 8
         ]);
 
@@ -156,6 +168,7 @@ class ProductAddSeeder extends Seeder
             'quantity_per_carton' => 1,
             'conditioning_per_carton' => 1,
             'price' => 13.46,
+            'price_kg' => 13.46,
             'provider_id' => 8
         ]);
 
@@ -167,6 +180,7 @@ class ProductAddSeeder extends Seeder
             'quantity_per_carton' => 1,
             'conditioning_per_carton' => 1,
             'price' => 35.81,
+            'price_kg' => 5.97,
             'provider_id' => 8
         ]);
 
@@ -178,6 +192,7 @@ class ProductAddSeeder extends Seeder
             'quantity_per_carton' => 1,
             'conditioning_per_carton' => 1,
             'price' => 48.55,
+            'price_kg' => 4.86,
             'provider_id' => 8
         ]);
 
@@ -189,6 +204,7 @@ class ProductAddSeeder extends Seeder
             'quantity_per_carton' => 1,
             'conditioning_per_carton' => 1,
             'price' => 33.62,
+            'price_kg' => 21.02,
             'provider_id' => 8
         ]);
 
@@ -200,6 +216,7 @@ class ProductAddSeeder extends Seeder
             'quantity_per_carton' => 1,
             'conditioning_per_carton' => 1,
             'price' => 11.03,
+            'price_kg' => 1.11,
             'provider_id' => 8
         ]);
 
@@ -211,6 +228,7 @@ class ProductAddSeeder extends Seeder
             'quantity_per_carton' => 1,
             'conditioning_per_carton' => 1,
             'price' => 13.67,
+            'price_kg' => 13.67,
             'provider_id' => 8
         ]);
 
@@ -222,6 +240,7 @@ class ProductAddSeeder extends Seeder
             'quantity_per_carton' => 1,
             'conditioning_per_carton' => 1,
             'price' => 2.21,
+            'price_kg' => 1.11,
             'provider_id' => 8
         ]);
 
@@ -233,6 +252,7 @@ class ProductAddSeeder extends Seeder
             'quantity_per_carton' => 1,
             'conditioning_per_carton' => 1,
             'price' => 8.27,
+            'price_kg' => 1.66,
             'provider_id' => 8
         ]);
 
@@ -244,17 +264,19 @@ class ProductAddSeeder extends Seeder
             'quantity_per_carton' => 1,
             'conditioning_per_carton' => 1,
             'price' => 1.65,
+            'price_kg' => 1.1,
             'provider_id' => 8
         ]);
 
         \App\Product::create([
-            'name' => 'Nettoyan désinfectant sanitaires',
+            'name' => 'Nettoyant désinfectant sanitaires',
             'reference' => '149420',
             'stock' => 1,
             'buffer' => 1,
             'quantity_per_carton' => 1,
             'conditioning_per_carton' => 1,
             'price' => 6.48,
+            'price_kg' => 8.64,
             'provider_id' => 8
         ]);
 
@@ -266,6 +288,7 @@ class ProductAddSeeder extends Seeder
             'quantity_per_carton' => 1,
             'conditioning_per_carton' => 1,
             'price' => 4.87,
+            'price_kg' => 4.87,
             'provider_id' => 8
         ]);
 
@@ -277,6 +300,7 @@ class ProductAddSeeder extends Seeder
             'quantity_per_carton' => 1,
             'conditioning_per_carton' => 1,
             'price' => 15.47,
+            'price_kg' => 15.47,
             'provider_id' => 8
         ]);
 
@@ -288,6 +312,7 @@ class ProductAddSeeder extends Seeder
             'quantity_per_carton' => 1,
             'conditioning_per_carton' => 1,
             'price' => 11.67,
+            'price_kg' => 11.67,
             'provider_id' => 8
         ]);
 
@@ -299,6 +324,7 @@ class ProductAddSeeder extends Seeder
             'quantity_per_carton' => 1,
             'conditioning_per_carton' => 1,
             'price' => 9.53,
+            'price_kg' => 9.53,
             'provider_id' => 8
         ]);
 
@@ -310,6 +336,7 @@ class ProductAddSeeder extends Seeder
             'quantity_per_carton' => 1,
             'conditioning_per_carton' => 1,
             'price' => 9.99,
+            'price_kg' => 9.99,
             'provider_id' => 8
         ]);
 
@@ -321,6 +348,7 @@ class ProductAddSeeder extends Seeder
             'quantity_per_carton' => 1,
             'conditioning_per_carton' => 1,
             'price' => 1.66,
+            'price_kg' => 1.66,
             'provider_id' => 8
         ]);
 
@@ -332,6 +360,7 @@ class ProductAddSeeder extends Seeder
             'quantity_per_carton' => 1,
             'conditioning_per_carton' => 1,
             'price' => 5.37,
+            'price_kg' => 5.37,
             'provider_id' => 8
         ]);
 
@@ -343,6 +372,7 @@ class ProductAddSeeder extends Seeder
             'quantity_per_carton' => 1,
             'conditioning_per_carton' => 1,
             'price' => 11.18,
+            'price_kg' => 11.18,
             'provider_id' => 8
         ]);
 
@@ -354,6 +384,7 @@ class ProductAddSeeder extends Seeder
             'quantity_per_carton' => 1,
             'conditioning_per_carton' => 1,
             'price' => 4.11,
+            'price_kg' => 4.11,
             'provider_id' => 8
         ]);
 
@@ -365,6 +396,7 @@ class ProductAddSeeder extends Seeder
             'quantity_per_carton' => 1,
             'conditioning_per_carton' => 1,
             'price' => 31.32,
+            'price_kg' => 31.32,
             'provider_id' => 8
         ]);
 
@@ -376,6 +408,7 @@ class ProductAddSeeder extends Seeder
             'quantity_per_carton' => 1,
             'conditioning_per_carton' => 1,
             'price' => 22.74,
+            'price_kg' => 22.74,
             'provider_id' => 8
         ]);
 
@@ -387,6 +420,7 @@ class ProductAddSeeder extends Seeder
             'quantity_per_carton' => 1,
             'conditioning_per_carton' => 1,
             'price' => 1.43,
+            'price_kg' => 1.43,
             'provider_id' => 8
         ]);
 
@@ -398,6 +432,7 @@ class ProductAddSeeder extends Seeder
             'quantity_per_carton' => 1,
             'conditioning_per_carton' => 1,
             'price' => 2.76,
+            'price_kg' => 2.76,
             'provider_id' => 8
         ]);
 
@@ -409,6 +444,7 @@ class ProductAddSeeder extends Seeder
             'quantity_per_carton' => 1,
             'conditioning_per_carton' => 1,
             'price' => 9.2,
+            'price_kg' => 9.2,
             'provider_id' => 8
         ]);
 
@@ -420,6 +456,7 @@ class ProductAddSeeder extends Seeder
             'quantity_per_carton' => 1,
             'conditioning_per_carton' => 1,
             'price' => 8.73,
+            'price_kg' => 8.73,
             'provider_id' => 8
         ]);
 
@@ -431,6 +468,7 @@ class ProductAddSeeder extends Seeder
             'quantity_per_carton' => 1,
             'conditioning_per_carton' => 1,
             'price' => 10.70,
+            'price_kg' => 10.70,
             'provider_id' => 8
         ]);
 
@@ -442,6 +480,7 @@ class ProductAddSeeder extends Seeder
             'quantity_per_carton' => 1,
             'conditioning_per_carton' => 1,
             'price' => 9.48,
+            'price_kg' => 9.48,
             'provider_id' => 8
         ]);
 
@@ -453,6 +492,7 @@ class ProductAddSeeder extends Seeder
             'quantity_per_carton' => 1,
             'conditioning_per_carton' => 1,
             'price' => 1.29,
+            'price_kg' => 1.29,
             'provider_id' => 8
         ]);
 
@@ -464,6 +504,7 @@ class ProductAddSeeder extends Seeder
             'quantity_per_carton' => 1,
             'conditioning_per_carton' => 1,
             'price' => 5.63,
+            'price_kg' => 1.88,
             'provider_id' => 8
         ]);
     }
