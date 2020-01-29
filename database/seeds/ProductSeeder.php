@@ -515,6 +515,7 @@ class ProductSeeder extends Seeder
             'quantity_per_carton' => 2,
             'conditioning_per_carton' => 2,
             'price' => 6.99,
+            'price_kg' => 3.50,
             'provider_id' => 3
         ]);
 
@@ -526,6 +527,7 @@ class ProductSeeder extends Seeder
             'quantity_per_carton' => 1,
             'conditioning_per_carton' => 1,
             'price' => 37.8,
+            'price_kg' => 7.56,
             'provider_id' => 3
         ]);
 
@@ -537,6 +539,7 @@ class ProductSeeder extends Seeder
             'quantity_per_carton' => 1,
             'conditioning_per_carton' => 1,
             'price' => 18.9,
+            'price_kg' => 7.56,
             'provider_id' => 3
         ]);
 
@@ -548,6 +551,7 @@ class ProductSeeder extends Seeder
             'quantity_per_carton' => 1,
             'conditioning_per_carton' => 1,
             'price' => 18.9,
+            'price_kg' => 7.56,
             'provider_id' => 3
         ]);
 
@@ -559,6 +563,7 @@ class ProductSeeder extends Seeder
             'quantity_per_carton' => 1,
             'conditioning_per_carton' => 1,
             'price' => 18.9,
+            'price_kg' => 7.56,
             'provider_id' => 3
         ]);
 
@@ -570,6 +575,7 @@ class ProductSeeder extends Seeder
             'quantity_per_carton' => 1,
             'conditioning_per_carton' => 1,
             'price' => 18.9,
+            'price_kg' => 7.56,
             'provider_id' => 3
         ]);
 
@@ -581,6 +587,7 @@ class ProductSeeder extends Seeder
             'quantity_per_carton' => 1,
             'conditioning_per_carton' => 1,
             'price' => 18.9,
+            'price_kg' => 7.56,
             'provider_id' => 3
         ]);
 
@@ -591,7 +598,8 @@ class ProductSeeder extends Seeder
             'buffer' => 2,
             'quantity_per_carton' => 1,
             'conditioning_per_carton' => 1,
-            'price' => 18.90,
+            'price' => 18.9,
+            'price_kg' => 7.56,
             'provider_id' => 3
         ]);
 
@@ -602,7 +610,8 @@ class ProductSeeder extends Seeder
             'buffer' => 0,
             'quantity_per_carton' => 1,
             'conditioning_per_carton' => 1,
-            'price' => 1,
+            'price' => 18.9,
+            'price_kg' => 7.56,
             'provider_id' => 3
         ]);
 
@@ -613,7 +622,8 @@ class ProductSeeder extends Seeder
             'buffer' => 0,
             'quantity_per_carton' => 1,
             'conditioning_per_carton' => 1,
-            'price' => 1,
+            'price' => 18.9,
+            'price_kg' => 7.56,
             'provider_id' => 3
         ]);
 
@@ -624,7 +634,8 @@ class ProductSeeder extends Seeder
             'buffer' => 0,
             'quantity_per_carton' => 1,
             'conditioning_per_carton' => 1,
-            'price' => 1,
+            'price' => 18.9,
+            'price_kg' => 7.56,
             'provider_id' => 3
         ]);
 
@@ -635,7 +646,8 @@ class ProductSeeder extends Seeder
             'buffer' => 0,
             'quantity_per_carton' => 1,
             'conditioning_per_carton' => 1,
-            'price' => 1,
+            'price' => 18.9,
+            'price_kg' => 7.56,
             'provider_id' => 3
         ]);
 
@@ -646,7 +658,8 @@ class ProductSeeder extends Seeder
             'buffer' => 0,
             'quantity_per_carton' => 1,
             'conditioning_per_carton' => 1,
-            'price' => 1,
+            'price' => 18.9,
+            'price_kg' => 7.56,
             'provider_id' => 3
         ]);
 
