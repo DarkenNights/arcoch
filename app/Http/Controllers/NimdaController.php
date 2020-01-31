@@ -7,6 +7,7 @@ use App\Mail\SendOrder;
 use App\Order;
 use App\Product;
 use App\Provider;
+use Carbon\Carbon;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Input;
 use Illuminate\Support\Facades\Mail;
@@ -150,6 +151,112 @@ class NimdaController extends Controller
             'products' => $products,
             'providers' => $providers
         ));
+    }
+
+    public function booking()
+    {
+        $dayOfTheWeek = Carbon::now()->dayOfWeek;
+        $dates = [];
+        switch ($dayOfTheWeek) {
+            case 1:
+                $dates[] = Carbon::now();
+                $dates[] = Carbon::now()->addDays(1);
+                $dates[] = Carbon::now()->addDays(2);
+                $dates[] = Carbon::now()->addDays(3);
+                $dates[] = Carbon::now()->addDays(4);
+                $dates[] = Carbon::now()->addDays(5);
+                $dates[] = Carbon::now()->addDays(6);
+                break;
+            case 2:
+                $dates[] = Carbon::now()->subDays(1);
+                $dates[] = Carbon::now();
+                $dates[] = Carbon::now()->addDays(1);
+                $dates[] = Carbon::now()->addDays(2);
+                $dates[] = Carbon::now()->addDays(3);
+                $dates[] = Carbon::now()->addDays(4);
+                $dates[] = Carbon::now()->addDays(5);
+                break;
+            case 3:
+                $dates[] = Carbon::now()->subDays(2);
+                $dates[] = Carbon::now()->subDays(1);
+                $dates[] = Carbon::now();
+                $dates[] = Carbon::now()->addDays(1);
+                $dates[] = Carbon::now()->addDays(2);
+                $dates[] = Carbon::now()->addDays(3);
+                $dates[] = Carbon::now()->addDays(4);
+                break;
+            case 4:
+                $dates[] = Carbon::now()->subDays(3);
+                $dates[] = Carbon::now()->subDays(2);
+                $dates[] = Carbon::now()->subDays(1);
+                $dates[] = Carbon::now();
+                $dates[] = Carbon::now()->addDays(1);
+                $dates[] = Carbon::now()->addDays(2);
+                $dates[] = Carbon::now()->addDays(3);
+                break;
+            case 5:
+                $dates[] = Carbon::now()->subDays(4);
+                $dates[] = Carbon::now()->subDays(3);
+                $dates[] = Carbon::now()->subDays(2);
+                $dates[] = Carbon::now()->subDays(1);
+                $dates[] = Carbon::now();
+                $dates[] = Carbon::now()->addDays(1);
+                $dates[] = Carbon::now()->addDays(2);
+                break;
+            case 6:
+                $dates[] = Carbon::now()->subDays(5);
+                $dates[] = Carbon::now()->subDays(4);
+                $dates[] = Carbon::now()->subDays(3);
+                $dates[] = Carbon::now()->subDays(2);
+                $dates[] = Carbon::now()->subDays(1);
+                $dates[] = Carbon::now();
+                $dates[] = Carbon::now()->addDays(1);
+                break;
+            case 0:
+                $dates[] = Carbon::now()->subDays(6);
+                $dates[] = Carbon::now()->subDays(5);
+                $dates[] = Carbon::now()->subDays(4);
+                $dates[] = Carbon::now()->subDays(3);
+                $dates[] = Carbon::now()->subDays(2);
+                $dates[] = Carbon::now()->subDays(1);
+                $dates[] = Carbon::now();
+        }
+        dump($dates);
+        dump($dates[0]->format('Ymd'));
+        dump($dates[6]->format('Ymd'));
+
+        /*
+        * The following sample uses a PHP array to construct the JSON data and php-curl to post it to the API.
+        * This sample will get the availability for one property with the specified parameters.
+        * Change the propId and other parameters to values for your account to use and test.
+        */
+
+        $auth = array();
+        $auth['apiKey'] = 'apiKeyCaribou2Doux$01';
+        $auth['propKey'] = 'propKeyCaribou2Doux$01';
+
+        $data = array();
+        $data['authentication'] = $auth;
+
+        /* Restrict the bookings using any combination of the following */
+        $data['arrivalFrom'] = $dates[0]->format('Ymd');
+        $data['arrivalTo'] = $dates[6]->format('Ymd');
+        $data['includeInfoItems'] = false;
+
+        $json = json_encode($data);
+
+        $url = "https://api.beds24.com/json/getBookings";
+
+        $ch=curl_init();
+        curl_setopt($ch, CURLOPT_POST, 1) ;
+        curl_setopt($ch, CURLOPT_FOLLOWLOCATION, 1);
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+        curl_setopt($ch, CURLOPT_URL, $url);
+        curl_setopt($ch, CURLOPT_POSTFIELDS, $json);
+        $result = curl_exec($ch);
+        curl_close ($ch);
+        dump($result);
+        exit;
     }
 
 }

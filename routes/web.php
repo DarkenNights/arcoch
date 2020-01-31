@@ -40,3 +40,5 @@ Route::get('/nimda/pertes', 'NimdaController@loss')->name('nimdaLoss');
 Route::post('/nimda/pertes/ajout', 'NimdaController@addLoss')->name('nimdaAddLoss');
 
 Route::get('/nimda/marges', 'NimdaController@cost')->name('nimdaCost');
+
+Route::get('/nimda/reservations', 'NimdaController@booking')->name('nimdaBooking');
