@@ -14,7 +14,7 @@ class AddPriceKgProductTable extends Migration
     public function up()
     {
         Schema::table('product', function (Blueprint $table) {
-            $table->float('price_kg')->nullable();
+            $table->float('price_kg')->nullable()->after('price');
         });
     }
 
