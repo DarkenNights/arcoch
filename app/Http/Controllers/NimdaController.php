@@ -221,25 +221,22 @@ class NimdaController extends Controller
                 $dates[] = Carbon::now()->subDays(1);
                 $dates[] = Carbon::now();
         }
-        dump($dates);
 
         /*
         * The following sample uses a PHP array to construct the JSON data and php-curl to post it to the API.
         * This sample will get the availability for one property with the specified parameters.
         * Change the propId and other parameters to values for your account to use and test.
         */
-
         $auth = array();
         $auth['apiKey'] = 'apiKeyCaribou2Doux$01';
         $auth['propKey'] = 'propKeyCaribou2Doux$01';
 
         $data = array();
         $data['authentication'] = $auth;
-
         /* Restrict the bookings using any combination of the following */
         $data['arrivalFrom'] = $dates[0]->format('Ymd');
         $data['arrivalTo'] = $dates[6]->format('Ymd');
-        $data['includeInfoItems'] = false;
+        $data['includeInfoItems'] = true;
 
         $json = json_encode($data);
 
@@ -254,24 +251,26 @@ class NimdaController extends Controller
         $results = json_decode(curl_exec($ch));
         curl_close ($ch);
 
-        dump($results[7]);
         $bookings = [];
         foreach ($dates as $date) {
             $bookings[$date->format('Y-m-d')] = [];
         }
         foreach ($results as $result) {
-            $firstNight = Carbon::parse($result->firstNight);
-            $lastNight = Carbon::parse($result->lastNight);
-            $diff = $lastNight->diffInDays($firstNight);
-            for ($i = 0; $i <= $diff; $i++) {
-                dump($bookings[$firstNight->addDays($i)->format('Y-m-d')]);
-                if (empty($bookings[$firstNight->addDays($i)->format('Y-m-d')])) {
-                    $bookings[$firstNight->addDays($i)->format('Y-m-d')][] = $result;
+            if($result->status == '1' || $result->status == '2') {
+                $firstNight = Carbon::parse($result->firstNight);
+                $lastNight = Carbon::parse($result->lastNight);
+                $diff = $lastNight->diffInDays($firstNight);
+                for ($i = 0; $i <= $diff; $i++) {
+                        $bookings[$firstNight->addDays($i)->format('Y-m-d')][] = $result;
                 }
             }
         }
-        dump($bookings);
-        exit;
+
+//        dump($bookings['2020-02-01'][0]);
+//        exit;
+        return view('nimda.booking', array(
+            'bookings' => $bookings
+        ));
     }
 
 }
