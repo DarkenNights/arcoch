@@ -72,8 +72,8 @@ class ProductSeeder extends Seeder
             'buffer' => 2,
             'quantity_per_carton' => 1,
             'conditioning_per_carton' => 1,
-            'price' => 6.89,
-            'price_kg' => 6.89,
+            'price' => 7.65,
+            'price_kg' => 7.65,
             'provider_id' => 1
         ]);
 
@@ -1209,8 +1209,8 @@ class ProductSeeder extends Seeder
             'buffer' => 2,
             'quantity_per_carton' => 1,
             'conditioning_per_carton' => 1,
-            'price' => 13.31,
-            'price_kg' => 26.62,
+            'price' => 13.38,
+            'price_kg' => 26.76,
             'provider_id' => 8
         ]);
 
