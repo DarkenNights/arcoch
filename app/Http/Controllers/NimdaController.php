@@ -222,8 +222,6 @@ class NimdaController extends Controller
                 $dates[] = Carbon::now();
         }
         dump($dates);
-        dump($dates[0]->format('Ymd'));
-        dump($dates[6]->format('Ymd'));
 
         /*
         * The following sample uses a PHP array to construct the JSON data and php-curl to post it to the API.
@@ -253,9 +251,26 @@ class NimdaController extends Controller
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
         curl_setopt($ch, CURLOPT_URL, $url);
         curl_setopt($ch, CURLOPT_POSTFIELDS, $json);
-        $result = curl_exec($ch);
+        $results = json_decode(curl_exec($ch));
         curl_close ($ch);
-        dump($result);
+
+        dump($results[7]);
+        $bookings = [];
+        foreach ($dates as $date) {
+            $bookings[$date->format('Y-m-d')] = [];
+        }
+        foreach ($results as $result) {
+            $firstNight = Carbon::parse($result->firstNight);
+            $lastNight = Carbon::parse($result->lastNight);
+            $diff = $lastNight->diffInDays($firstNight);
+            for ($i = 0; $i <= $diff; $i++) {
+                dump($bookings[$firstNight->addDays($i)->format('Y-m-d')]);
+                if (empty($bookings[$firstNight->addDays($i)->format('Y-m-d')])) {
+                    $bookings[$firstNight->addDays($i)->format('Y-m-d')][] = $result;
+                }
+            }
+        }
+        dump($bookings);
         exit;
     }
 
