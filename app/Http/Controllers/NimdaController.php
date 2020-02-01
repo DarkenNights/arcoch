@@ -261,9 +261,13 @@ class NimdaController extends Controller
                 $lastNight = Carbon::parse($result->lastNight);
                 $diff = $lastNight->diffInDays($firstNight);
                 for ($i = 0; $i <= $diff; $i++) {
-                        $bookings[$firstNight->addDays($i)->format('Y-m-d')][] = $result;
+                    $bookings[$firstNight->addDays($i)->format('Y-m-d')][$result->unitId] = $result;
                 }
             }
+        }
+
+        foreach ($dates as $date) {
+            ksort($bookings[$date->format('Y-m-d')]);
         }
 
 //        dump($bookings['2020-02-01'][0]);
