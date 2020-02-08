@@ -4,8 +4,11 @@
     <div class="container-fluid" style="margin-bottom: 40px">
         <div class="wrap" id="index-block" style="background-color: #333">
             @include('nimda.layout.header')
-            <div class="row" id="bookings" style="margin-bottom: 20px; background-color: #333">
-                @foreach($bookings as $date => $booking)
+            @php $i = 0; @endphp
+            @foreach($bookings as $date => $booking)
+                @if($i%7 == 0)
+                    <div class="row" class="bookings" style="margin-bottom: 20px; background-color: #333">
+                @endif
                     <div class="col" style="border: 2px solid rgb(204, 123, 25)">
                         <div class="row">
                             <div class="col-12" style="text-align: center; font-weight: bold; color: rgb(204, 123, 25); border: solid rgb(204, 123, 25); border-width: 0 0 2px 0">
@@ -40,7 +43,7 @@
                                                     <span style="color: rgb(204, 123, 25);">Site:</span> {{ $infos->referer }}
                                                 </div>
                                                 @if(!empty($infos->message))
-                                                    <div class="col-12" style="color: darkred">
+                                                    <div class="col-12" style="color: red">
                                                         Message: {{ $infos->message }}
                                                     </div>
                                                 @endif
@@ -51,10 +54,12 @@
                                 @endforeach
                             </div>
                         </div>
-
                     </div>
-                @endforeach
-            </div>
+                @if($i != 0 && $i != 12 && $i%6 == 0)
+                    </div>
+                @endif
+                @php $i++; @endphp
+            @endforeach
         </div>
     </div>
 @endsection

@@ -166,6 +166,13 @@ class NimdaController extends Controller
                 $dates[] = Carbon::now()->addDays(4);
                 $dates[] = Carbon::now()->addDays(5);
                 $dates[] = Carbon::now()->addDays(6);
+                $dates[] = Carbon::now()->addDays(7);
+                $dates[] = Carbon::now()->addDays(8);
+                $dates[] = Carbon::now()->addDays(9);
+                $dates[] = Carbon::now()->addDays(10);
+                $dates[] = Carbon::now()->addDays(11);
+                $dates[] = Carbon::now()->addDays(12);
+                $dates[] = Carbon::now()->addDays(13);
                 break;
             case 2:
                 $dates[] = Carbon::now()->subDays(1);
@@ -175,6 +182,13 @@ class NimdaController extends Controller
                 $dates[] = Carbon::now()->addDays(3);
                 $dates[] = Carbon::now()->addDays(4);
                 $dates[] = Carbon::now()->addDays(5);
+                $dates[] = Carbon::now()->addDays(6);
+                $dates[] = Carbon::now()->addDays(7);
+                $dates[] = Carbon::now()->addDays(8);
+                $dates[] = Carbon::now()->addDays(9);
+                $dates[] = Carbon::now()->addDays(10);
+                $dates[] = Carbon::now()->addDays(11);
+                $dates[] = Carbon::now()->addDays(12);
                 break;
             case 3:
                 $dates[] = Carbon::now()->subDays(2);
@@ -184,6 +198,13 @@ class NimdaController extends Controller
                 $dates[] = Carbon::now()->addDays(2);
                 $dates[] = Carbon::now()->addDays(3);
                 $dates[] = Carbon::now()->addDays(4);
+                $dates[] = Carbon::now()->addDays(5);
+                $dates[] = Carbon::now()->addDays(6);
+                $dates[] = Carbon::now()->addDays(7);
+                $dates[] = Carbon::now()->addDays(8);
+                $dates[] = Carbon::now()->addDays(9);
+                $dates[] = Carbon::now()->addDays(10);
+                $dates[] = Carbon::now()->addDays(11);
                 break;
             case 4:
                 $dates[] = Carbon::now()->subDays(3);
@@ -193,6 +214,13 @@ class NimdaController extends Controller
                 $dates[] = Carbon::now()->addDays(1);
                 $dates[] = Carbon::now()->addDays(2);
                 $dates[] = Carbon::now()->addDays(3);
+                $dates[] = Carbon::now()->addDays(4);
+                $dates[] = Carbon::now()->addDays(5);
+                $dates[] = Carbon::now()->addDays(6);
+                $dates[] = Carbon::now()->addDays(7);
+                $dates[] = Carbon::now()->addDays(8);
+                $dates[] = Carbon::now()->addDays(9);
+                $dates[] = Carbon::now()->addDays(10);
                 break;
             case 5:
                 $dates[] = Carbon::now()->subDays(4);
@@ -202,6 +230,13 @@ class NimdaController extends Controller
                 $dates[] = Carbon::now();
                 $dates[] = Carbon::now()->addDays(1);
                 $dates[] = Carbon::now()->addDays(2);
+                $dates[] = Carbon::now()->addDays(3);
+                $dates[] = Carbon::now()->addDays(4);
+                $dates[] = Carbon::now()->addDays(5);
+                $dates[] = Carbon::now()->addDays(6);
+                $dates[] = Carbon::now()->addDays(7);
+                $dates[] = Carbon::now()->addDays(8);
+                $dates[] = Carbon::now()->addDays(9);
                 break;
             case 6:
                 $dates[] = Carbon::now()->subDays(5);
@@ -211,6 +246,13 @@ class NimdaController extends Controller
                 $dates[] = Carbon::now()->subDays(1);
                 $dates[] = Carbon::now();
                 $dates[] = Carbon::now()->addDays(1);
+                $dates[] = Carbon::now()->addDays(2);
+                $dates[] = Carbon::now()->addDays(3);
+                $dates[] = Carbon::now()->addDays(4);
+                $dates[] = Carbon::now()->addDays(5);
+                $dates[] = Carbon::now()->addDays(6);
+                $dates[] = Carbon::now()->addDays(7);
+                $dates[] = Carbon::now()->addDays(8);
                 break;
             case 0:
                 $dates[] = Carbon::now()->subDays(6);
@@ -220,6 +262,13 @@ class NimdaController extends Controller
                 $dates[] = Carbon::now()->subDays(2);
                 $dates[] = Carbon::now()->subDays(1);
                 $dates[] = Carbon::now();
+                $dates[] = Carbon::now()->addDays(1);
+                $dates[] = Carbon::now()->addDays(2);
+                $dates[] = Carbon::now()->addDays(3);
+                $dates[] = Carbon::now()->addDays(4);
+                $dates[] = Carbon::now()->addDays(5);
+                $dates[] = Carbon::now()->addDays(6);
+                $dates[] = Carbon::now()->addDays(7);
         }
 
         /*
@@ -235,7 +284,7 @@ class NimdaController extends Controller
         $data['authentication'] = $auth;
         /* Restrict the bookings using any combination of the following */
         $data['arrivalFrom'] = $dates[0]->format('Ymd');
-        $data['arrivalTo'] = $dates[6]->format('Ymd');
+        $data['arrivalTo'] = $dates[13]->format('Ymd');
         $data['includeInfoItems'] = true;
 
         $json = json_encode($data);
