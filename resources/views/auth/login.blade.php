@@ -5,7 +5,7 @@
         <div class="container-login100">
             <div class="wrap-login100">
                 <div class="login100-pic js-tilt" data-tilt>
-                    <img src="{{ asset('nimda/img/connect.png') }}" alt="connect">
+                    <img src="{{ asset('admin/img/connect.png') }}" alt="connect">
                 </div>
 
                 <form class="login100-form validate-form" method="post" action="{{ route('login') }}">

@@ -31,24 +31,28 @@
                                                 </div>
                                                 <div id="collapse{{$orderNumber}}" class="collapse" aria-labelledby="heading{{$orderNumber}}" data-parent="#accordion">
                                                     <div class="card-body">
-                                                        <table class="table table-bordered">
-                                                            <thead style="background-color: {{ $provider->color }}; color: #FFFFFF">
-                                                            <tr>
-                                                                <th scope="col">Produit</th>
-                                                                <th scope="col">Quantité commandée</th>
-                                                                <th scope="col">Prix</th>
-                                                            </tr>
-                                                            </thead>
-                                                            <tbody>
+                                                        Bonjour,
+                                                        <br><br>
+                                                        Voici la commande que nous souhaiterions passer pour la prochaine livraison :
+
+                                                        <ul>
                                                             @foreach($order as $product)
-                                                                <tr id="{{ $product->id }}">
-                                                                    <td class="productName"><strong>{{ $product->product->name }}</strong></td>
-                                                                    <td>{{ $product->quantity }}</td>
-                                                                    <td>{{ $product->price }}</td>
-                                                                </tr>
+                                                                <li>{{ $product->quantity }} x {{ $product->product->name }} @if(!empty($product->product->reference)) ( ref: {{ $product->product->reference }} ) @endif</li>
                                                             @endforeach
-                                                            </tbody>
-                                                        </table>
+                                                        </ul>
+
+                                                        @if(!empty($product->product->provider->order_message))
+                                                            {{ $product->product->provider->order_message }}
+                                                            <br><br>
+                                                        @endif
+
+                                                        Merci d'avance pour vos actions.
+                                                        <br><br>
+                                                        Cordialement,<br>
+                                                        L'équipe de l'Arcoch - SAS Le Petit Canada <br>
+                                                        Tel: 09 54 11 54 16 <br>
+                                                        Addresse : Route du lac de Payolle, 65710 Campan<br>
+                                                        <img src="{{ asset('index/img/logo_mail.png') }}">
                                                     </div>
                                                 </div>
                                             </div>
