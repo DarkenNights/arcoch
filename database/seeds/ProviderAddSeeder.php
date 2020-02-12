@@ -14,7 +14,7 @@ class ProviderAddSeeder extends Seeder
         \App\Provider::create([
             'name' => 'Kanata',
             'short_name' => 'kanata',
-            'color' => '#cdd5d9',
+            'color' => '#adb5b9',
             'email' => 'pro.a@kanata.fr',
             'franco' => 300,
             'address' => '1 Rue Louis Lefèvre Utile 56000 VANNES ',
