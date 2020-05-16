@@ -13,31 +13,6 @@
     <meta name="keywords" content="Bootstrap3,cv,resume, portfolio, Template, multipurpose , Responsive, HTML5"/>
     <meta name="author" content="themearth.com"/>
 
-    <!-- twitter card starts from here, if you don't need remove this section -->
-    <meta name="twitter:card" content="summary"/>
-    <meta name="twitter:site" content="@yourtwitterusername"/>
-    <meta name="twitter:creator" content="@yourtwitterusername"/>
-    <meta name="twitter:url" content="http://yourdomain.com/"/>
-    <meta name="twitter:title" content="Your home page title, max 140 char"/>
-    <meta name="twitter:title" content="Your home page title, max 140 char"/>
-    <!-- maximum 140 char -->
-    <meta name="twitter:description" content="Your site description, maximum 140 char "/>
-    <!-- maximum 140 char -->
-    <meta name="twitter:image" content="{{ asset('index/img/twittercardimg/twittercard-280-150.jpg') }}"/>
-    <!-- when you post this page url in twitter , this image will be shown -->
-    <!-- twitter card ends from here -->
-
-    <!-- facebook open graph starts from here, if you don't need then delete open graph related  -->
-    <meta property="og:title" content="Your home page title"/>
-    <meta property="og:url" content="http://your domain here.com"/>
-    <meta property="og:locale" content="fr_FR"/>
-    <meta property="og:site_name" content="Your site name here"/>
-    <!--meta property="fb:admins" content="" /-->  <!-- use this if you have  -->
-    <meta property="og:type" content="website"/>
-    <meta property="og:image" content="{{ asset('index/img/opengraph/fbphoto.jpg') }}"/>
-    <!-- when you post this page url in facebook , this image will be shown -->
-    <!-- facebook open graph ends from here -->
-
     <!--  FAVICON AND TOUCH ICONS -->
     @include('layout/favicon')
 
@@ -368,7 +343,11 @@
                                     <span class="heading">Planning</span>
                                 </h2>
                                 <p class="text">
-                                    Ce qu'il ne faut pas rater !
+                                    @if(empty($events))
+                                        Aucun évènement à venir pour le moment !
+                                    @else
+                                        Ce qu'il ne faut pas rater !
+                                    @endif
                                 </p>
                             </div>
                         </div>
