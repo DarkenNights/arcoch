@@ -13,11 +13,11 @@ class DinnerController extends Controller
 
     public function getCard()
     {
-        $file= public_path(). "/dinner/carte_arcoch.pdf";
+        $file= public_path(). "/dinner/carte_arcoch_emporter.pdf";
         $headers = [
             'Content-Type' => 'application/pdf',
         ];
 
-        return response()->download($file, 'carte_arcoch.pdf', $headers);
+        return response()->download($file, 'carte_arcoch_emporter.pdf', $headers);
     }
 }
