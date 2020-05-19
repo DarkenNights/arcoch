@@ -52,82 +52,6 @@
     </div>
     <div id="mobile-menu-container" class="hidden-md hidden-lg"></div>
 </header>
-<!-- End of Main Header -->
-
-<!-- Top Slider and Booking form -->
-<div id="home-top-section">
-
-    <!-- Main Slider -->
-{{--    <div id="main-slider">--}}
-{{--        <div class="items">--}}
-{{--            <a href="http://google.com/">--}}
-{{--                <img src="{{ asset('rooms/img/slider/1.jpg') }}" alt="3"/><!-- Change the URL section based on your image\'s name -->--}}
-{{--            </a>--}}
-{{--        </div>--}}
-{{--        <div class="items">--}}
-{{--            <a href="http://google.com/">--}}
-{{--                <img src="{{ asset('rooms/img/slider/3.jpg') }}" alt="3"/>--}}
-{{--            </a>--}}
-{{--        </div>--}}
-{{--        <div class="items">--}}
-{{--            <a href="http://google.com/">--}}
-{{--                <img src="{{ asset('rooms/img/slider/4.jpg') }}" alt="4"/>--}}
-{{--            </a>--}}
-{{--        </div>--}}
-{{--        <div class="items">--}}
-{{--            <a href="http://google.com/">--}}
-{{--                <img src="{{ asset('rooms/img/slider/2.jpg') }}" alt="2"/>--}}
-{{--            </a>--}}
-{{--        </div>--}}
-{{--    </div>--}}
-
-    <!-- Booking Form -->
-{{--    <div class="booking-form-container container">--}}
-{{--        <div class="booking-form-inner-container">--}}
-{{--            <div id="main-booking-form" class="style-2">--}}
-{{--                <h2>Find A <span>Room</span></h2>--}}
-{{--                <form class="booking-form clearfix" action="#"><!-- Do Not remove the classes -->--}}
-{{--                    <div class="input-daterange clearfix">--}}
-{{--                        <div class="booking-fields col-xs-6 col-md-12">--}}
-{{--                            <input placeholder="Choose check in date" class="datepicker-fields check-in" type="text" name="start" /><!-- Date Picker field ( Do Not remove the "datepicker-fields" class ) -->--}}
-{{--                            <i class="fa fa-calendar"></i><!-- Date Picker Icon -->--}}
-{{--                        </div>--}}
-{{--                        <div class="booking-fields col-xs-6 col-md-12">--}}
-{{--                            <input placeholder="Choose check out date" class="datepicker-fields check-out" type="text" name="end" />--}}
-{{--                            <i class="fa fa-calendar"></i>--}}
-{{--                        </div>--}}
-{{--                    </div>--}}
-{{--                    <div class="booking-fields col-xs-6 col-md-12">--}}
-{{--                        <!-- Select boxes ( you can change the items and its value based on your project's needs ) -->--}}
-{{--                        <select name="room-type">--}}
-{{--                            <option value="">How Many Adult?</option><!-- Select box items ( you can change the items and its value based on your project's needs ) -->--}}
-{{--                            <option value="2">1</option>--}}
-{{--                            <option value="3">2</option>--}}
-{{--                            <option value="4">3</option>--}}
-{{--                            <option value="5">4</option>--}}
-{{--                            <option value="6">5</option>--}}
-{{--                        </select>--}}
-{{--                        <!-- End of Select boxes -->--}}
-{{--                    </div>--}}
-{{--                    <div class="booking-fields col-xs-6 col-md-12">--}}
-{{--                        <select name="guest">--}}
-{{--                            <option value="">How Many Children ?</option>--}}
-{{--                            <option value="1">1</option>--}}
-{{--                            <option value="2">2</option>--}}
-{{--                            <option value="3">3</option>--}}
-{{--                            <option value="4">4</option>--}}
-{{--                            <option value="5">5</option>--}}
-{{--                        </select>--}}
-{{--                    </div>--}}
-{{--                    <div class="booking-button-container">--}}
-{{--                        <input class="btn btn-default" value="Check Availability" type="submit"/><!-- Submit button -->--}}
-{{--                    </div>--}}
-{{--                </form>--}}
-{{--            </div>--}}
-{{--        </div>--}}
-{{--    </div>--}}
-</div>
-<!-- End of Top Slider and Booking form -->
 
 <!-- Luxury Rooms -->
 <div id="luxury-rooms">
@@ -149,7 +73,7 @@
                     Une banquette amovible est disponible pour permettre le couchage de deux enfants ou un adulte supplémentaire.<br>
                     La chambre est à 110 € avec un supplément de 30 € par enfant ou 50 € par adulte.
                 </div>
-                <div class="btn btn-default">Réserver en appelant au 09 54 11 54 16</div><!-- Detail link -->
+                <a href="https://www.beds24.com/booking2.php?propid=91751" target="_blank"><div class="btn btn-default">Réserver une chambre</div></a><!-- Detail link -->
             </div>
             <div class="price-container col-xs-6 col-md-8">
                 <div class="price text-center">
@@ -169,8 +93,10 @@
 <!-- Special Packages -->
 <div id="special-packages" class="container">
     <!-- Heading box -->
-    <div class="heading-box">
+    <div class="heading-box" style="margin: 80px 0 50px;">
         <h2>Nos <span> prestations</span> et <span>tarifs</span></h2><!-- Title -->
+        <br><br>
+        <a href="https://www.beds24.com/booking2.php?propid=91751" target="_blank"><div class="btn btn-default" style="font-size: 20px">Réserver une chambre</div></a>
     </div>
 
     <!-- Package Container -->
@@ -215,7 +141,7 @@
                 <div class="package-details">
                     <ul>
                         <li>Repas froid en chambres :</li>
-                        <li>Assiette de charcuterie, fromage et soupe 15 €</li>
+                        <li>Assiette de charcuterie et fromage 15 €</li>
                         <li>Dessert du jour 5.90 €</li>
                         <li>Boisson à partir de 2.20 €</li>
                     </ul>
@@ -226,6 +152,63 @@
     </div>
 </div>
 <!-- End of Special Packages -->
+
+<div id="special-packages" class="container">
+    <!-- Heading box -->
+    <div class="heading-box">
+        <h2><span>Déroulement</span> du <span>séjour</span></h2><!-- Title -->
+    </div>
+
+    <!-- Package Container -->
+    <div class="package-container clearfix">
+        <!-- Package Box -->
+        <div class="package-box wow fadeInUp col-sm-6 col-md-4">
+            <div class="package-inner">
+                <div class="title">Votre arrivée</div>
+                <div class="package-details">
+                    <ul>
+                        <li>Arrivée à partir de 15h00</li>
+                        <li>Arrivée au plus tard à 18h00</li>
+                        <li>Merci de nous prévenir si vous ne pouvez pas être là avant 18h00</li>
+                        <li>Paiement et commande du repas du soir servi à 19h00 en chambre</li>
+                        <li>Pas de repas du soir si vous arrivez après 19h00 (les cuisines sont fermées)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Package Box -->
+        <div class="package-box wow fadeInUp col-sm-6 col-md-4" data-wow-delay="0.5s">
+            <div class="package-inner">
+                <div class="title">Votre séjour</div>
+                <div class="package-details">
+                    <ul>
+                        <li>Machine à café nespresso à disposition (achat de capsules au bar)</li>
+                        <li>Choix du petit déjeuner tous les jours</li>
+                        <li>Possibilité d'amener un repas froid dans vos chambres</li>
+                        <li>Restaurant ouvert à quelques kilomètres pour les repas du soir si vous ne souhaitez pas nos repas froid</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Package Box -->
+        <div class="package-box wow fadeInUp col-sm-6 col-md-4" data-wow-delay="1s">
+            <div class="package-inner">
+                <div class="title">Votre départ</div>
+                <div class="package-details">
+                    <ul>
+                        <li>Vous devez libérer la chambre <br> au plus tard à 10h00</li>
+                        <li>Laisser la chambre au maximum dans l'état dans laquelle vous l'avez trouvée</li>
+                        <li>Pensez aux personnes faisant le ménage derrère vous</li>
+                        <li>Remise des clés au bar en partant</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
 
 <!-- Gallery -->
 <div id="gallery">
