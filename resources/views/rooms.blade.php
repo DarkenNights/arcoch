@@ -157,6 +157,8 @@
     <!-- Heading box -->
     <div class="heading-box">
         <h2><span>Déroulement</span> du <span>séjour</span></h2><!-- Title -->
+        <br><br>
+        <a href="https://www.beds24.com/booking2.php?propid=91751" target="_blank"><div class="btn btn-default" style="font-size: 20px">Réserver une chambre</div></a>
     </div>
 
     <!-- Package Container -->

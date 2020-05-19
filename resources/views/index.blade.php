@@ -181,12 +181,12 @@
                             Les horaires du restaurant en saison (Juillet et Août) sont les suivants : <br>
                             <ul>
                                 <li>Lundi : Fermé</li>
-                                <li>Mardi : 09h00 - 19h00</li>
-                                <li>Mercredi : 09h00 - 19h00</li>
-                                <li>Jeudi : 09h00 - 19h00</li>
-                                <li>Vendredi : 09h00 - 19h00</li>
-                                <li>Samedi : 09h00 - 19h00</li>
-                                <li>Dimanche : 09h00 - 19h00</li>
+                                <li>Mardi : 09h00 - 19h30</li>
+                                <li>Mercredi : 09h00 - 19h30</li>
+                                <li>Jeudi : 09h00 - 19h30</li>
+                                <li>Vendredi : 09h00 - 22h00</li>
+                                <li>Samedi : 09h00 - 22h00</li>
+                                <li>Dimanche : 09h00 - 19h30</li>
                             </ul>
                         </div>
                     </div>
