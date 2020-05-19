@@ -1,5 +1,5 @@
 <li class="@if($active == "index") active @endif">
-    <a href="{{ route('index') }}">Les évènements</a>
+    <a href="{{ route('index') }}">Accueil</a>
 </li>
 <li class="@if($active == "dinner") active @endif">
     <a href="{{ route('dinner') }}">Le restaurant</a>

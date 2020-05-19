@@ -147,6 +147,57 @@
     </section>
     <!--BANNER END-->
 
+    <section>
+        <div id="lgx-schedule" class="lgx-schedule">
+            <div class="lgx-inner">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <div class="lgx-heading-area">
+                                <h2 class="lgx-heading">
+                                    <span class="back-heading"><i class="fa fa-clock-o" aria-hidden="true"></i></span>
+                                    <span class="heading">Horaires et Contact</span>
+                                </h2>
+                                <p class="text" style="padding: 0">
+                                    Vous trouverez ci-dessous les différentes informations d'ouverture du restaurant
+                                    <br>
+                                    Vous pouvez nous joindre au 09 54 11 54 16 ou par mail à contact@arcoch.fr
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-xs-6" style="color: #000">
+                            Les horaires du restaurant hors saison sont les suivants : <br>
+                            <ul>
+                                <li>Lundi : Fermé</li>
+                                <li>Mardi : Fermé</li>
+                                <li>Mercredi : 09h30 - 18h00</li>
+                                <li>Jeudi : 09h30 - 18h00</li>
+                                <li>Vendredi : 09h30 - 18h00</li>
+                                <li>Samedi : 09h30 - 18h00</li>
+                                <li>Dimanche : 09h30 - 18h00</li>
+                            </ul>
+                        </div>
+                        <div class="col-xs-6" style="color: #000">
+                            Les horaires du restaurant en saison (Juillet et Août) sont les suivants : <br>
+                            <ul>
+                                <li>Lundi : Fermé</li>
+                                <li>Mardi : 09h00 - 19h00</li>
+                                <li>Mercredi : 09h00 - 19h00</li>
+                                <li>Jeudi : 09h00 - 19h00</li>
+                                <li>Vendredi : 09h00 - 19h00</li>
+                                <li>Samedi : 09h00 - 19h00</li>
+                                <li>Dimanche : 09h00 - 19h00</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!--//.ROW-->
+                </div>
+                <!-- //.CONTAINER -->
+            </div>
+            <!-- //.INNER -->
+        </div>
+    </section>
+
     <!--ABOUT-->
     <section>
         <div class="lgx-about">
