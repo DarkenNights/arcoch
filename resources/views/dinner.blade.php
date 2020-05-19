@@ -233,14 +233,16 @@
         <div class="row">
             <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
                 <div class="area-title text-center">
-                    <h2>La carte</h2>
+                    <h2>La carte à emporter</h2>
+                    <br><br>
+                    <p>Jusqu'à l'autorisation de réouverture des restaurants par l'état, nous vous proposons une carte à emporter !</p>
                 </div>
             </div>
         </div>
         <div class="row">
             <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
                 <div class="resarvation-from-button text-center wow fadeIn">
-                    <a href="{{ route('dinnerCard') }}" class="reservation-button" style="border: solid 2px #ca3d26">Télécharger la carte</a>
+                    <a href="{{ route('dinnerCard') }}" class="reservation-button" style="border: solid 2px #ca3d26">Télécharger la carte à emporter</a>
                 </div>
             </div>
         </div>
