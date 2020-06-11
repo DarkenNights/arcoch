@@ -142,7 +142,7 @@
                 <div class="package-details">
                     <ul>
                         <li>Repas froid en chambres :</li>
-                        <li>Assiette de charcuterie et fromage 15 €</li>
+                        <li>Assiette de charcuterie, fromages 15 €</li>
                         <li>Dessert du jour 5.90 €</li>
                         <li>Boisson à partir de 2.20 €</li>
                     </ul>
