@@ -70,15 +70,15 @@
                 <div class="title">Les chambres</div><!-- Room title -->
                 <div class="description"><!-- Room Description -->
                     Chambres de 32m² pour deux personnes. Vue directe sur le lac et les montagnes. Petit déjeuner inclus.
-                    Une banquette amovible est disponible pour permettre le couchage de deux enfants ou un adulte supplémentaire.<br>
-                    La chambre est à 110 € avec un supplément de 30 € par enfant ou 50 € par adulte.
+                    Une banquette amovible est disponible pour permettre le couchage de deux enfants ou adultes supplémentaires.<br>
+                    La chambre est à 99 € avec un supplément de 40 € par enfant ou par adulte.
                 </div>
                 <a href="https://www.beds24.com/booking2.php?propid=91751" target="_blank"><div class="btn btn-default">Réserver une chambre</div></a><!-- Detail link -->
             </div>
             <div class="price-container col-xs-6 col-md-8">
                 <div class="price text-center">
                     <span>
-                        110 € / nuit
+                        99 € / nuit
                         <br>
                         Pour deux personnes
                     </span>
@@ -105,7 +105,7 @@
         <div class="package-box wow fadeInUp col-sm-6 col-md-4">
             <div class="package-inner">
                 <div class="title">Chambre double</div>
-                <div class="price"><span>110 € par nuit</span>pour deux personnes</div>
+                <div class="price"><span>99 € par nuit</span>pour deux personnes</div>
                 <div class="package-details">
                     <ul>
                         <li>Grande chambre de 32m²</li>
@@ -122,12 +122,13 @@
         <div class="package-box wow fadeInUp col-sm-6 col-md-4" data-wow-delay="0.5s">
             <div class="package-inner">
                 <div class="title">Personnes supp.</div>
-                <div class="price"><span>De 30 à 60 €</span>par nuit</div>
+                <div class="price"><span>40 €</span>par nuit</div>
                 <div class="package-details">
                     <ul>
-                        <li>30 € par enfant (limité à 2)</li>
-                        <li>50 € par adulte (limité à 1)</li>
+                        <li>40 € par enfant</li>
+                        <li>40 € par adulte</li>
                         <li>Petit déjeuner inclus en chambre</li>
+                        <li>Maximum deux personnes supplémentaires par chambre</li>
                     </ul>
                 </div>
             </div>
