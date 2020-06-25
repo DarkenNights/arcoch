@@ -141,9 +141,9 @@
                 <div class="price"><span>Jusqu'à 30 €</span>par personne et par nuit</div>
                 <div class="package-details">
                     <ul>
-                        <li>Repas froid en chambres :</li>
-                        <li>Assiette de charcuterie, fromages 15 €</li>
-                        <li>Dessert du jour 5.90 €</li>
+                        <li>Repas en chambres :</li>
+                        <li>Plat 15 €</li>
+                        <li>Dessert 6.50 €</li>
                         <li>Boisson à partir de 2.20 €</li>
                     </ul>
                 </div>
@@ -171,8 +171,8 @@
                 <div class="package-details">
                     <ul>
                         <li>Arrivée à partir de 15h00</li>
-                        <li>Arrivée au plus tard à 18h00</li>
-                        <li>Merci de nous prévenir si vous ne pouvez pas être là avant 18h00</li>
+                        <li>Arrivée au plus tard à 19h00</li>
+                        <li>Merci de nous prévenir si vous ne pouvez pas être là avant 19h00</li>
                         <li>Paiement et commande du repas du soir servi à 19h00 en chambre</li>
                         <li>Pas de repas du soir si vous arrivez après 19h00 (les cuisines sont fermées)</li>
                     </ul>
@@ -189,7 +189,7 @@
                         <li>Machine à café nespresso à disposition (achat de capsules au bar)</li>
                         <li>Choix du petit déjeuner tous les jours</li>
                         <li>Possibilité d'amener un repas froid dans vos chambres</li>
-                        <li>Restaurant ouvert à quelques kilomètres pour les repas du soir si vous ne souhaitez pas nos repas froid</li>
+                        <li>Restaurant ouvert à quelques kilomètres pour les repas du soir si vous ne souhaitez pas nos repas</li>
                     </ul>
                 </div>
             </div>
@@ -202,7 +202,7 @@
                 <div class="package-details">
                     <ul>
                         <li>Vous devez libérer la chambre <br> au plus tard à 10h00</li>
-                        <li>Laisser la chambre au maximum dans l'état dans laquelle vous l'avez trouvée</li>
+                        <li>Laisser la chambre au maximum dans l'état dans laquelle vous l'avez trouvée.</li>
                         <li>Pensez aux personnes faisant le ménage derrère vous</li>
                         <li>Remise des clés au bar en partant</li>
                     </ul>
