@@ -17,14 +17,10 @@
                                 {{ \Carbon\Carbon::parse($date)->format('d/m/Y') }}
                             </div>
                             <div class="col-12">
-                                @foreach($booking as $key => $infos)
-                                    @php $marginTop = 0; @endphp
-                                    @foreach($booking as $keyCalculUnitId => $calculUnitId)
-                                        @if(!empty($infos[$key - $keyCalculUnitId]->unitId && $infos[$key - $keyCalculUnitId]->unitId < $infos->unitId))
-                                            @php $marginTop = $marginTop + 150; @endphp
-                                        @endif
-                                    @endforeach
-                                    <div class="row" style="border: 3px solid #bb2c34; margin-top: {{ $marginTop }}px">
+				@php $marginTop = 0; $previousId = 0; @endphp
+                                @foreach($booking as $infos)
+                                    @php $marginTop = 150*($infos->unitId - $previousId - 1); @endphp
+                                    <div class="row" style="border: 3px solid #bb2c34; margin-top: {{ $marginTop . 'px' }}">
                                         <div class="col-12">
                                             <div class="row" style="color: #fff;">
                                                 <div class="col-2" style="text-align: center; padding-left: 0; padding-right: 0; border: solid #bb2c34; border-width: 0 2px 2px 0">
@@ -57,6 +53,7 @@
 
                                         </div>
                                     </div>
+				@php $previousId = $infos->unitId @endphp
                                 @endforeach
                             </div>
                         </div>
