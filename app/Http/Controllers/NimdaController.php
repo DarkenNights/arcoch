@@ -18,7 +18,7 @@ class NimdaController extends Controller
 {
     public function stock()
     {
-        $providers = Provider::all();
+        $providers = Provider::where('short_name', '!=', 'boulanger')->get();
         return view('nimda.stock', array(
             'providers' => $providers
         ));
@@ -46,7 +46,7 @@ class NimdaController extends Controller
 
     public function order()
     {
-        $providers = Provider::all();
+        $providers = Provider::where('short_name', '!=', 'boulanger')->get();
         return view('nimda.order', array(
             'providers' => $providers
         ));
@@ -93,7 +93,7 @@ class NimdaController extends Controller
 
     public function orderHistory()
     {
-        $providers = Provider::all();
+        $providers = Provider::where('short_name', '!=', 'boulanger')->get();
         $ordersDB = Order::orderBy('created_at', 'DESC')->get();
         $orders = [];
         foreach ($ordersDB as $orderDB) {
