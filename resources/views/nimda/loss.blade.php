@@ -31,7 +31,11 @@
                 <form class="col-12" method="POST" action="{{ route('nimdaAddLoss') }}">
                     {{ csrf_field() }}
                     <div class="row">
-                        <div class="col-6 form-group">
+                        <div class="col-2 form-group">
+                            <label for="date">Date</label>
+                            <input class="form-control" type="date" name="date">
+                        </div>
+                        <div class="col-4 form-group">
                             <label for="product">Produit</label>
                             <select class="form-control" name="product">
                                 @foreach($providers as $provider)

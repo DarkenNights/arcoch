@@ -123,6 +123,7 @@ class NimdaController extends Controller
     {
         $productId = Input::get('product');
         $quantity = Input::get('quantity');
+        $date = Input::get('date');
 
         $product = Product::find($productId);
 
@@ -130,6 +131,8 @@ class NimdaController extends Controller
         $loss->product()->associate($product);
         $loss->quantity = $quantity;
         $loss->price = $product->price_kg * $quantity;
+        $loss->created_at = $date;
+        $loss->updated_at = $date;
         try
         {
             $loss->save();
