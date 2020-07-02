@@ -143,6 +143,16 @@ class NimdaController extends Controller
         return redirect()->route('nimdaLoss');
     }
 
+    public function getLosses()
+    {
+        $start = Input::get('start');
+        $end = Input::get('end');
+
+        $losses = Loss::where('created_at', '>=', $start)->where('created_at', '<=', $end)->sum('price');
+
+        return response()->json($losses);
+    }
+
     public function cost()
     {
         $products = Product::orderBy('provider_id', 'ASC')->get();

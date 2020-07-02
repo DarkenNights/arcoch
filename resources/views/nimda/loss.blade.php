@@ -13,6 +13,20 @@
                     @endif
                 </div>
             </div>
+            <div class="row" id="getLosses" style="margin-bottom: 20px">
+                <div class="col-3 form-group">
+                    <label for="start">Date de début</label>
+                    <input class="form-control" type="date" id="start" name="start">
+                </div>
+                <div class="col-3 form-group">
+                    <label for="end">Date de fin</label>
+                    <input class="form-control" type="date" id="end" name="end">
+                </div>
+                <div class="col-3">
+                    <button style="margin-top: 32px" class="btn btn-success" onclick="getLosses($('#start').val(), $('#end').val())">Calculer les pertes</button>
+                </div>
+                <div style="margin-top: 32px" class="col-3" id="totalLosses"></div>
+            </div>
             <div class="row" id="losses" style="margin-bottom: 20px">
                 <form class="col-12" method="POST" action="{{ route('nimdaAddLoss') }}">
                     {{ csrf_field() }}
@@ -39,7 +53,6 @@
                             <button style="margin-top: 32px" type="submit" class="btn btn-success">Enregistrer la perte</button>
                         </div>
                     </div>
-
                 </form>
             </div>
             <table class="table table-bordered">
@@ -66,4 +79,21 @@
             </table>
         </div>
     </div>
+@endsection
+
+@section('javascripts')
+    <script type="text/javascript">
+        function getLosses(start, end) {
+            $.ajax({
+                type: "POST",
+                url: "/nimda/getLosses",
+                data: "start="+start+"&end="+end,
+                dataType: "json"
+            }).done(function(data) {
+                $('#totalLosses').html('Total des pertes pour la période donnée : ' + data);
+            }).fail(function(data) {
+                $(target + ' .productName').html('<strong>Une erreur s\'est produite.</strong>');
+            });
+        }
+    </script>
 @endsection
