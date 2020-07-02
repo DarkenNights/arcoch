@@ -129,7 +129,7 @@ class NimdaController extends Controller
         $loss = new Loss();
         $loss->product()->associate($product);
         $loss->quantity = $quantity;
-        $loss->price = $product->price * $quantity;
+        $loss->price = $product->price_kg * $quantity;
         try
         {
             $loss->save();
