@@ -19,8 +19,8 @@
                             <div class="col-12">
 				@php $marginTop = 0; $previousId = 0; @endphp
                                 @foreach($booking as $infos)
-                                    @php $marginTop = 150*($infos->unitId - $previousId - 1); @endphp
-                                    <div class="row" style="border: 3px solid #bb2c34; margin-top: {{ $marginTop . 'px' }}">
+                                    @php $marginTop = 200*($infos->unitId - $previousId - 1); @endphp
+                                    <div class="row" style="min-height: 200px; border: 3px solid #bb2c34; margin-top: {{ $marginTop . 'px' }}">
                                         <div class="col-12">
                                             <div class="row" style="color: #fff;">
                                                 <div class="col-2" style="text-align: center; padding-left: 0; padding-right: 0; border: solid #bb2c34; border-width: 0 2px 2px 0">
