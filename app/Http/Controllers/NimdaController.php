@@ -110,7 +110,7 @@ class NimdaController extends Controller
     public function loss()
     {
         $losses = Loss::orderBy('created_at', 'DESC')->get();
-        $products = Product::orderBy('provider_id', 'ASC')->get();
+        $products = Product::orderBy('provider_id', 'ASC')->orderBy('name', 'ASC')->get();
         $providers = Provider::all();
         return view('nimda.loss', array(
             'losses' => $losses,
