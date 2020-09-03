@@ -187,7 +187,7 @@
                 <div class="package-details">
                     <ul>
                         <li>Machine à café nespresso à disposition (achat de capsules au bar)</li>
-                        <li>Petit déjeuner servi à 09h00 en chambre</li>
+                        <li>Petit déjeuner à 09h00 en chambre</li>
                         <li>Possibilité d'amener un repas froid dans vos chambres</li>
                         <li>Restaurant ouvert à quelques kilomètres pour les repas du soir si vous ne souhaitez pas nos repas</li>
                     </ul>
