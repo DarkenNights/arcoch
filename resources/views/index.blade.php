@@ -170,11 +170,11 @@
                             <ul>
                                 <li>Lundi : Fermé</li>
                                 <li>Mardi : Fermé</li>
-                                <li>Mercredi : 09h30 - 18h00</li>
-                                <li>Jeudi : 09h30 - 18h00</li>
-                                <li>Vendredi : 09h30 - 18h00</li>
-                                <li>Samedi : 09h30 - 18h00</li>
-                                <li>Dimanche : 09h30 - 18h00</li>
+                                <li>Mercredi : 09h30 - 19h00</li>
+                                <li>Jeudi : 09h30 - 19h00</li>
+                                <li>Vendredi : 09h30 - 19h00</li>
+                                <li>Samedi : 09h30 - 19h00</li>
+                                <li>Dimanche : 09h30 - 19h00</li>
                             </ul>
                         </div>
                         <div class="col-xs-6" style="color: #000">
