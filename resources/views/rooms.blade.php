@@ -174,7 +174,7 @@
                         <li>Arrivée au plus tard à 19h00</li>
                         <li>Merci de nous prévenir si vous ne pouvez pas être là avant 19h00</li>
                         <li>Paiement et commande du repas du soir servi à 19h00 en chambre</li>
-                        <li>Pas de repas du soir si vous arrivez après 19h00 (les cuisines sont fermées)</li>
+                        <li>Pas de repas du soir si vous arrivez après 18h45 (les cuisines sont fermées)</li>
                     </ul>
                 </div>
             </div>
@@ -187,7 +187,7 @@
                 <div class="package-details">
                     <ul>
                         <li>Machine à café nespresso à disposition (achat de capsules au bar)</li>
-                        <li>Choix du petit déjeuner tous les jours</li>
+                        <li>Petit déjeuner servi à 09h00 en chambre</li>
                         <li>Possibilité d'amener un repas froid dans vos chambres</li>
                         <li>Restaurant ouvert à quelques kilomètres pour les repas du soir si vous ne souhaitez pas nos repas</li>
                     </ul>
@@ -247,7 +247,7 @@
             <div class="widget-content">
                 Chambres de 32m² pour deux personnes. Vue directe sur le lac et les montagnes. Petit déjeuner inclus.
                 Une banquette amovible est disponible pour permettre le couchage de deux enfants ou un adulte supplémentaire.<br>
-                La chambre est à 110 € avec un supplément de 30 € par enfant ou 50 € par adulte.
+                La chambre est à 99 € avec un supplément de 40 € par enfant ou par adulte.
             </div>
         </div>
         <div class="widget col-xs-12 col-md-6 get-in-touch">
