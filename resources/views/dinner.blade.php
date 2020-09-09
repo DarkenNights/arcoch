@@ -199,16 +199,16 @@
                     <div class="promotions-details">
                         <h3>Nos bières canadiennes</h3>
                         <p>
-                        <ul>
-                            <li>
-                                La pisse du Caribou : Sous l'étiquette d'un caribou déjanté, se cache une bière de haute fermantation au vu de sa robe orangée et trouble et son dépot en fond de bouteille.
-                                La mousse blanche de cette bière retombe lentement en dégageant d'agréables parfums.
-                            </li>
-                            <li>
-                                La rouse du trappeur : La bière rousse du trappeur est bien houblonnée et épicée avec une mousse dense. Un goût nouveau, explosif, rafraîchissant, avec sun arôme rare.
-                                Cette bière, couleur caramel, ne vous laissera pas indifférent.
-                            </li>
-                        </ul>
+                            <ul>
+                                <li>
+                                    La pisse du Caribou : Sous l'étiquette d'un caribou déjanté, se cache une bière de haute fermantation au vu de sa robe orangée et trouble et son dépot en fond de bouteille.
+                                    La mousse blanche de cette bière retombe lentement en dégageant d'agréables parfums.
+                                </li>
+                                <li>
+                                    La rouse du trappeur : La bière rousse du trappeur est bien houblonnée et épicée avec une mousse dense. Un goût nouveau, explosif, rafraîchissant, avec sun arôme rare.
+                                    Cette bière, couleur caramel, ne vous laissera pas indifférent.
+                                </li>
+                            </ul>
                         </p>
                     </div>
                 </div>
@@ -485,6 +485,16 @@
 <script src="{{ asset('dinner/js/typed.js') }}"></script>
 <script src="{{ asset('dinner/js/jquery.magnific-popup.min.js') }}"></script>
 <script src="{{ asset('dinner/js/jquery.sticky.js') }}"></script>
+<!-- COOKIES JS -->
+<script type="text/javascript" id="cookieinfo"
+        src="//cookieinfoscript.com/js/cookieinfo.min.js"
+        data-bg="#AAAAAA"
+        data-link="#dc4e41"
+        data-message="Nous utilisons des cookies pour vous permettre un confort de navigation. En continuant de visiter notre site vous consentez à l'utilisation des cookies sur celui-ci"
+        data-linkmsg="Plus d'informations"
+        data-close-text="J'accepte"
+>
+</script>
 
 <!--===== ACTIVE JS=====-->
 <script src="{{ asset('dinner/js/main.js') }}"></script>

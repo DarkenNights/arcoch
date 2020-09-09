@@ -331,6 +331,16 @@
 <script src="{{ asset('concierge/js/all.min.js') }}"></script>
 <script src="{{ asset('concierge/js/scripts.js') }}"></script>
 <script src="{{ asset('concierge/js/custom.js') }}"></script>
+<!-- COOKIES JS -->
+<script type="text/javascript" id="cookieinfo"
+        src="//cookieinfoscript.com/js/cookieinfo.min.js"
+        data-bg="#AAAAAA"
+        data-link="#dc4e41"
+        data-message="Nous utilisons des cookies pour vous permettre un confort de navigation. En continuant de visiter notre site vous consentez à l'utilisation des cookies sur celui-ci"
+        data-linkmsg="Plus d'informations"
+        data-close-text="J'accepte"
+>
+</script>
 </body>
 
 </html>
