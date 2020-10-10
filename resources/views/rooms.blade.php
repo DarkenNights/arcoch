@@ -171,10 +171,10 @@
                 <div class="package-details">
                     <ul>
                         <li>Arrivée à partir de 15h00</li>
-                        <li>Arrivée au plus tard à 19h00</li>
-                        <li>Merci de nous prévenir si vous ne pouvez pas être là avant 19h00</li>
+                        <li>Arrivée au plus tard à 18h00</li>
+                        <li>Merci de nous prévenir si vous ne pouvez pas être là avant 18h00</li>
                         <li>Paiement et commande du repas du soir servi à 19h00 en chambre</li>
-                        <li>Pas de repas du soir si vous arrivez après 18h45 (les cuisines sont fermées)</li>
+                        <li>Pas de repas du soir si vous arrivez après 18h30 (les cuisines sont fermées)</li>
                     </ul>
                 </div>
             </div>
