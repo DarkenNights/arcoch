@@ -166,6 +166,25 @@
                             </div>
                         </div>
                         <div class="col-xs-6" style="color: #000">
+                            Les horaires du restaurant pendant la vente à emporter sont les suivants : <br>
+                            <ul>
+                                <li>Lundi : 10h00 - 17h00</li>
+                                <li>Mardi : 10h00 - 17h00</li>
+                                <li>Mercredi : 10h00 - 17h00</li>
+                                <li>Jeudi : 10h00 - 17h00</li>
+                                <li>Vendredi : 10h00 - 17h00</li>
+                                <li>Samedi : 10h00 - 17h00</li>
+                                <li>Dimanche : 10h00 - 17h00</li>
+                            </ul>
+                        </div>
+                        <div class="col-xs-6" style="color: #000">
+                            Le restaurant est fermé les jours suivants : <br>
+                            <ul>
+                                <li>Vendredi 25 décembre 2020</li>
+                                <li>Vendredi 01 janvier 2021</li>
+                            </ul>
+                        </div>
+                        <div class="col-xs-6" style="color: #000">
                             Les horaires du restaurant hors saison sont les suivants : <br>
                             <ul>
                                 <li>Lundi : Fermé</li>
